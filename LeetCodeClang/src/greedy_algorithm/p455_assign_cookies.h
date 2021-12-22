@@ -2,8 +2,9 @@
 #pragma once
 
 #include <vector>
-#include <cassert>
 #include <iostream>
+
+#include "Tester.h"
 
 class Solution455 {
 public:
@@ -12,11 +13,11 @@ public:
 	void test() {
 		std::vector test1_g = { 1, 2, 3 };
 		std::vector test1_s = { 1, 1 };
-		assert(findContentChildren(test1_g, test1_s) == 1);
+		ASSERT(findContentChildren(test1_g, test1_s) == 1);
 
 		std::vector test2_g = { 1, 2 };
 		std::vector test2_s = { 1, 2, 3 };
-		assert(findContentChildren(test2_g, test2_s) == 2);
+		ASSERT(findContentChildren(test2_g, test2_s) == 2);
 
 		std::cout << "Solution 455 passed!\n";
 	}

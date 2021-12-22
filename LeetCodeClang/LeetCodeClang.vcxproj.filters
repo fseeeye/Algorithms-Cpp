@@ -18,12 +18,21 @@
     <ClInclude Include="src\greedy_algorithm\p455_assign_cookies.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\greedy_algorithm\p135_candy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Tester.cpp">
+    <ClCompile Include="src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\greedy_algorithm\p135_candy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

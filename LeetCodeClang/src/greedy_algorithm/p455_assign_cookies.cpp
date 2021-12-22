@@ -2,6 +2,8 @@
 
 #include <algorithm>
 
+// Time:  O()
+// Space: O()
 int Solution455::findContentChildren(std::vector<int>& g, std::vector<int>& s)
 {
 	// sort g and s
