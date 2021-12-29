@@ -23,12 +23,14 @@
     <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h" />
     <ClInclude Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.h" />
     <ClInclude Include="src\Tester.h" />
+    <ClInclude Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p135_candy\candy.cpp" />
     <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp" />
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -135,7 +137,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>src;src/greedy_algorithm</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;src/greedy_algorithm;src/two_pointers;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

@@ -27,6 +27,9 @@
     <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -39,6 +42,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
