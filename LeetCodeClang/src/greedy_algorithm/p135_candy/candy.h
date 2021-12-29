@@ -1,4 +1,5 @@
-﻿// OJ: https://leetcode-cn.com/problems/candy/
+﻿// 分配问题
+// OJ: https://leetcode-cn.com/problems/candy/
 #pragma once
 
 #include <vector>

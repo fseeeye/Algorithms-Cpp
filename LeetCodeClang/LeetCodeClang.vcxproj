@@ -19,13 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\greedy_algorithm\p135_candy.h" />
-    <ClInclude Include="src\greedy_algorithm\p455_assign_cookies.h" />
+    <ClInclude Include="src\greedy_algorithm\p135_candy\candy.h" />
+    <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h" />
+    <ClInclude Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.h" />
     <ClInclude Include="src\Tester.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\greedy_algorithm\p135_candy.cpp" />
-    <ClCompile Include="src\greedy_algorithm\p455_assign_cookies.cpp" />
+    <ClCompile Include="src\greedy_algorithm\p135_candy\candy.cpp" />
+    <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp" />
+    <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp" />
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -133,7 +135,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;src/greedy_algorithm</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

@@ -1,15 +1,11 @@
 ﻿#include <iostream>
 
-#include "greedy_algorithm/p455_assign_cookies.h"
-#include "greedy_algorithm/p135_candy.h"
+#include "p435_non_overlapping_intervals/non_overlapping_intervals.h"
 
 int main()
 {
-	Solution455 solution455;
-	solution455.test();
-
-	Solution135 solution135;
-	solution135.test();
+	Solution435 solution435;
+	solution435.test();
 
 	std::cin.get();
 }
