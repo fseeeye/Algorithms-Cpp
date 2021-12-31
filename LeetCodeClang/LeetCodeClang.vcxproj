@@ -22,15 +22,22 @@
     <ClInclude Include="src\greedy_algorithm\p135_candy\candy.h" />
     <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h" />
     <ClInclude Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.h" />
+    <ClInclude Include="src\Structures.h" />
     <ClInclude Include="src\Tester.h" />
+    <ClInclude Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.h" />
     <ClInclude Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.h" />
+    <ClInclude Include="src\two_pointers\p76_minimum_window_substring\minimum_window_substring.h" />
+    <ClInclude Include="src\two_pointers\p88_merge_sorted_array\merge_sorted_array.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p135_candy\candy.cpp" />
     <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp" />
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.cpp" />
     <ClCompile Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.cpp" />
+    <ClCompile Include="src\two_pointers\p76_minimum_window_substring\minimum_window_substring.cpp" />
+    <ClCompile Include="src\two_pointers\p88_merge_sorted_array\merge_sorted_array.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

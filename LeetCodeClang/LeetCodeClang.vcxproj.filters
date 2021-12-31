@@ -30,6 +30,18 @@
     <ClInclude Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\two_pointers\p88_merge_sorted_array\merge_sorted_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Structures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\two_pointers\p76_minimum_window_substring\minimum_window_substring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -45,6 +57,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\two_pointers\p88_merge_sorted_array\merge_sorted_array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\two_pointers\p76_minimum_window_substring\minimum_window_substring.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
