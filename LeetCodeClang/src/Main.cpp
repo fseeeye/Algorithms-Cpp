@@ -14,11 +14,15 @@
 
 // Interval Search
 #include "p69_sqrtx/sqrtx.h"
+#include "p34_find_ele_in_sorted_array/find_ele_in_sorted_array.h"
 
 int main()
 {
 	Solution69 solution69;
 	solution69.test();
+
+	Solution034 solution34;
+	solution34.test();
 
 	std::cin.get();
 }

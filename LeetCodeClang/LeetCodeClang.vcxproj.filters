@@ -45,6 +45,9 @@
     <ClInclude Include="src\interval_search\p69_sqrtx\sqrtx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -72,6 +75,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\interval_search\p69_sqrtx\sqrtx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
