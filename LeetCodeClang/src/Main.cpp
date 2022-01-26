@@ -19,11 +19,15 @@
 
 // Sort
 #include "p215_kth_largest_element/kth_largest_element.h"
+#include "p347_top_k_frequent_elements/top_k_frequent_elements.h"
 
 int main()
 {
 	Solution215 solution215;
 	solution215.test();
+
+	Solution347 solution347;
+	solution347.test();
 
 	std::cin.get();
 }
