@@ -15,6 +15,7 @@
 // Interval Search
 #include "p69_sqrtx/sqrtx.h"
 #include "p34_find_ele_in_sorted_array/find_ele_in_sorted_array.h"
+#include "p81_search_in_rotated_sorted_array_ii/search_in_rotated_sorted_array_ii.h"
 
 int main()
 {
@@ -23,6 +24,9 @@ int main()
 
 	Solution034 solution34;
 	solution34.test();
+
+	Solution081 solution81;
+	solution81.test();
 
 	std::cin.get();
 }
