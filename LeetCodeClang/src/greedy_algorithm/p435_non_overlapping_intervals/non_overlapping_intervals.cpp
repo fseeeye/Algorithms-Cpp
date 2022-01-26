@@ -15,7 +15,7 @@ int Solution435::eraseOverlapIntervals(std::vector<std::vector<int>>& intervals)
 	});
 
 	// 每次选择结尾最小且和前一个选择的区间不重叠的区间
-	int intervals_size = intervals.size();
+	int intervals_size = static_cast<int>(intervals.size());
 	int prev_last = intervals[0][1];
 	int removed = 0;
 	for (int i = 1; i < intervals_size; i++)

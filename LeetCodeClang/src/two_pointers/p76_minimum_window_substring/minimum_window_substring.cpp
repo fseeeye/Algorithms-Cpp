@@ -7,7 +7,7 @@
 // Space: O(1)
 std::string Solution76::minWindow(std::string s, std::string t)
 {
-	unsigned int s_size = s.size(), t_size = t.size();
+	unsigned int s_size = static_cast<int>(s.size()), t_size = static_cast<int>(t.size());
 	// 滑动窗口双指针
 	unsigned int l = 0, r = 0; 
 	// 最小滑动窗口存储变量
@@ -63,7 +63,7 @@ std::string Solution76::minWindow(std::string s, std::string t)
 // ref: https://leetcode-cn.com/problems/minimum-window-substring/solution/tong-su-qie-xiang-xi-de-miao-shu-hua-dong-chuang-k/
 std::string Solution76::minWindow_2(std::string s, std::string t)
 {
-	unsigned int s_size = s.size();
+	unsigned int s_size = static_cast<int>(s.size());
 	// 滑动窗口双指针
 	unsigned int l = 0, r = 0;
 	// 最小滑动窗口存储变量
@@ -73,7 +73,7 @@ std::string Solution76::minWindow_2(std::string s, std::string t)
 	std::vector<int> chars_need(128, 0); 
 	// int，统计缺少的 t 中字符的总数量，需要同时维护 chars_need 和 chars_count
 	// 用于判断滑动窗口是否包含了 T 中的所有元素
-	unsigned int need_count = t.size();
+	unsigned int need_count = static_cast<int>(t.size());
 
 	for (char i : t)
 	{

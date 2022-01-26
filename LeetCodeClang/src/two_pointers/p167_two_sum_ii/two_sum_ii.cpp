@@ -5,7 +5,7 @@
 std::vector<int> Solution167::twoSum(std::vector<int>& numbers, int target)
 {
 	// 定义左指针和右指针
-	int left = 0, right = numbers.size() - 1, sum;
+	int left = 0, right = static_cast<int>(numbers.size() - 1), sum;
 
 	while (left < right)
 	{

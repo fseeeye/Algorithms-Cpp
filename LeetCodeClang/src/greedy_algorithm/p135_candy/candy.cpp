@@ -6,7 +6,7 @@
 // Space: O(N)
 int Solution135::candy(std::vector<int>& ratings)
 {
-	int ratings_size = ratings.size();
+	int ratings_size = static_cast<int>(ratings.size());
 	// 初始化每个小孩对应的糖果数组，并为每个小孩先分配一颗糖
 	std::vector<int> candys(ratings_size, 1);
 	// 正向遍历，更新糖果数量

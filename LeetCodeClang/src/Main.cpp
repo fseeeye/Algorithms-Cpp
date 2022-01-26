@@ -13,20 +13,17 @@
 //#include "p76_minimum_window_substring/minimum_window_substring.h"
 
 // Interval Search
-#include "p69_sqrtx/sqrtx.h"
-#include "p34_find_ele_in_sorted_array/find_ele_in_sorted_array.h"
-#include "p81_search_in_rotated_sorted_array_ii/search_in_rotated_sorted_array_ii.h"
+//#include "p69_sqrtx/sqrtx.h"
+//#include "p34_find_ele_in_sorted_array/find_ele_in_sorted_array.h"
+//#include "p81_search_in_rotated_sorted_array_ii/search_in_rotated_sorted_array_ii.h"
+
+// Sort
+#include "p215_kth_largest_element/kth_largest_element.h"
 
 int main()
 {
-	Solution69 solution69;
-	solution69.test();
-
-	Solution034 solution34;
-	solution34.test();
-
-	Solution081 solution81;
-	solution81.test();
+	Solution215 solution215;
+	solution215.test();
 
 	std::cin.get();
 }

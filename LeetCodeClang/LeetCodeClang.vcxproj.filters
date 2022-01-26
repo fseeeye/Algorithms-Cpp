@@ -48,10 +48,10 @@
     <ClInclude Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\interval_search\p00_templatefoo\templatefoo.h">
+    <ClInclude Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.h">
+    <ClInclude Include="src\sort\p215_kth_largest_element\kth_largest_element.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -86,10 +86,10 @@
     <ClCompile Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\interval_search\p00_templatefoo\templatefoo.cpp">
+    <ClCompile Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.cpp">
+    <ClCompile Include="src\sort\p215_kth_largest_element\kth_largest_element.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
