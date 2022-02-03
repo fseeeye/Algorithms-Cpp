@@ -54,8 +54,8 @@ int Solution695::maxAreaOfIslandStack(std::vector<std::vector<int>>& grid)
 }
 
 // method2: recurse
-// Time:  O()
-// Space: O()
+// Time:  O(N), N 为所有网格的数量
+// Space: O(N), N 为所有网格的数量
 int Solution695::maxAreaOfIslandRecurse(std::vector<std::vector<int>>& grid)
 {
 	if (grid.empty() || grid[0].empty())
