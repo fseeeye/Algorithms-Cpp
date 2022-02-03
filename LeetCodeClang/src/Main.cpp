@@ -18,16 +18,16 @@
 //#include "p81_search_in_rotated_sorted_array_ii/search_in_rotated_sorted_array_ii.h"
 
 // Sort
-#include "p215_kth_largest_element/kth_largest_element.h"
-#include "p347_top_k_frequent_elements/top_k_frequent_elements.h"
+//#include "p215_kth_largest_element/kth_largest_element.h"
+//#include "p347_top_k_frequent_elements/top_k_frequent_elements.h"
+
+// Search
+#include "p695_max_area_of_island/max_area_of_island.h"
 
 int main()
 {
-	Solution215 solution215;
-	solution215.test();
-
-	Solution347 solution347;
-	solution347.test();
+	Solution695 solution695;
+	solution695.test();
 
 	std::cin.get();
 }

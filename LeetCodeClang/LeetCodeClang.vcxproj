@@ -25,6 +25,7 @@
     <ClInclude Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.h" />
     <ClInclude Include="src\interval_search\p69_sqrtx\sqrtx.h" />
     <ClInclude Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.h" />
+    <ClInclude Include="src\search\p695_max_area_of_island\max_area_of_island.h" />
     <ClInclude Include="src\sort\p215_kth_largest_element\kth_largest_element.h" />
     <ClInclude Include="src\sort\p347_top_k_frequent_elements\top_k_frequent_elements.h" />
     <ClInclude Include="src\Structures.h" />
@@ -42,6 +43,7 @@
     <ClCompile Include="src\interval_search\p69_sqrtx\sqrtx.cpp" />
     <ClCompile Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\search\p695_max_area_of_island\max_area_of_island.cpp" />
     <ClCompile Include="src\sort\p215_kth_largest_element\kth_largest_element.cpp" />
     <ClCompile Include="src\sort\p347_top_k_frequent_elements\top_k_frequent_elements.cpp" />
     <ClCompile Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.cpp" />
@@ -154,7 +156,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>src;src/greedy_algorithm;src/two_pointers;src/interval_search;src/sort</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;src/greedy_algorithm;src/two_pointers;src/interval_search;src/sort;src/search</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -170,7 +172,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>src;src/greedy_algorithm;src/two_pointers;src/interval_search;src/sort</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;src/greedy_algorithm;src/two_pointers;src/interval_search;src/sort;src/search</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
