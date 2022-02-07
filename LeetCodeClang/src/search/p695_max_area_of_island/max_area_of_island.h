@@ -25,4 +25,6 @@ public:
 
 		std::cout << "Solution 695 passed!\n";
 	}
+private:
+	static std::vector<int> dirs; // 上下左右方向向量
 };

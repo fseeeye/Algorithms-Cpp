@@ -24,6 +24,7 @@
 // Search
 #include "p695_max_area_of_island/max_area_of_island.h"
 #include "p547_number_of_provinces/number_of_provinces.h"
+#include "p417_pacific_atlantic_water_flow/pacific_atlantic_water_flow.h"
 
 int main()
 {
@@ -32,6 +33,9 @@ int main()
 
 	Solution547 solution547;
 	solution547.test();
+
+	Solution417 solution417;
+	solution417.test();
 
 	std::cin.get();
 }

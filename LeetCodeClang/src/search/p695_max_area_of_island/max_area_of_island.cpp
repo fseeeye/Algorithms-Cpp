@@ -3,7 +3,7 @@
 #include <stack>
 #include <utility>
 
-std::vector<int> dirs{ -1, 0, 1, 0, -1 }; // 上下左右方向向量
+std::vector<int> Solution695::dirs = { -1, 0, 1, 0, -1 };
 
 // method1: stack
 // Time:  O(N), N 为所有网格的数量
