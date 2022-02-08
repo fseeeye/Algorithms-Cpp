@@ -25,6 +25,8 @@
 #include "p695_max_area_of_island/max_area_of_island.h"
 #include "p547_number_of_provinces/number_of_provinces.h"
 #include "p417_pacific_atlantic_water_flow/pacific_atlantic_water_flow.h"
+#include "p46_permutations/permutations.h"
+#include "p77_combinations/combinations.h"
 
 int main()
 {
@@ -36,6 +38,12 @@ int main()
 
 	Solution417 solution417;
 	solution417.test();
+
+	Solution46 solution46;
+	solution46.test();
+
+	Solution77 solution77;
+	solution77.test();
 
 	std::cin.get();
 }

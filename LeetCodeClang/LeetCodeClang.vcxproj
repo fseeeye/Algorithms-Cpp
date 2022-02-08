@@ -26,8 +26,10 @@
     <ClInclude Include="src\interval_search\p69_sqrtx\sqrtx.h" />
     <ClInclude Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.h" />
     <ClInclude Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.h" />
+    <ClInclude Include="src\search\p46_permutations\permutations.h" />
     <ClInclude Include="src\search\p547_number_of_provinces\number_of_provinces.h" />
     <ClInclude Include="src\search\p695_max_area_of_island\max_area_of_island.h" />
+    <ClInclude Include="src\search\p77_combinations\combinations.h" />
     <ClInclude Include="src\sort\p215_kth_largest_element\kth_largest_element.h" />
     <ClInclude Include="src\sort\p347_top_k_frequent_elements\top_k_frequent_elements.h" />
     <ClInclude Include="src\Structures.h" />
@@ -46,8 +48,10 @@
     <ClCompile Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.cpp" />
+    <ClCompile Include="src\search\p46_permutations\permutations.cpp" />
     <ClCompile Include="src\search\p547_number_of_provinces\number_of_provinces.cpp" />
     <ClCompile Include="src\search\p695_max_area_of_island\max_area_of_island.cpp" />
+    <ClCompile Include="src\search\p77_combinations\combinations.cpp" />
     <ClCompile Include="src\sort\p215_kth_largest_element\kth_largest_element.cpp" />
     <ClCompile Include="src\sort\p347_top_k_frequent_elements\top_k_frequent_elements.cpp" />
     <ClCompile Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.cpp" />
