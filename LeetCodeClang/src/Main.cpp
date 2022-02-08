@@ -28,6 +28,7 @@
 #include "p46_permutations/permutations.h"
 #include "p77_combinations/combinations.h"
 #include "p79_word_search/word_search.h"
+#include "p51_n_queens/n_queens.h"
 
 int main()
 {
@@ -48,6 +49,9 @@ int main()
 
 	Solution79 solution79;
 	solution79.test();
+
+	Solution51 solution51;
+	solution51.test();
 
 	std::cin.get();
 }

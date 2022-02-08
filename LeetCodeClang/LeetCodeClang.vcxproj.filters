@@ -75,6 +75,9 @@
     <ClInclude Include="src\search\p79_word_search\word_search.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\search\p51_n_queens\n_queens.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -132,6 +135,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\search\p79_word_search\word_search.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\search\p51_n_queens\n_queens.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

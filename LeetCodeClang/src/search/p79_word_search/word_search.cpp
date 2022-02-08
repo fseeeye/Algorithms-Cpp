@@ -1,7 +1,7 @@
 ﻿#include "word_search.h"
 
-// Time:  O()
-// Space: O()
+// Time:  O(M * N * 3^L), L 为 word 长度
+// Space: O(M * N), visited 数组 + 栈深度
 bool Solution79::exist(std::vector<std::vector<char>>& board, std::string word)
 {
 	if (board.empty() || board[0].empty() || word.empty())
