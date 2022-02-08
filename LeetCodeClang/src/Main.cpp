@@ -27,6 +27,7 @@
 #include "p417_pacific_atlantic_water_flow/pacific_atlantic_water_flow.h"
 #include "p46_permutations/permutations.h"
 #include "p77_combinations/combinations.h"
+#include "p79_word_search/word_search.h"
 
 int main()
 {
@@ -44,6 +45,9 @@ int main()
 
 	Solution77 solution77;
 	solution77.test();
+
+	Solution79 solution79;
+	solution79.test();
 
 	std::cin.get();
 }
