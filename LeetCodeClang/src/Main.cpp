@@ -29,6 +29,8 @@
 #include "p77_combinations/combinations.h"
 #include "p79_word_search/word_search.h"
 #include "p51_n_queens/n_queens.h"
+#include "p934_shortest_bridge/shortest_bridge.h"
+#include "p126_word_ladder_ii/word_ladder_ii.h"
 
 int main()
 {
@@ -52,6 +54,12 @@ int main()
 
 	Solution51 solution51;
 	solution51.test();
+
+	Solution934 solution934;
+	solution934.test();
+
+	Solution126 solution126;
+	solution126.test();
 
 	std::cin.get();
 }

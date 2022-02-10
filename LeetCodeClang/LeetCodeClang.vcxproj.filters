@@ -78,6 +78,12 @@
     <ClInclude Include="src\search\p51_n_queens\n_queens.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\search\p934_shortest_bridge\shortest_bridge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\search\p126_word_ladder_ii\word_ladder_ii.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -138,6 +144,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\search\p51_n_queens\n_queens.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\search\p934_shortest_bridge\shortest_bridge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\search\p126_word_ladder_ii\word_ladder_ii.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

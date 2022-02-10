@@ -1,7 +1,7 @@
 ﻿#include "n_queens.h"
 
-// Time:  O()
-// Space: O()
+// Time:  O(N!)
+// Space: O(N)
 std::vector<std::vector<std::string>> Solution51::solveNQueens(int n)
 {
 	std::vector<std::vector<std::string>> rst;
