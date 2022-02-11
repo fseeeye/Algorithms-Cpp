@@ -22,44 +22,23 @@
 //#include "p347_top_k_frequent_elements/top_k_frequent_elements.h"
 
 // Search
-#include "p695_max_area_of_island/max_area_of_island.h"
-#include "p547_number_of_provinces/number_of_provinces.h"
-#include "p417_pacific_atlantic_water_flow/pacific_atlantic_water_flow.h"
-#include "p46_permutations/permutations.h"
-#include "p77_combinations/combinations.h"
-#include "p79_word_search/word_search.h"
-#include "p51_n_queens/n_queens.h"
-#include "p934_shortest_bridge/shortest_bridge.h"
-#include "p126_word_ladder_ii/word_ladder_ii.h"
+//#include "p695_max_area_of_island/max_area_of_island.h"
+//#include "p547_number_of_provinces/number_of_provinces.h"
+//#include "p417_pacific_atlantic_water_flow/pacific_atlantic_water_flow.h"
+//#include "p46_permutations/permutations.h"
+//#include "p77_combinations/combinations.h"
+//#include "p79_word_search/word_search.h"
+//#include "p51_n_queens/n_queens.h"
+//#include "p934_shortest_bridge/shortest_bridge.h"
+//#include "p126_word_ladder_ii/word_ladder_ii.h"
+
+// Dynamic Programming
+#include "p70_climbing_stairs/climbing_stairs.h"
 
 int main()
 {
-	Solution695 solution695;
-	solution695.test();
-
-	Solution547 solution547;
-	solution547.test();
-
-	Solution417 solution417;
-	solution417.test();
-
-	Solution46 solution46;
-	solution46.test();
-
-	Solution77 solution77;
-	solution77.test();
-
-	Solution79 solution79;
-	solution79.test();
-
-	Solution51 solution51;
-	solution51.test();
-
-	Solution934 solution934;
-	solution934.test();
-
-	Solution126 solution126;
-	solution126.test();
+	Solution70 solution70;
+	solution70.test();
 
 	std::cin.get();
 }

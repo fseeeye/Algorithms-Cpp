@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.h" />
     <ClInclude Include="src\greedy_algorithm\p135_candy\candy.h" />
     <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h" />
     <ClInclude Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.h" />
@@ -44,6 +45,7 @@
     <ClInclude Include="src\two_pointers\p88_merge_sorted_array\merge_sorted_array.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.cpp" />
     <ClCompile Include="src\greedy_algorithm\p135_candy\candy.cpp" />
     <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp" />
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp" />
@@ -172,7 +174,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>src;src/greedy_algorithm;src/two_pointers;src/interval_search;src/sort;src/search</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;src/greedy_algorithm;src/two_pointers;src/interval_search;src/sort;src/search;src/dynamic_programming</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -188,7 +190,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>src;src/greedy_algorithm;src/two_pointers;src/interval_search;src/sort;src/search</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;src/greedy_algorithm;src/two_pointers;src/interval_search;src/sort;src/search;src/dynamic_programming</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
