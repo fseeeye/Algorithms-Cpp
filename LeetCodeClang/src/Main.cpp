@@ -34,11 +34,15 @@
 
 // Dynamic Programming
 #include "p70_climbing_stairs/climbing_stairs.h"
+#include "p198_house_robber/house_robber.h"
 
 int main()
 {
 	Solution70 solution70;
 	solution70.test();
+
+	Solution198 solution198;
+	solution198.test();
 
 	std::cin.get();
 }

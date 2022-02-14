@@ -87,6 +87,9 @@
     <ClInclude Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\dynamic_programming\p198_house_robber\house_robber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -156,6 +159,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_programming\p198_house_robber\house_robber.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
