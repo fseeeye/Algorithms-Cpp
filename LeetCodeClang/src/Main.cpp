@@ -35,6 +35,7 @@
 // Dynamic Programming
 #include "p70_climbing_stairs/climbing_stairs.h"
 #include "p198_house_robber/house_robber.h"
+#include "p413_arithmetic_slices/arithmetic_slices.h"
 
 int main()
 {
@@ -43,6 +44,9 @@ int main()
 
 	Solution198 solution198;
 	solution198.test();
+
+	Solution413 solution413;
+	solution413.test();
 
 	std::cin.get();
 }

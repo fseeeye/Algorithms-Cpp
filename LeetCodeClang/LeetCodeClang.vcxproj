@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\dynamic_programming\p198_house_robber\house_robber.h" />
+    <ClInclude Include="src\dynamic_programming\p413_arithmetic_slices\arithmetic_slices.h" />
     <ClInclude Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.h" />
     <ClInclude Include="src\greedy_algorithm\p135_candy\candy.h" />
     <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h" />
@@ -47,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dynamic_programming\p198_house_robber\house_robber.cpp" />
+    <ClCompile Include="src\dynamic_programming\p413_arithmetic_slices\arithmetic_slices.cpp" />
     <ClCompile Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.cpp" />
     <ClCompile Include="src\greedy_algorithm\p135_candy\candy.cpp" />
     <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp" />
