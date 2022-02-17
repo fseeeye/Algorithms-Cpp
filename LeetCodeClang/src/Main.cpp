@@ -36,6 +36,9 @@
 #include "p70_climbing_stairs/climbing_stairs.h"
 #include "p198_house_robber/house_robber.h"
 #include "p413_arithmetic_slices/arithmetic_slices.h"
+#include "p64_mini_path_sum/mini_path_sum.h"
+#include "p542_01_matrix/01_matrix.h"
+#include "p221_maximal_square/maximal_square.h"
 
 int main()
 {
@@ -47,6 +50,15 @@ int main()
 
 	Solution413 solution413;
 	solution413.test();
+
+	Solution64 solution64;
+	solution64.test();
+
+	Solution542 solution542;
+	solution542.test();
+
+	Solution221 solution221;
+	solution221.test();
 
 	std::cin.get();
 }

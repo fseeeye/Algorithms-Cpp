@@ -93,6 +93,15 @@
     <ClInclude Include="src\dynamic_programming\p413_arithmetic_slices\arithmetic_slices.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\dynamic_programming\p64_mini_path_sum\mini_path_sum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dynamic_programming\p542_01_matrix\01_matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dynamic_programming\p221_maximal_square\maximal_square.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -168,6 +177,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\dynamic_programming\p413_arithmetic_slices\arithmetic_slices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_programming\p64_mini_path_sum\mini_path_sum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_programming\p542_01_matrix\01_matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_programming\p221_maximal_square\maximal_square.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
