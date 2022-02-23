@@ -33,32 +33,26 @@
 //#include "p126_word_ladder_ii/word_ladder_ii.h"
 
 // Dynamic Programming
-#include "p70_climbing_stairs/climbing_stairs.h"
-#include "p198_house_robber/house_robber.h"
-#include "p413_arithmetic_slices/arithmetic_slices.h"
-#include "p64_mini_path_sum/mini_path_sum.h"
-#include "p542_01_matrix/01_matrix.h"
-#include "p221_maximal_square/maximal_square.h"
+//#include "p70_climbing_stairs/climbing_stairs.h"
+//#include "p198_house_robber/house_robber.h"
+//#include "p413_arithmetic_slices/arithmetic_slices.h"
+//#include "p64_mini_path_sum/mini_path_sum.h"
+//#include "p542_01_matrix/01_matrix.h"
+//#include "p221_maximal_square/maximal_square.h"
+#include "p279_perfect_squares/perfect_squares.h"
+#include "p91_decode_ways/decode_ways.h"
+#include "p139_word_break/word_break.h"
 
 int main()
 {
-	Solution70 solution70;
-	solution70.test();
+	Solution279 solution279;
+	solution279.test();
 
-	Solution198 solution198;
-	solution198.test();
+	Solution91 solution91;
+	solution91.test();
 
-	Solution413 solution413;
-	solution413.test();
-
-	Solution64 solution64;
-	solution64.test();
-
-	Solution542 solution542;
-	solution542.test();
-
-	Solution221 solution221;
-	solution221.test();
+	Solution139 solution139;
+	solution139.test();
 
 	std::cin.get();
 }

@@ -19,12 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\dynamic_programming\p139_word_break\word_break.h" />
     <ClInclude Include="src\dynamic_programming\p198_house_robber\house_robber.h" />
     <ClInclude Include="src\dynamic_programming\p221_maximal_square\maximal_square.h" />
+    <ClInclude Include="src\dynamic_programming\p279_perfect_squares\perfect_squares.h" />
     <ClInclude Include="src\dynamic_programming\p413_arithmetic_slices\arithmetic_slices.h" />
     <ClInclude Include="src\dynamic_programming\p542_01_matrix\01_matrix.h" />
     <ClInclude Include="src\dynamic_programming\p64_mini_path_sum\mini_path_sum.h" />
     <ClInclude Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.h" />
+    <ClInclude Include="src\dynamic_programming\p91_decode_ways\decode_ways.h" />
     <ClInclude Include="src\greedy_algorithm\p135_candy\candy.h" />
     <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h" />
     <ClInclude Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.h" />
@@ -50,12 +53,15 @@
     <ClInclude Include="src\two_pointers\p88_merge_sorted_array\merge_sorted_array.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\dynamic_programming\p139_word_break\word_break.cpp" />
     <ClCompile Include="src\dynamic_programming\p198_house_robber\house_robber.cpp" />
     <ClCompile Include="src\dynamic_programming\p221_maximal_square\maximal_square.cpp" />
+    <ClCompile Include="src\dynamic_programming\p279_perfect_squares\perfect_squares.cpp" />
     <ClCompile Include="src\dynamic_programming\p413_arithmetic_slices\arithmetic_slices.cpp" />
     <ClCompile Include="src\dynamic_programming\p542_01_matrix\01_matrix.cpp" />
     <ClCompile Include="src\dynamic_programming\p64_mini_path_sum\mini_path_sum.cpp" />
     <ClCompile Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.cpp" />
+    <ClCompile Include="src\dynamic_programming\p91_decode_ways\decode_ways.cpp" />
     <ClCompile Include="src\greedy_algorithm\p135_candy\candy.cpp" />
     <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp" />
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp" />
