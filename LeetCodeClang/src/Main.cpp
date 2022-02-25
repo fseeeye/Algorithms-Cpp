@@ -39,20 +39,20 @@
 //#include "p64_mini_path_sum/mini_path_sum.h"
 //#include "p542_01_matrix/01_matrix.h"
 //#include "p221_maximal_square/maximal_square.h"
-#include "p279_perfect_squares/perfect_squares.h"
-#include "p91_decode_ways/decode_ways.h"
-#include "p139_word_break/word_break.h"
+//#include "p279_perfect_squares/perfect_squares.h"
+//#include "p91_decode_ways/decode_ways.h"
+//#include "p139_word_break/word_break.h"
+#include "p300_longest_increasing_subsequence/longest_increasing_subsequence.h"
+#include "p1143_longest_commom_subsequence/longest_commom_subsequence.h"
+
 
 int main()
 {
-	Solution279 solution279;
-	solution279.test();
+	Solution300 solution300;
+	solution300.test();
 
-	Solution91 solution91;
-	solution91.test();
-
-	Solution139 solution139;
-	solution139.test();
+	Solution1143 solution1143;
+	solution1143.test();
 
 	std::cin.get();
 }
