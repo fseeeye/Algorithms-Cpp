@@ -42,17 +42,24 @@
 //#include "p279_perfect_squares/perfect_squares.h"
 //#include "p91_decode_ways/decode_ways.h"
 //#include "p139_word_break/word_break.h"
-#include "p300_longest_increasing_subsequence/longest_increasing_subsequence.h"
-#include "p1143_longest_commom_subsequence/longest_commom_subsequence.h"
-
+// 
+//#include "p300_longest_increasing_subsequence/longest_increasing_subsequence.h"
+//#include "p1143_longest_commom_subsequence/longest_commom_subsequence.h"
+//
+#include "p416_partition_equal_subset_sum/partition_equal_subset_sum.h"
+#include "p474_ones_and_zeroes/ones_and_zeroes.h"
+#include "p322_coin_change/coin_change.h"
 
 int main()
 {
-	Solution300 solution300;
-	solution300.test();
+	Solution416 solution416;
+	solution416.test();
+	
+	Solution474 solution474;
+	solution474.test();
 
-	Solution1143 solution1143;
-	solution1143.test();
+	Solution322 solution322;
+	solution322.test();
 
 	std::cin.get();
 }

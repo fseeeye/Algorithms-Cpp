@@ -117,6 +117,15 @@
     <ClInclude Include="src\dynamic_programming\p1143_longest_commom_subsequence\longest_commom_subsequence.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\dynamic_programming\p416_partition_equal_subset_sum\partition_equal_subset_sum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dynamic_programming\p474_ones_and_zeroes\ones_and_zeroes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dynamic_programming\p322_coin_change\coin_change.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -216,6 +225,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\dynamic_programming\p1143_longest_commom_subsequence\longest_commom_subsequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_programming\p416_partition_equal_subset_sum\partition_equal_subset_sum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_programming\p474_ones_and_zeroes\ones_and_zeroes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_programming\p322_coin_change\coin_change.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -4,7 +4,7 @@
 // Space: O()
 int Solution198::rob(std::vector<int>& nums)
 {
-	int nums_size = nums.size();
+	int nums_size = static_cast<int>(nums.size());
 	//if (nums_size == 0)
 	//	return 0;
 	//if (nums_size == 1)
