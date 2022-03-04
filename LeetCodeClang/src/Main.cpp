@@ -46,20 +46,24 @@
 //#include "p300_longest_increasing_subsequence/longest_increasing_subsequence.h"
 //#include "p1143_longest_commom_subsequence/longest_commom_subsequence.h"
 //
-#include "p416_partition_equal_subset_sum/partition_equal_subset_sum.h"
-#include "p474_ones_and_zeroes/ones_and_zeroes.h"
-#include "p322_coin_change/coin_change.h"
+//#include "p416_partition_equal_subset_sum/partition_equal_subset_sum.h"
+//#include "p474_ones_and_zeroes/ones_and_zeroes.h"
+//#include "p322_coin_change/coin_change.h"
+//
+#include "p72_edit_distance/edit_distance.h"
+#include "p650_2_keys_keyboard/2_keys_keyboard.h"
+#include "p10_regular_expression_matching/regular_expression_matching.h"
 
 int main()
 {
-	Solution416 solution416;
-	solution416.test();
-	
-	Solution474 solution474;
-	solution474.test();
+	Solution72 solution72;
+	solution72.test();
 
-	Solution322 solution322;
-	solution322.test();
+	Solution650 solution650;
+	solution650.test();
+
+	Solution10 solution10;
+	solution10.test();
 
 	std::cin.get();
 }

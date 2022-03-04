@@ -126,6 +126,15 @@
     <ClInclude Include="src\dynamic_programming\p322_coin_change\coin_change.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\dynamic_programming\p72_edit_distance\edit_distance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dynamic_programming\p650_2_keys_keyboard\2_keys_keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dynamic_programming\p10_regular_expression_matching\regular_expression_matching.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -234,6 +243,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\dynamic_programming\p322_coin_change\coin_change.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_programming\p72_edit_distance\edit_distance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_programming\p650_2_keys_keyboard\2_keys_keyboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic_programming\p10_regular_expression_matching\regular_expression_matching.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
