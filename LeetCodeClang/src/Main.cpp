@@ -50,20 +50,22 @@
 //#include "p474_ones_and_zeroes/ones_and_zeroes.h"
 //#include "p322_coin_change/coin_change.h"
 //
-#include "p72_edit_distance/edit_distance.h"
-#include "p650_2_keys_keyboard/2_keys_keyboard.h"
-#include "p10_regular_expression_matching/regular_expression_matching.h"
+//#include "p72_edit_distance/edit_distance.h"
+//#include "p650_2_keys_keyboard/2_keys_keyboard.h"
+//#include "p10_regular_expression_matching/regular_expression_matching.h"
+//
+#include "p121_best_time_to_buy_and_sell_stock/best_time_to_buy_and_sell_stock.h"
+#include "p188_best_time_to_buy_and_sell_stock_iv/best_time_to_buy_and_sell_stock_iv.h"
+#include "p309_best_time_to_buy_and_sell_stock_with_cooldown/best_time_to_buy_and_sell_stock_with_cooldown.h"
+
 
 int main()
 {
-	Solution72 solution72;
-	solution72.test();
+	Solution121::test();
 
-	Solution650 solution650;
-	solution650.test();
+	Solution188::test();
 
-	Solution10 solution10;
-	solution10.test();
+	Solution309::test();
 
 	std::cin.get();
 }

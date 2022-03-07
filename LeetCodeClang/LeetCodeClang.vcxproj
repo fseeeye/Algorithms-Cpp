@@ -21,11 +21,14 @@
   <ItemGroup>
     <ClInclude Include="src\dynamic_programming\p10_regular_expression_matching\regular_expression_matching.h" />
     <ClInclude Include="src\dynamic_programming\p1143_longest_commom_subsequence\longest_commom_subsequence.h" />
+    <ClInclude Include="src\dynamic_programming\p121_best_time_to_buy_and_sell_stock\best_time_to_buy_and_sell_stock.h" />
     <ClInclude Include="src\dynamic_programming\p139_word_break\word_break.h" />
+    <ClInclude Include="src\dynamic_programming\p188_best_time_to_buy_and_sell_stock_iv\best_time_to_buy_and_sell_stock_iv.h" />
     <ClInclude Include="src\dynamic_programming\p198_house_robber\house_robber.h" />
     <ClInclude Include="src\dynamic_programming\p221_maximal_square\maximal_square.h" />
     <ClInclude Include="src\dynamic_programming\p279_perfect_squares\perfect_squares.h" />
     <ClInclude Include="src\dynamic_programming\p300_longest_increasing_subsequence\longest_increasing_subsequence.h" />
+    <ClInclude Include="src\dynamic_programming\p309_best_time_to_buy_and_sell_stock_with_cooldown\best_time_to_buy_and_sell_stock_with_cooldown.h" />
     <ClInclude Include="src\dynamic_programming\p322_coin_change\coin_change.h" />
     <ClInclude Include="src\dynamic_programming\p413_arithmetic_slices\arithmetic_slices.h" />
     <ClInclude Include="src\dynamic_programming\p416_partition_equal_subset_sum\partition_equal_subset_sum.h" />
@@ -63,11 +66,14 @@
   <ItemGroup>
     <ClCompile Include="src\dynamic_programming\p10_regular_expression_matching\regular_expression_matching.cpp" />
     <ClCompile Include="src\dynamic_programming\p1143_longest_commom_subsequence\longest_commom_subsequence.cpp" />
+    <ClCompile Include="src\dynamic_programming\p121_best_time_to_buy_and_sell_stock\best_time_to_buy_and_sell_stock.cpp" />
     <ClCompile Include="src\dynamic_programming\p139_word_break\word_break.cpp" />
+    <ClCompile Include="src\dynamic_programming\p188_best_time_to_buy_and_sell_stock_iv\best_time_to_buy_and_sell_stock_iv.cpp" />
     <ClCompile Include="src\dynamic_programming\p198_house_robber\house_robber.cpp" />
     <ClCompile Include="src\dynamic_programming\p221_maximal_square\maximal_square.cpp" />
     <ClCompile Include="src\dynamic_programming\p279_perfect_squares\perfect_squares.cpp" />
     <ClCompile Include="src\dynamic_programming\p300_longest_increasing_subsequence\longest_increasing_subsequence.cpp" />
+    <ClCompile Include="src\dynamic_programming\p309_best_time_to_buy_and_sell_stock_with_cooldown\best_time_to_buy_and_sell_stock_with_cooldown.cpp" />
     <ClCompile Include="src\dynamic_programming\p322_coin_change\coin_change.cpp" />
     <ClCompile Include="src\dynamic_programming\p413_arithmetic_slices\arithmetic_slices.cpp" />
     <ClCompile Include="src\dynamic_programming\p416_partition_equal_subset_sum\partition_equal_subset_sum.cpp" />
