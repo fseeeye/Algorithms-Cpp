@@ -144,6 +144,9 @@
     <ClInclude Include="src\dynamic_programming\p309_best_time_to_buy_and_sell_stock_with_cooldown\best_time_to_buy_and_sell_stock_with_cooldown.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -270,6 +273,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\dynamic_programming\p309_best_time_to_buy_and_sell_stock_with_cooldown\best_time_to_buy_and_sell_stock_with_cooldown.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

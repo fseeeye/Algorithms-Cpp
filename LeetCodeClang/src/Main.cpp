@@ -54,18 +54,17 @@
 //#include "p650_2_keys_keyboard/2_keys_keyboard.h"
 //#include "p10_regular_expression_matching/regular_expression_matching.h"
 //
-#include "p121_best_time_to_buy_and_sell_stock/best_time_to_buy_and_sell_stock.h"
-#include "p188_best_time_to_buy_and_sell_stock_iv/best_time_to_buy_and_sell_stock_iv.h"
-#include "p309_best_time_to_buy_and_sell_stock_with_cooldown/best_time_to_buy_and_sell_stock_with_cooldown.h"
+//#include "p121_best_time_to_buy_and_sell_stock/best_time_to_buy_and_sell_stock.h"
+//#include "p188_best_time_to_buy_and_sell_stock_iv/best_time_to_buy_and_sell_stock_iv.h"
+//#include "p309_best_time_to_buy_and_sell_stock_with_cooldown/best_time_to_buy_and_sell_stock_with_cooldown.h"
+
+// Divide and Conquer
+#include "p241_different_ways_to_add_parentheses/different_ways_to_add_parentheses.h"
 
 
 int main()
 {
-	Solution121::test();
-
-	Solution188::test();
-
-	Solution309::test();
+	Solution241::test();
 
 	std::cin.get();
 }
