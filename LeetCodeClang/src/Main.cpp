@@ -59,12 +59,11 @@
 //#include "p309_best_time_to_buy_and_sell_stock_with_cooldown/best_time_to_buy_and_sell_stock_with_cooldown.h"
 
 // Divide and Conquer
-#include "p241_different_ways_to_add_parentheses/different_ways_to_add_parentheses.h"
+//#include "p241_different_ways_to_add_parentheses/different_ways_to_add_parentheses.h"
 
 
 int main()
 {
-	Solution241::test();
 
 	std::cin.get();
 }

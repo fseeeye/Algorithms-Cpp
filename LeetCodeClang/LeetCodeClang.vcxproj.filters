@@ -147,6 +147,21 @@
     <ClInclude Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\linked_list\p234_palindrome_linked_list\palindrome_linked_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -276,6 +291,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linked_list\p234_palindrome_linked_list\palindrome_linked_list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

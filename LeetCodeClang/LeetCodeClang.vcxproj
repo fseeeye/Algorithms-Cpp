@@ -46,6 +46,11 @@
     <ClInclude Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.h" />
     <ClInclude Include="src\interval_search\p69_sqrtx\sqrtx.h" />
     <ClInclude Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.h" />
+    <ClInclude Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.h" />
+    <ClInclude Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.h" />
+    <ClInclude Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.h" />
+    <ClInclude Include="src\linked_list\p234_palindrome_linked_list\palindrome_linked_list.h" />
+    <ClInclude Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.h" />
     <ClInclude Include="src\search\p126_word_ladder_ii\word_ladder_ii.h" />
     <ClInclude Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.h" />
     <ClInclude Include="src\search\p46_permutations\permutations.h" />
@@ -92,6 +97,11 @@
     <ClCompile Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.cpp" />
     <ClCompile Include="src\interval_search\p69_sqrtx\sqrtx.cpp" />
     <ClCompile Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.cpp" />
+    <ClCompile Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.cpp" />
+    <ClCompile Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.cpp" />
+    <ClCompile Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.cpp" />
+    <ClCompile Include="src\linked_list\p234_palindrome_linked_list\palindrome_linked_list.cpp" />
+    <ClCompile Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\search\p126_word_ladder_ii\word_ladder_ii.cpp" />
     <ClCompile Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.cpp" />
