@@ -1,6 +1,17 @@
 # leetcode-cpp
 My LeetCode Solutions.
 
+## 目录
+* [贪心算法](https://github.com/fseeeye/leetcode-cpp/edit/master/README.md#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95)
+* [双指针](https://github.com/fseeeye/leetcode-cpp/edit/master/README.md#%E5%8F%8C%E6%8C%87%E9%92%88)
+* [二分查找](https://github.com/fseeeye/leetcode-cpp/edit/master/README.md#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE)
+* [排序算法](https://github.com/fseeeye/leetcode-cpp/edit/master/README.md#%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95)
+* [优先搜索](https://github.com/fseeeye/leetcode-cpp/edit/master/README.md#%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2)
+* [动态规划](https://github.com/fseeeye/leetcode-cpp/edit/master/README.md#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)
+* [分治算法](https://github.com/fseeeye/leetcode-cpp/edit/master/README.md#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95)
+* [数据结构 - 链表](https://github.com/fseeeye/leetcode-cpp/edit/master/README.md#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E9%93%BE%E8%A1%A8)
+* [Ref](https://github.com/fseeeye/leetcode-cpp/edit/master/README.md#reference)
+
 ## Solution List
 
 ### 贪心算法
@@ -28,7 +39,7 @@ My LeetCode Solutions.
 |  69   | [Sqrt(x) (Easy)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/interval_search/p69_sqrtx)  |
 |  81   | [Search In Rotated Sorted Array II (Medium)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/interval_search/p81_search_in_rotated_sorted_array_ii)  |
 
-### 排序
+### 排序算法
 
 |  QID  |      Name      |      Tip      |
 | :---: |     :----:     |     :----:    |
