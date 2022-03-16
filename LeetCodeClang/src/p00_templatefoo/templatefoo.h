@@ -5,6 +5,7 @@
 #include <iostream>
 
 #include "Tester.h"
+#include "Structures.h"
 
 class Solution000 {
 public:
