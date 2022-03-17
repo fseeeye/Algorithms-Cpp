@@ -66,10 +66,13 @@
     <ClInclude Include="src\Tester.h" />
     <ClInclude Include="src\tree\p101_symmetric_tree\symmetric_tree.h" />
     <ClInclude Include="src\tree\p104_maximum_depth_of_binary_tree\maximum_depth_of_binary_tree.h" />
+    <ClInclude Include="src\tree\p105_construct_binary_tree\construct_binary_tree.h" />
     <ClInclude Include="src\tree\p110_balanced_binary_tree\balanced_binary_tree.h" />
     <ClInclude Include="src\tree\p1110_delete_nodes_and_return_forest\delete_nodes_and_return_forest.h" />
+    <ClInclude Include="src\tree\p144_binary_tree_preorder_traversal\binary_tree_preorder_traversal.h" />
     <ClInclude Include="src\tree\p437_path_sum_iii\path_sum_iii.h" />
     <ClInclude Include="src\tree\p543_diameter_of_binary_tree\diameter_of_binary_tree.h" />
+    <ClInclude Include="src\tree\p637_average_of_levels_in_binary_tree\average_of_levels_in_binary_tree.h" />
     <ClInclude Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.h" />
     <ClInclude Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.h" />
     <ClInclude Include="src\two_pointers\p76_minimum_window_substring\minimum_window_substring.h" />
@@ -122,10 +125,13 @@
     <ClCompile Include="src\sort\p347_top_k_frequent_elements\top_k_frequent_elements.cpp" />
     <ClCompile Include="src\tree\p101_symmetric_tree\symmetric_tree.cpp" />
     <ClCompile Include="src\tree\p104_maximum_depth_of_binary_tree\maximum_depth_of_binary_tree.cpp" />
+    <ClCompile Include="src\tree\p105_construct_binary_tree\construct_binary_tree.cpp" />
     <ClCompile Include="src\tree\p110_balanced_binary_tree\balanced_binary_tree.cpp" />
     <ClCompile Include="src\tree\p1110_delete_nodes_and_return_forest\delete_nodes_and_return_forest.cpp" />
+    <ClCompile Include="src\tree\p144_binary_tree_preorder_traversal\binary_tree_preorder_traversal.cpp" />
     <ClCompile Include="src\tree\p437_path_sum_iii\path_sum_iii.cpp" />
     <ClCompile Include="src\tree\p543_diameter_of_binary_tree\diameter_of_binary_tree.cpp" />
+    <ClCompile Include="src\tree\p637_average_of_levels_in_binary_tree\average_of_levels_in_binary_tree.cpp" />
     <ClCompile Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.cpp" />
     <ClCompile Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.cpp" />
     <ClCompile Include="src\two_pointers\p76_minimum_window_substring\minimum_window_substring.cpp" />

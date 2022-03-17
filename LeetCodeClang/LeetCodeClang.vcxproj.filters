@@ -180,6 +180,15 @@
     <ClInclude Include="src\tree\p1110_delete_nodes_and_return_forest\delete_nodes_and_return_forest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\tree\p637_average_of_levels_in_binary_tree\average_of_levels_in_binary_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tree\p105_construct_binary_tree\construct_binary_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tree\p144_binary_tree_preorder_traversal\binary_tree_preorder_traversal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -342,6 +351,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\tree\p1110_delete_nodes_and_return_forest\delete_nodes_and_return_forest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tree\p637_average_of_levels_in_binary_tree\average_of_levels_in_binary_tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tree\p105_construct_binary_tree\construct_binary_tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tree\p144_binary_tree_preorder_traversal\binary_tree_preorder_traversal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
