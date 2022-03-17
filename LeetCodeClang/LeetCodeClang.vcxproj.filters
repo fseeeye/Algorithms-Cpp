@@ -171,6 +171,15 @@
     <ClInclude Include="src\tree\p543_diameter_of_binary_tree\diameter_of_binary_tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\tree\p437_path_sum_iii\path_sum_iii.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tree\p101_symmetric_tree\symmetric_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tree\p1110_delete_nodes_and_return_forest\delete_nodes_and_return_forest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -324,6 +333,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\tree\p543_diameter_of_binary_tree\diameter_of_binary_tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tree\p437_path_sum_iii\path_sum_iii.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tree\p101_symmetric_tree\symmetric_tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tree\p1110_delete_nodes_and_return_forest\delete_nodes_and_return_forest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,4 +1,4 @@
-﻿// 二叉树
+﻿// 二叉树 - 递归遍历
 // OJ: https://leetcode-cn.com/problems/balanced-binary-tree/
 #pragma once
 
