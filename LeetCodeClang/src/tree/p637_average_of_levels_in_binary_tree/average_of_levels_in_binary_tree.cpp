@@ -15,7 +15,7 @@ std::vector<double> Solution637::averageOfLevels(TreeNode* root)
 
 	while (!level_nodes.empty())
 	{
-		int nodes_count = level_nodes.size();
+		int nodes_count = static_cast<int>(level_nodes.size());
 		double sum = 0;
 
 		for (int i = 0; i < nodes_count; ++i)

@@ -189,6 +189,15 @@
     <ClInclude Include="src\tree\p144_binary_tree_preorder_traversal\binary_tree_preorder_traversal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\tree\p99_recover_binary_search_tree\recover_binary_search_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tree\p669_trim_a_binary_search_tree\trim_a_binary_search_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tree\p208_implement_trie\implement_trie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -360,6 +369,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\tree\p144_binary_tree_preorder_traversal\binary_tree_preorder_traversal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tree\p99_recover_binary_search_tree\recover_binary_search_tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tree\p669_trim_a_binary_search_tree\trim_a_binary_search_tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tree\p208_implement_trie\implement_trie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
