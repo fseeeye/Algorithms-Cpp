@@ -53,6 +53,7 @@
     <ClInclude Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.h" />
     <ClInclude Include="src\linked_list\p234_palindrome_linked_list\palindrome_linked_list.h" />
     <ClInclude Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.h" />
+    <ClInclude Include="src\other_structures\p146_lru_cache\lru_cache.h" />
     <ClInclude Include="src\search\p126_word_ladder_ii\word_ladder_ii.h" />
     <ClInclude Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.h" />
     <ClInclude Include="src\search\p46_permutations\permutations.h" />
@@ -119,6 +120,7 @@
     <ClCompile Include="src\linked_list\p234_palindrome_linked_list\palindrome_linked_list.cpp" />
     <ClCompile Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\other_structures\p146_lru_cache\lru_cache.cpp" />
     <ClCompile Include="src\search\p126_word_ladder_ii\word_ladder_ii.cpp" />
     <ClCompile Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.cpp" />
     <ClCompile Include="src\search\p46_permutations\permutations.cpp" />

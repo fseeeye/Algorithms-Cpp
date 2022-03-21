@@ -204,6 +204,9 @@
     <ClInclude Include="src\graph\p210_course_schedule_ii\course_schedule_ii.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\other_structures\p146_lru_cache\lru_cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -390,6 +393,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\graph\p210_course_schedule_ii\course_schedule_ii.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\other_structures\p146_lru_cache\lru_cache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
