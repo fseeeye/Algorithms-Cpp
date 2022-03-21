@@ -11,6 +11,8 @@ My LeetCode Solutions.
 * [分治算法](https://github.com/fseeeye/leetcode-cpp#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95)
 * [数据结构 - 链表](https://github.com/fseeeye/leetcode-cpp#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E9%93%BE%E8%A1%A8)
 * [数据结构 - 树](https://github.com/fseeeye/leetcode-cpp#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E6%A0%91)
+* [数据结构 - 图](https://github.com/fseeeye/leetcode-cpp#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E5%9B%BE)
+* [数据结构 - 其它](https://github.com/fseeeye/leetcode-cpp#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E5%85%B6%E5%AE%83)
 * [Ref](https://github.com/fseeeye/leetcode-cpp#reference)
 
 ## Solution List
@@ -110,6 +112,28 @@ My LeetCode Solutions.
 |  104  | [Maximum Depth of Binary Tree (Easy)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/tree/p104_maximum_depth_of_binary_tree)  | 二叉树递归遍历 |
 |  110  | [Balanced Binary Tree (Easy)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/tree/p110_balanced_binary_tree)  | 二叉树递归遍历 |
 |  543  | [Diameter of Binary Tree (Easy)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/tree/p543_diameter_of_binary_tree)  | 二叉树递归遍历 |
+|  437  | [Path Sum III (Medium)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/tree/p437_path_sum_iii)  | 二叉树递归遍历 |
+|  101  | [Symmetric Tree (Easy)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/tree/p110_balanced_binary_tree)  | 二叉树递归遍历 |
+|  1110 | [Delete Nodes And Return Forest (Medium)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/tree/p1110_delete_nodes_and_return_forest)  | 二叉树递归遍历 |
+|  637  | [Average of Levels in Binary Tree (Easy)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/tree/p637_average_of_levels_in_binary_tree)  | 二叉树层次遍历 |
+|  105  | [Construct Binary Tree from Preorder and Inorder Traversal (Medium)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/tree/p105_construct_binary_tree)  | 二叉树前中序遍历 |
+|  144  | [Binary Tree Preorder Traversal (Easy)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/tree/p144_binary_tree_preorder_traversal)  | 二叉树前序遍历 |
+|  99   | [Recover Binary Search Tree (Medium)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/tree/p99_recover_binary_search_tree)  | 二叉查找树 |
+|  669  | [Trim a Binary Search Tree (Easy)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/tree/p669_trim_a_binary_search_tree)  | 二叉查找树 |
+|  208  | [Implement Trie (Prefix Tree) (Medium)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/tree/p208_implement_trie)  | 前缀树 / 字典树 |
+
+### 数据结构 - 图
+
+|  QID  |      Name      |      Tip      |
+| :---: |     :----:     |     :----:    |
+|  785  | [Is Graphy Bipartite? (Medium)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/graph/p785_is_graph_bipartite)  | 二分图 |
+|  210  | [Course Schedule II (Medium)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/graph/p210_course_schedule_ii)  | 拓扑排序 |
+
+### 数据结构 - 其它
+
+|  QID  |      Name      |      Tip      |
+| :---: |     :----:     |     :----:    |
+|  210  | [LRU Cache (Medium)](https://github.com/fseeeye/leetcode-cpp/tree/master/LeetCodeClang/src/other_structures/p146_lru_cache)  | LRU |
 
 
 ## Reference
