@@ -198,6 +198,12 @@
     <ClInclude Include="src\tree\p208_implement_trie\implement_trie.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\graph\p785_is_graph_bipartite\is_graph_bipartite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graph\p210_course_schedule_ii\course_schedule_ii.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -378,6 +384,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\tree\p208_implement_trie\implement_trie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graph\p785_is_graph_bipartite\is_graph_bipartite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graph\p210_course_schedule_ii\course_schedule_ii.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

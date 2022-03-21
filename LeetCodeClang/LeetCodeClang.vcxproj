@@ -40,6 +40,8 @@
     <ClInclude Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.h" />
     <ClInclude Include="src\dynamic_programming\p72_edit_distance\edit_distance.h" />
     <ClInclude Include="src\dynamic_programming\p91_decode_ways\decode_ways.h" />
+    <ClInclude Include="src\graph\p210_course_schedule_ii\course_schedule_ii.h" />
+    <ClInclude Include="src\graph\p785_is_graph_bipartite\is_graph_bipartite.h" />
     <ClInclude Include="src\greedy_algorithm\p135_candy\candy.h" />
     <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h" />
     <ClInclude Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.h" />
@@ -103,6 +105,8 @@
     <ClCompile Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.cpp" />
     <ClCompile Include="src\dynamic_programming\p72_edit_distance\edit_distance.cpp" />
     <ClCompile Include="src\dynamic_programming\p91_decode_ways\decode_ways.cpp" />
+    <ClCompile Include="src\graph\p210_course_schedule_ii\course_schedule_ii.cpp" />
+    <ClCompile Include="src\graph\p785_is_graph_bipartite\is_graph_bipartite.cpp" />
     <ClCompile Include="src\greedy_algorithm\p135_candy\candy.cpp" />
     <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp" />
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp" />
