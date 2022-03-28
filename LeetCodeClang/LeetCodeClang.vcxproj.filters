@@ -207,6 +207,9 @@
     <ClInclude Include="src\other_structures\p146_lru_cache\lru_cache.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\interval_search\template\template.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
@@ -396,6 +399,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\other_structures\p146_lru_cache\lru_cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interval_search\template\template.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

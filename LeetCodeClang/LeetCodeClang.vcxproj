@@ -48,6 +48,7 @@
     <ClInclude Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.h" />
     <ClInclude Include="src\interval_search\p69_sqrtx\sqrtx.h" />
     <ClInclude Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.h" />
+    <ClInclude Include="src\interval_search\template\template.h" />
     <ClInclude Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.h" />
     <ClInclude Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.h" />
     <ClInclude Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.h" />
@@ -114,6 +115,7 @@
     <ClCompile Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.cpp" />
     <ClCompile Include="src\interval_search\p69_sqrtx\sqrtx.cpp" />
     <ClCompile Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.cpp" />
+    <ClCompile Include="src\interval_search\template\template.cpp" />
     <ClCompile Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.cpp" />
     <ClCompile Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.cpp" />
     <ClCompile Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.cpp" />

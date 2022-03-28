@@ -11,7 +11,7 @@ TreeNode* Solution105::buildTree(std::vector<int>& preorder, std::vector<int>& i
 	for (int i = 0; i < inorder.size(); ++i)
 		inorder_map[inorder[i]] = i;
 	
-	return buildTreeRecurse(preorder, inorder_map, 0, 0, inorder.size() - 1);
+	return buildTreeRecurse(preorder, inorder_map, 0, 0, static_cast<int>(inorder.size()) - 1);
 }
 
 TreeNode* Solution105::buildTreeRecurse(std::vector<int>& preorder, std::unordered_map<int, int>& inorder_map, int preorder_index, int inorder_begin, int inorder_end)
