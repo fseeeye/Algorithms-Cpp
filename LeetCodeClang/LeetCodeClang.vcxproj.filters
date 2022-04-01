@@ -21,9 +21,6 @@
     <ClInclude Include="src\greedy_algorithm\p135_candy\candy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Tester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -34,9 +31,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Structures.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\two_pointers\p76_minimum_window_substring\minimum_window_substring.h">
@@ -207,7 +201,28 @@
     <ClInclude Include="src\other_structures\p146_lru_cache\lru_cache.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\interval_search\template\template.h">
+    <ClInclude Include="src\huawei\hj01_last_word_length\last_word_length.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\Structures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\Tester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\bits\stdc++.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\huawei\hj97_input_nums_count\input_nums_count.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\huawei\hj02_count_char\count_char.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\huawei\hj54_exp_calc\exp_calc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\other_structures\p3_longest_substring_without_repeating_characters\longest_substring_without_repeating_characters.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -401,7 +416,19 @@
     <ClCompile Include="src\other_structures\p146_lru_cache\lru_cache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\interval_search\template\template.cpp">
+    <ClCompile Include="src\huawei\hj01_last_word_length\last_word_length.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\huawei\hj97_input_nums_count\input_nums_count.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\huawei\hj02_count_char\count_char.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\huawei\hj54_exp_calc\exp_calc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\other_structures\p3_longest_substring_without_repeating_characters\longest_substring_without_repeating_characters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

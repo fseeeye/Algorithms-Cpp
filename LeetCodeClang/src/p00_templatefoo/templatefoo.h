@@ -9,9 +9,9 @@
 
 class Solution000 {
 public:
-	int foo();
+	static int foo();
 
-	void test() {
+	static void test() {
 		
 		std::cout << "Solution 000 passed!\n";
 	}

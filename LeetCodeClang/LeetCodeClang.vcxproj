@@ -45,16 +45,21 @@
     <ClInclude Include="src\greedy_algorithm\p135_candy\candy.h" />
     <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h" />
     <ClInclude Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.h" />
-    <ClInclude Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.h" />
-    <ClInclude Include="src\interval_search\p69_sqrtx\sqrtx.h" />
-    <ClInclude Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.h" />
-    <ClInclude Include="src\interval_search\template\template.h" />
+    <ClInclude Include="src\huawei\hj01_last_word_length\last_word_length.h" />
+    <ClInclude Include="src\huawei\hj02_count_char\count_char.h" />
+    <ClInclude Include="src\huawei\hj54_exp_calc\exp_calc.h" />
+    <ClInclude Include="src\huawei\hj97_input_nums_count\input_nums_count.h" />
+    <ClInclude Include="src\binary_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.h" />
+    <ClInclude Include="src\binary_search\p69_sqrtx\sqrtx.h" />
+    <ClInclude Include="src\binary_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.h" />
     <ClInclude Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.h" />
     <ClInclude Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.h" />
     <ClInclude Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.h" />
     <ClInclude Include="src\linked_list\p234_palindrome_linked_list\palindrome_linked_list.h" />
     <ClInclude Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.h" />
     <ClInclude Include="src\other_structures\p146_lru_cache\lru_cache.h" />
+    <ClInclude Include="src\two_pointers\p30_substring_with_concatenation_of_all_words\substring_with_concatenation_of_all_words.h" />
+    <ClInclude Include="src\two_pointers\p3_longest_substring_without_repeating_characters\longest_substring_without_repeating_characters.h" />
     <ClInclude Include="src\search\p126_word_ladder_ii\word_ladder_ii.h" />
     <ClInclude Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.h" />
     <ClInclude Include="src\search\p46_permutations\permutations.h" />
@@ -66,8 +71,6 @@
     <ClInclude Include="src\search\p934_shortest_bridge\shortest_bridge.h" />
     <ClInclude Include="src\sort\p215_kth_largest_element\kth_largest_element.h" />
     <ClInclude Include="src\sort\p347_top_k_frequent_elements\top_k_frequent_elements.h" />
-    <ClInclude Include="src\Structures.h" />
-    <ClInclude Include="src\Tester.h" />
     <ClInclude Include="src\tree\p101_symmetric_tree\symmetric_tree.h" />
     <ClInclude Include="src\tree\p104_maximum_depth_of_binary_tree\maximum_depth_of_binary_tree.h" />
     <ClInclude Include="src\tree\p105_construct_binary_tree\construct_binary_tree.h" />
@@ -112,10 +115,14 @@
     <ClCompile Include="src\greedy_algorithm\p135_candy\candy.cpp" />
     <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp" />
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp" />
-    <ClCompile Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.cpp" />
-    <ClCompile Include="src\interval_search\p69_sqrtx\sqrtx.cpp" />
-    <ClCompile Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.cpp" />
-    <ClCompile Include="src\interval_search\template\template.cpp" />
+    <ClCompile Include="src\huawei\hj01_last_word_length\last_word_length.cpp" />
+    <ClCompile Include="src\huawei\hj02_count_char\count_char.cpp" />
+    <ClCompile Include="src\huawei\hj54_exp_calc\exp_calc.cpp" />
+    <ClCompile Include="src\huawei\hj97_input_nums_count\input_nums_count.cpp" />
+    <ClCompile Include="src\binary_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.cpp" />
+    <ClCompile Include="src\binary_search\p69_sqrtx\sqrtx.cpp" />
+    <ClCompile Include="src\binary_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.cpp" />
+    <ClCompile Include="src\binary_search\template\template.cpp" />
     <ClCompile Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.cpp" />
     <ClCompile Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.cpp" />
     <ClCompile Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.cpp" />
@@ -123,6 +130,8 @@
     <ClCompile Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\other_structures\p146_lru_cache\lru_cache.cpp" />
+    <ClCompile Include="src\two_pointers\p30_substring_with_concatenation_of_all_words\substring_with_concatenation_of_all_words.cpp" />
+    <ClCompile Include="src\two_pointers\p3_longest_substring_without_repeating_characters\longest_substring_without_repeating_characters.cpp" />
     <ClCompile Include="src\search\p126_word_ladder_ii\word_ladder_ii.cpp" />
     <ClCompile Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.cpp" />
     <ClCompile Include="src\search\p46_permutations\permutations.cpp" />
@@ -256,7 +265,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>src;src/greedy_algorithm;src/two_pointers;src/interval_search;src/sort;src/search;src/dynamic_programming;src/divide_conquer</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src/greedy_algorithm;src/two_pointers;src/binary_search;src/sort;src/search;src/dynamic_programming;src/divide_conquer;src/lib;src/other_structures;src/huawei</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -272,7 +281,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>src;src/greedy_algorithm;src/two_pointers;src/interval_search;src/sort;src/search;src/dynamic_programming;src/divide_conquer</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src/greedy_algorithm;src/two_pointers;src/binary_search;src/sort;src/search;src/dynamic_programming;src/divide_conquer;src/lib;src/other_structures;src/huawei</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

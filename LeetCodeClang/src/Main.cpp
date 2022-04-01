@@ -61,9 +61,18 @@
 // Divide and Conquer
 //#include "p241_different_ways_to_add_parentheses/different_ways_to_add_parentheses.h"
 
+// Huawei Interview
+#include "hj01_last_word_length/last_word_length.h"
+#include "hj97_input_nums_count/input_nums_count.h"
+#include "hj02_count_char/count_char.h"
+#include "hj54_exp_calc/exp_calc.h"
+
+#include "p3_longest_substring_without_repeating_characters/longest_substring_without_repeating_characters.h"
+#include "p30_substring_with_concatenation_of_all_words/substring_with_concatenation_of_all_words.h"
 
 int main()
 {
+	Solution30::test();
 
 	std::cin.get();
 }
