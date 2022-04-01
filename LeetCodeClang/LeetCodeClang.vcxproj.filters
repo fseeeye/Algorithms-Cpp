@@ -1,435 +1,146 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <ClCompile Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.cpp" />
+    <ClCompile Include="src\dynamic_programming\p10_regular_expression_matching\regular_expression_matching.cpp" />
+    <ClCompile Include="src\dynamic_programming\p1143_longest_commom_subsequence\longest_commom_subsequence.cpp" />
+    <ClCompile Include="src\dynamic_programming\p121_best_time_to_buy_and_sell_stock\best_time_to_buy_and_sell_stock.cpp" />
+    <ClCompile Include="src\dynamic_programming\p139_word_break\word_break.cpp" />
+    <ClCompile Include="src\dynamic_programming\p188_best_time_to_buy_and_sell_stock_iv\best_time_to_buy_and_sell_stock_iv.cpp" />
+    <ClCompile Include="src\dynamic_programming\p198_house_robber\house_robber.cpp" />
+    <ClCompile Include="src\dynamic_programming\p221_maximal_square\maximal_square.cpp" />
+    <ClCompile Include="src\dynamic_programming\p279_perfect_squares\perfect_squares.cpp" />
+    <ClCompile Include="src\dynamic_programming\p300_longest_increasing_subsequence\longest_increasing_subsequence.cpp" />
+    <ClCompile Include="src\dynamic_programming\p309_best_time_to_buy_and_sell_stock_with_cooldown\best_time_to_buy_and_sell_stock_with_cooldown.cpp" />
+    <ClCompile Include="src\dynamic_programming\p322_coin_change\coin_change.cpp" />
+    <ClCompile Include="src\dynamic_programming\p413_arithmetic_slices\arithmetic_slices.cpp" />
+    <ClCompile Include="src\dynamic_programming\p416_partition_equal_subset_sum\partition_equal_subset_sum.cpp" />
+    <ClCompile Include="src\dynamic_programming\p474_ones_and_zeroes\ones_and_zeroes.cpp" />
+    <ClCompile Include="src\dynamic_programming\p542_01_matrix\01_matrix.cpp" />
+    <ClCompile Include="src\dynamic_programming\p64_mini_path_sum\mini_path_sum.cpp" />
+    <ClCompile Include="src\dynamic_programming\p650_2_keys_keyboard\2_keys_keyboard.cpp" />
+    <ClCompile Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.cpp" />
+    <ClCompile Include="src\dynamic_programming\p72_edit_distance\edit_distance.cpp" />
+    <ClCompile Include="src\dynamic_programming\p91_decode_ways\decode_ways.cpp" />
+    <ClCompile Include="src\graph\p210_course_schedule_ii\course_schedule_ii.cpp" />
+    <ClCompile Include="src\graph\p785_is_graph_bipartite\is_graph_bipartite.cpp" />
+    <ClCompile Include="src\greedy_algorithm\p135_candy\candy.cpp" />
+    <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp" />
+    <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp" />
+    <ClCompile Include="src\huawei\hj01_last_word_length\last_word_length.cpp" />
+    <ClCompile Include="src\huawei\hj02_count_char\count_char.cpp" />
+    <ClCompile Include="src\huawei\hj54_exp_calc\exp_calc.cpp" />
+    <ClCompile Include="src\huawei\hj97_input_nums_count\input_nums_count.cpp" />
+    <ClCompile Include="src\binary_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.cpp" />
+    <ClCompile Include="src\binary_search\p69_sqrtx\sqrtx.cpp" />
+    <ClCompile Include="src\binary_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.cpp" />
+    <ClCompile Include="src\binary_search\template\template.cpp" />
+    <ClCompile Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.cpp" />
+    <ClCompile Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.cpp" />
+    <ClCompile Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.cpp" />
+    <ClCompile Include="src\linked_list\p234_palindrome_linked_list\palindrome_linked_list.cpp" />
+    <ClCompile Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\other_structures\p146_lru_cache\lru_cache.cpp" />
+    <ClCompile Include="src\search\p126_word_ladder_ii\word_ladder_ii.cpp" />
+    <ClCompile Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.cpp" />
+    <ClCompile Include="src\search\p46_permutations\permutations.cpp" />
+    <ClCompile Include="src\search\p51_n_queens\n_queens.cpp" />
+    <ClCompile Include="src\search\p547_number_of_provinces\number_of_provinces.cpp" />
+    <ClCompile Include="src\search\p695_max_area_of_island\max_area_of_island.cpp" />
+    <ClCompile Include="src\search\p77_combinations\combinations.cpp" />
+    <ClCompile Include="src\search\p79_word_search\word_search.cpp" />
+    <ClCompile Include="src\search\p934_shortest_bridge\shortest_bridge.cpp" />
+    <ClCompile Include="src\sort\p215_kth_largest_element\kth_largest_element.cpp" />
+    <ClCompile Include="src\sort\p347_top_k_frequent_elements\top_k_frequent_elements.cpp" />
+    <ClCompile Include="src\tree\p101_symmetric_tree\symmetric_tree.cpp" />
+    <ClCompile Include="src\tree\p104_maximum_depth_of_binary_tree\maximum_depth_of_binary_tree.cpp" />
+    <ClCompile Include="src\tree\p105_construct_binary_tree\construct_binary_tree.cpp" />
+    <ClCompile Include="src\tree\p110_balanced_binary_tree\balanced_binary_tree.cpp" />
+    <ClCompile Include="src\tree\p1110_delete_nodes_and_return_forest\delete_nodes_and_return_forest.cpp" />
+    <ClCompile Include="src\tree\p144_binary_tree_preorder_traversal\binary_tree_preorder_traversal.cpp" />
+    <ClCompile Include="src\tree\p208_implement_trie\implement_trie.cpp" />
+    <ClCompile Include="src\tree\p437_path_sum_iii\path_sum_iii.cpp" />
+    <ClCompile Include="src\tree\p543_diameter_of_binary_tree\diameter_of_binary_tree.cpp" />
+    <ClCompile Include="src\tree\p637_average_of_levels_in_binary_tree\average_of_levels_in_binary_tree.cpp" />
+    <ClCompile Include="src\tree\p669_trim_a_binary_search_tree\trim_a_binary_search_tree.cpp" />
+    <ClCompile Include="src\tree\p99_recover_binary_search_tree\recover_binary_search_tree.cpp" />
+    <ClCompile Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.cpp" />
+    <ClCompile Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.cpp" />
+    <ClCompile Include="src\two_pointers\p76_minimum_window_substring\minimum_window_substring.cpp" />
+    <ClCompile Include="src\two_pointers\p88_merge_sorted_array\merge_sorted_array.cpp" />
+    <ClCompile Include="src\two_pointers\p3_longest_substring_without_repeating_characters\longest_substring_without_repeating_characters.cpp" />
+    <ClCompile Include="src\two_pointers\p30_substring_with_concatenation_of_all_words\substring_with_concatenation_of_all_words.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\greedy_algorithm\p135_candy\candy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\two_pointers\p88_merge_sorted_array\merge_sorted_array.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\two_pointers\p76_minimum_window_substring\minimum_window_substring.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\interval_search\p69_sqrtx\sqrtx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\sort\p215_kth_largest_element\kth_largest_element.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\sort\p347_top_k_frequent_elements\top_k_frequent_elements.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\search\p695_max_area_of_island\max_area_of_island.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\search\p547_number_of_provinces\number_of_provinces.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\search\p46_permutations\permutations.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\search\p77_combinations\combinations.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\search\p79_word_search\word_search.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\search\p51_n_queens\n_queens.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\search\p934_shortest_bridge\shortest_bridge.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\search\p126_word_ladder_ii\word_ladder_ii.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p198_house_robber\house_robber.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p413_arithmetic_slices\arithmetic_slices.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p64_mini_path_sum\mini_path_sum.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p542_01_matrix\01_matrix.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p221_maximal_square\maximal_square.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p279_perfect_squares\perfect_squares.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p91_decode_ways\decode_ways.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p139_word_break\word_break.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p300_longest_increasing_subsequence\longest_increasing_subsequence.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p1143_longest_commom_subsequence\longest_commom_subsequence.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p416_partition_equal_subset_sum\partition_equal_subset_sum.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p474_ones_and_zeroes\ones_and_zeroes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p322_coin_change\coin_change.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p72_edit_distance\edit_distance.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p650_2_keys_keyboard\2_keys_keyboard.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p10_regular_expression_matching\regular_expression_matching.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p121_best_time_to_buy_and_sell_stock\best_time_to_buy_and_sell_stock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p188_best_time_to_buy_and_sell_stock_iv\best_time_to_buy_and_sell_stock_iv.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\dynamic_programming\p309_best_time_to_buy_and_sell_stock_with_cooldown\best_time_to_buy_and_sell_stock_with_cooldown.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\linked_list\p234_palindrome_linked_list\palindrome_linked_list.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tree\p104_maximum_depth_of_binary_tree\maximum_depth_of_binary_tree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tree\p110_balanced_binary_tree\balanced_binary_tree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tree\p543_diameter_of_binary_tree\diameter_of_binary_tree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tree\p437_path_sum_iii\path_sum_iii.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tree\p101_symmetric_tree\symmetric_tree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tree\p1110_delete_nodes_and_return_forest\delete_nodes_and_return_forest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tree\p637_average_of_levels_in_binary_tree\average_of_levels_in_binary_tree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tree\p105_construct_binary_tree\construct_binary_tree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tree\p144_binary_tree_preorder_traversal\binary_tree_preorder_traversal.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tree\p99_recover_binary_search_tree\recover_binary_search_tree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tree\p669_trim_a_binary_search_tree\trim_a_binary_search_tree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tree\p208_implement_trie\implement_trie.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graph\p785_is_graph_bipartite\is_graph_bipartite.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graph\p210_course_schedule_ii\course_schedule_ii.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\other_structures\p146_lru_cache\lru_cache.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\huawei\hj01_last_word_length\last_word_length.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lib\Structures.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lib\Tester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lib\bits\stdc++.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\huawei\hj97_input_nums_count\input_nums_count.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\huawei\hj02_count_char\count_char.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\huawei\hj54_exp_calc\exp_calc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\other_structures\p3_longest_substring_without_repeating_characters\longest_substring_without_repeating_characters.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\greedy_algorithm\p135_candy\candy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\two_pointers\p88_merge_sorted_array\merge_sorted_array.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\two_pointers\p76_minimum_window_substring\minimum_window_substring.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\interval_search\p69_sqrtx\sqrtx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\interval_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\interval_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sort\p215_kth_largest_element\kth_largest_element.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sort\p347_top_k_frequent_elements\top_k_frequent_elements.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\search\p695_max_area_of_island\max_area_of_island.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\search\p547_number_of_provinces\number_of_provinces.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\search\p46_permutations\permutations.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\search\p77_combinations\combinations.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\search\p79_word_search\word_search.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\search\p51_n_queens\n_queens.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\search\p934_shortest_bridge\shortest_bridge.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\search\p126_word_ladder_ii\word_ladder_ii.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p198_house_robber\house_robber.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p413_arithmetic_slices\arithmetic_slices.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p64_mini_path_sum\mini_path_sum.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p542_01_matrix\01_matrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p221_maximal_square\maximal_square.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p279_perfect_squares\perfect_squares.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p91_decode_ways\decode_ways.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p139_word_break\word_break.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p300_longest_increasing_subsequence\longest_increasing_subsequence.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p1143_longest_commom_subsequence\longest_commom_subsequence.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p416_partition_equal_subset_sum\partition_equal_subset_sum.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p474_ones_and_zeroes\ones_and_zeroes.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p322_coin_change\coin_change.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p72_edit_distance\edit_distance.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p650_2_keys_keyboard\2_keys_keyboard.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p10_regular_expression_matching\regular_expression_matching.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p121_best_time_to_buy_and_sell_stock\best_time_to_buy_and_sell_stock.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p188_best_time_to_buy_and_sell_stock_iv\best_time_to_buy_and_sell_stock_iv.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dynamic_programming\p309_best_time_to_buy_and_sell_stock_with_cooldown\best_time_to_buy_and_sell_stock_with_cooldown.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\linked_list\p234_palindrome_linked_list\palindrome_linked_list.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tree\p104_maximum_depth_of_binary_tree\maximum_depth_of_binary_tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tree\p110_balanced_binary_tree\balanced_binary_tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tree\p543_diameter_of_binary_tree\diameter_of_binary_tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tree\p437_path_sum_iii\path_sum_iii.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tree\p101_symmetric_tree\symmetric_tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tree\p1110_delete_nodes_and_return_forest\delete_nodes_and_return_forest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tree\p637_average_of_levels_in_binary_tree\average_of_levels_in_binary_tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tree\p105_construct_binary_tree\construct_binary_tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tree\p144_binary_tree_preorder_traversal\binary_tree_preorder_traversal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tree\p99_recover_binary_search_tree\recover_binary_search_tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tree\p669_trim_a_binary_search_tree\trim_a_binary_search_tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tree\p208_implement_trie\implement_trie.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graph\p785_is_graph_bipartite\is_graph_bipartite.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graph\p210_course_schedule_ii\course_schedule_ii.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\other_structures\p146_lru_cache\lru_cache.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\huawei\hj01_last_word_length\last_word_length.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\huawei\hj97_input_nums_count\input_nums_count.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\huawei\hj02_count_char\count_char.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\huawei\hj54_exp_calc\exp_calc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\other_structures\p3_longest_substring_without_repeating_characters\longest_substring_without_repeating_characters.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.h" />
+    <ClInclude Include="src\dynamic_programming\p10_regular_expression_matching\regular_expression_matching.h" />
+    <ClInclude Include="src\dynamic_programming\p1143_longest_commom_subsequence\longest_commom_subsequence.h" />
+    <ClInclude Include="src\dynamic_programming\p121_best_time_to_buy_and_sell_stock\best_time_to_buy_and_sell_stock.h" />
+    <ClInclude Include="src\dynamic_programming\p139_word_break\word_break.h" />
+    <ClInclude Include="src\dynamic_programming\p188_best_time_to_buy_and_sell_stock_iv\best_time_to_buy_and_sell_stock_iv.h" />
+    <ClInclude Include="src\dynamic_programming\p198_house_robber\house_robber.h" />
+    <ClInclude Include="src\dynamic_programming\p221_maximal_square\maximal_square.h" />
+    <ClInclude Include="src\dynamic_programming\p279_perfect_squares\perfect_squares.h" />
+    <ClInclude Include="src\dynamic_programming\p300_longest_increasing_subsequence\longest_increasing_subsequence.h" />
+    <ClInclude Include="src\dynamic_programming\p309_best_time_to_buy_and_sell_stock_with_cooldown\best_time_to_buy_and_sell_stock_with_cooldown.h" />
+    <ClInclude Include="src\dynamic_programming\p322_coin_change\coin_change.h" />
+    <ClInclude Include="src\dynamic_programming\p413_arithmetic_slices\arithmetic_slices.h" />
+    <ClInclude Include="src\dynamic_programming\p416_partition_equal_subset_sum\partition_equal_subset_sum.h" />
+    <ClInclude Include="src\dynamic_programming\p474_ones_and_zeroes\ones_and_zeroes.h" />
+    <ClInclude Include="src\dynamic_programming\p542_01_matrix\01_matrix.h" />
+    <ClInclude Include="src\dynamic_programming\p64_mini_path_sum\mini_path_sum.h" />
+    <ClInclude Include="src\dynamic_programming\p650_2_keys_keyboard\2_keys_keyboard.h" />
+    <ClInclude Include="src\dynamic_programming\p70_climbing_stairs\climbing_stairs.h" />
+    <ClInclude Include="src\dynamic_programming\p72_edit_distance\edit_distance.h" />
+    <ClInclude Include="src\dynamic_programming\p91_decode_ways\decode_ways.h" />
+    <ClInclude Include="src\graph\p210_course_schedule_ii\course_schedule_ii.h" />
+    <ClInclude Include="src\graph\p785_is_graph_bipartite\is_graph_bipartite.h" />
+    <ClInclude Include="src\greedy_algorithm\p135_candy\candy.h" />
+    <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h" />
+    <ClInclude Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.h" />
+    <ClInclude Include="src\huawei\hj01_last_word_length\last_word_length.h" />
+    <ClInclude Include="src\huawei\hj02_count_char\count_char.h" />
+    <ClInclude Include="src\huawei\hj54_exp_calc\exp_calc.h" />
+    <ClInclude Include="src\huawei\hj97_input_nums_count\input_nums_count.h" />
+    <ClInclude Include="src\binary_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.h" />
+    <ClInclude Include="src\binary_search\p69_sqrtx\sqrtx.h" />
+    <ClInclude Include="src\binary_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.h" />
+    <ClInclude Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.h" />
+    <ClInclude Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.h" />
+    <ClInclude Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.h" />
+    <ClInclude Include="src\linked_list\p234_palindrome_linked_list\palindrome_linked_list.h" />
+    <ClInclude Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.h" />
+    <ClInclude Include="src\other_structures\p146_lru_cache\lru_cache.h" />
+    <ClInclude Include="src\search\p126_word_ladder_ii\word_ladder_ii.h" />
+    <ClInclude Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.h" />
+    <ClInclude Include="src\search\p46_permutations\permutations.h" />
+    <ClInclude Include="src\search\p51_n_queens\n_queens.h" />
+    <ClInclude Include="src\search\p547_number_of_provinces\number_of_provinces.h" />
+    <ClInclude Include="src\search\p695_max_area_of_island\max_area_of_island.h" />
+    <ClInclude Include="src\search\p77_combinations\combinations.h" />
+    <ClInclude Include="src\search\p79_word_search\word_search.h" />
+    <ClInclude Include="src\search\p934_shortest_bridge\shortest_bridge.h" />
+    <ClInclude Include="src\sort\p215_kth_largest_element\kth_largest_element.h" />
+    <ClInclude Include="src\sort\p347_top_k_frequent_elements\top_k_frequent_elements.h" />
+    <ClInclude Include="src\tree\p101_symmetric_tree\symmetric_tree.h" />
+    <ClInclude Include="src\tree\p104_maximum_depth_of_binary_tree\maximum_depth_of_binary_tree.h" />
+    <ClInclude Include="src\tree\p105_construct_binary_tree\construct_binary_tree.h" />
+    <ClInclude Include="src\tree\p110_balanced_binary_tree\balanced_binary_tree.h" />
+    <ClInclude Include="src\tree\p1110_delete_nodes_and_return_forest\delete_nodes_and_return_forest.h" />
+    <ClInclude Include="src\tree\p144_binary_tree_preorder_traversal\binary_tree_preorder_traversal.h" />
+    <ClInclude Include="src\tree\p208_implement_trie\implement_trie.h" />
+    <ClInclude Include="src\tree\p437_path_sum_iii\path_sum_iii.h" />
+    <ClInclude Include="src\tree\p543_diameter_of_binary_tree\diameter_of_binary_tree.h" />
+    <ClInclude Include="src\tree\p637_average_of_levels_in_binary_tree\average_of_levels_in_binary_tree.h" />
+    <ClInclude Include="src\tree\p669_trim_a_binary_search_tree\trim_a_binary_search_tree.h" />
+    <ClInclude Include="src\tree\p99_recover_binary_search_tree\recover_binary_search_tree.h" />
+    <ClInclude Include="src\two_pointers\p142_link_list_cycle_ii\link_list_cycle_ii.h" />
+    <ClInclude Include="src\two_pointers\p167_two_sum_ii\two_sum_ii.h" />
+    <ClInclude Include="src\two_pointers\p76_minimum_window_substring\minimum_window_substring.h" />
+    <ClInclude Include="src\two_pointers\p88_merge_sorted_array\merge_sorted_array.h" />
+    <ClInclude Include="src\two_pointers\p3_longest_substring_without_repeating_characters\longest_substring_without_repeating_characters.h" />
+    <ClInclude Include="src\two_pointers\p30_substring_with_concatenation_of_all_words\substring_with_concatenation_of_all_words.h" />
+    <ClInclude Include="src\binary_search\template\template.h" />
   </ItemGroup>
 </Project>

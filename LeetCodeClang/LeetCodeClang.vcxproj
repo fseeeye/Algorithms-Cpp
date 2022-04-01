@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\binary_search\template\template.h" />
     <ClInclude Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.h" />
     <ClInclude Include="src\dynamic_programming\p10_regular_expression_matching\regular_expression_matching.h" />
     <ClInclude Include="src\dynamic_programming\p1143_longest_commom_subsequence\longest_commom_subsequence.h" />
