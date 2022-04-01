@@ -66,13 +66,16 @@
 #include "hj97_input_nums_count/input_nums_count.h"
 #include "hj02_count_char/count_char.h"
 #include "hj54_exp_calc/exp_calc.h"
+#include "hj51_linked_list_last_k/linked_list_last_k.h"
 
 #include "p3_longest_substring_without_repeating_characters/longest_substring_without_repeating_characters.h"
 #include "p30_substring_with_concatenation_of_all_words/substring_with_concatenation_of_all_words.h"
+#include "p16_3sum_closest/3sum_closest.h"
+
 
 int main()
 {
-	Solution30::test();
+	HJ51::test();
 
 	std::cin.get();
 }

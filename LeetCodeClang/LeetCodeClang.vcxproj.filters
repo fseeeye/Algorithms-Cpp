@@ -71,6 +71,9 @@
     <ClCompile Include="src\two_pointers\p88_merge_sorted_array\merge_sorted_array.cpp" />
     <ClCompile Include="src\two_pointers\p3_longest_substring_without_repeating_characters\longest_substring_without_repeating_characters.cpp" />
     <ClCompile Include="src\two_pointers\p30_substring_with_concatenation_of_all_words\substring_with_concatenation_of_all_words.cpp" />
+    <ClCompile Include="src\linked_list\p86_partition_list\partition_list.cpp" />
+    <ClCompile Include="src\two_pointers\p16_3sum_closest\3sum_closest.cpp" />
+    <ClCompile Include="src\huawei\hj51_linked_list_last_k\linked_list_last_k.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.h" />
@@ -142,5 +145,11 @@
     <ClInclude Include="src\two_pointers\p3_longest_substring_without_repeating_characters\longest_substring_without_repeating_characters.h" />
     <ClInclude Include="src\two_pointers\p30_substring_with_concatenation_of_all_words\substring_with_concatenation_of_all_words.h" />
     <ClInclude Include="src\binary_search\template\template.h" />
+    <ClInclude Include="src\linked_list\p86_partition_list\partition_list.h" />
+    <ClInclude Include="src\two_pointers\p16_3sum_closest\3sum_closest.h" />
+    <ClInclude Include="src\huawei\hj51_linked_list_last_k\linked_list_last_k.h" />
+    <ClInclude Include="src\lib\bits\stdc++.h" />
+    <ClInclude Include="src\lib\Structures.h" />
+    <ClInclude Include="src\lib\Tester.h" />
   </ItemGroup>
 </Project>
