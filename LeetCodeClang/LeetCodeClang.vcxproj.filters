@@ -74,6 +74,12 @@
     <ClCompile Include="src\linked_list\p86_partition_list\partition_list.cpp" />
     <ClCompile Include="src\two_pointers\p16_3sum_closest\3sum_closest.cpp" />
     <ClCompile Include="src\huawei\hj51_linked_list_last_k\linked_list_last_k.cpp" />
+    <ClCompile Include="src\two_pointers\p27_remove_element\remove_element.cpp" />
+    <ClCompile Include="src\linked_list\p641_design_circular_deque\design_circular_deque.cpp" />
+    <ClCompile Include="src\huawei\p406_queue_reconstruction_by_height\queue_reconstruction_by_height.cpp" />
+    <ClCompile Include="src\greedy_algorithm\p946_validate_stack_sequences\validate_stack_sequences.cpp" />
+    <ClCompile Include="src\tree\p116_populating_next_right_pointers_in_each_node\populating_next_right_pointers_in_each_node.cpp" />
+    <ClCompile Include="src\tree\p117_populating_next_right_pointers_in_each_node_ii\populating_next_right_pointers_in_each_node_ii.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.h" />
@@ -151,5 +157,11 @@
     <ClInclude Include="src\lib\bits\stdc++.h" />
     <ClInclude Include="src\lib\Structures.h" />
     <ClInclude Include="src\lib\Tester.h" />
+    <ClInclude Include="src\two_pointers\p27_remove_element\remove_element.h" />
+    <ClInclude Include="src\linked_list\p641_design_circular_deque\design_circular_deque.h" />
+    <ClInclude Include="src\huawei\p406_queue_reconstruction_by_height\queue_reconstruction_by_height.h" />
+    <ClInclude Include="src\greedy_algorithm\p946_validate_stack_sequences\validate_stack_sequences.h" />
+    <ClInclude Include="src\tree\p116_populating_next_right_pointers_in_each_node\populating_next_right_pointers_in_each_node.h" />
+    <ClInclude Include="src\tree\p117_populating_next_right_pointers_in_each_node_ii\populating_next_right_pointers_in_each_node_ii.h" />
   </ItemGroup>
 </Project>

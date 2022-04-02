@@ -54,10 +54,15 @@
     <ClInclude Include="src\binary_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.h" />
     <ClInclude Include="src\binary_search\p69_sqrtx\sqrtx.h" />
     <ClInclude Include="src\binary_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.h" />
+    <ClInclude Include="src\huawei\p406_queue_reconstruction_by_height\queue_reconstruction_by_height.h" />
+    <ClInclude Include="src\greedy_algorithm\p946_validate_stack_sequences\validate_stack_sequences.h" />
     <ClInclude Include="src\lib\bits\stdc++.h" />
     <ClInclude Include="src\lib\Structures.h" />
     <ClInclude Include="src\lib\Tester.h" />
     <ClInclude Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.h" />
+    <ClInclude Include="src\linked_list\p641_design_circular_deque\design_circular_deque.h" />
+    <ClInclude Include="src\tree\p116_populating_next_right_pointers_in_each_node\populating_next_right_pointers_in_each_node.h" />
+    <ClInclude Include="src\tree\p117_populating_next_right_pointers_in_each_node_ii\populating_next_right_pointers_in_each_node_ii.h" />
     <ClInclude Include="src\two_pointers\p16_3sum_closest\3sum_closest.h" />
     <ClInclude Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.h" />
     <ClInclude Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.h" />
@@ -65,6 +70,7 @@
     <ClInclude Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.h" />
     <ClInclude Include="src\linked_list\p86_partition_list\partition_list.h" />
     <ClInclude Include="src\other_structures\p146_lru_cache\lru_cache.h" />
+    <ClInclude Include="src\two_pointers\p27_remove_element\remove_element.h" />
     <ClInclude Include="src\two_pointers\p30_substring_with_concatenation_of_all_words\substring_with_concatenation_of_all_words.h" />
     <ClInclude Include="src\two_pointers\p3_longest_substring_without_repeating_characters\longest_substring_without_repeating_characters.h" />
     <ClInclude Include="src\search\p126_word_ladder_ii\word_ladder_ii.h" />
@@ -131,7 +137,12 @@
     <ClCompile Include="src\binary_search\p69_sqrtx\sqrtx.cpp" />
     <ClCompile Include="src\binary_search\p81_search_in_rotated_sorted_array_ii\search_in_rotated_sorted_array_ii.cpp" />
     <ClCompile Include="src\binary_search\template\template.cpp" />
+    <ClCompile Include="src\huawei\p406_queue_reconstruction_by_height\queue_reconstruction_by_height.cpp" />
+    <ClCompile Include="src\greedy_algorithm\p946_validate_stack_sequences\validate_stack_sequences.cpp" />
     <ClCompile Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.cpp" />
+    <ClCompile Include="src\linked_list\p641_design_circular_deque\design_circular_deque.cpp" />
+    <ClCompile Include="src\tree\p116_populating_next_right_pointers_in_each_node\populating_next_right_pointers_in_each_node.cpp" />
+    <ClCompile Include="src\tree\p117_populating_next_right_pointers_in_each_node_ii\populating_next_right_pointers_in_each_node_ii.cpp" />
     <ClCompile Include="src\two_pointers\p16_3sum_closest\3sum_closest.cpp" />
     <ClCompile Include="src\linked_list\p206_reverse_linked_list\reverse_linked_list.cpp" />
     <ClCompile Include="src\linked_list\p21_merge_two_sorted_lists\merge_two_sorted_lists.cpp" />
@@ -140,6 +151,7 @@
     <ClCompile Include="src\linked_list\p86_partition_list\partition_list.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\other_structures\p146_lru_cache\lru_cache.cpp" />
+    <ClCompile Include="src\two_pointers\p27_remove_element\remove_element.cpp" />
     <ClCompile Include="src\two_pointers\p30_substring_with_concatenation_of_all_words\substring_with_concatenation_of_all_words.cpp" />
     <ClCompile Include="src\two_pointers\p3_longest_substring_without_repeating_characters\longest_substring_without_repeating_characters.cpp" />
     <ClCompile Include="src\search\p126_word_ladder_ii\word_ladder_ii.cpp" />

@@ -71,11 +71,12 @@
 #include "p3_longest_substring_without_repeating_characters/longest_substring_without_repeating_characters.h"
 #include "p30_substring_with_concatenation_of_all_words/substring_with_concatenation_of_all_words.h"
 #include "p16_3sum_closest/3sum_closest.h"
-
+#include "p641_design_circular_deque/design_circular_deque.h"
+#include "p946_validate_stack_sequences/validate_stack_sequences.h"
 
 int main()
 {
-	HJ51::test();
+	Solution946::test();
 
 	std::cin.get();
 }
