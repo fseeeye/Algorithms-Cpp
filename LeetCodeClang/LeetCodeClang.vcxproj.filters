@@ -42,15 +42,6 @@
     <ClCompile Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\other_structures\p146_lru_cache\lru_cache.cpp" />
-    <ClCompile Include="src\search\p126_word_ladder_ii\word_ladder_ii.cpp" />
-    <ClCompile Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.cpp" />
-    <ClCompile Include="src\search\p46_permutations\permutations.cpp" />
-    <ClCompile Include="src\search\p51_n_queens\n_queens.cpp" />
-    <ClCompile Include="src\search\p547_number_of_provinces\number_of_provinces.cpp" />
-    <ClCompile Include="src\search\p695_max_area_of_island\max_area_of_island.cpp" />
-    <ClCompile Include="src\search\p77_combinations\combinations.cpp" />
-    <ClCompile Include="src\search\p79_word_search\word_search.cpp" />
-    <ClCompile Include="src\search\p934_shortest_bridge\shortest_bridge.cpp" />
     <ClCompile Include="src\sort\p215_kth_largest_element\kth_largest_element.cpp" />
     <ClCompile Include="src\sort\p347_top_k_frequent_elements\top_k_frequent_elements.cpp" />
     <ClCompile Include="src\tree\p101_symmetric_tree\symmetric_tree.cpp" />
@@ -80,6 +71,26 @@
     <ClCompile Include="src\greedy_algorithm\p946_validate_stack_sequences\validate_stack_sequences.cpp" />
     <ClCompile Include="src\tree\p116_populating_next_right_pointers_in_each_node\populating_next_right_pointers_in_each_node.cpp" />
     <ClCompile Include="src\tree\p117_populating_next_right_pointers_in_each_node_ii\populating_next_right_pointers_in_each_node_ii.cpp" />
+    <ClCompile Include="src\linked_list\p61_rotate_list\rotate_list.cpp" />
+    <ClCompile Include="src\other_structures\p729_my_calendar_i\my_calendar_i.cpp" />
+    <ClCompile Include="src\huawei\p554_brick_wall\brick_wall.cpp" />
+    <ClCompile Include="src\tree\p112_path_sum\path_sum.cpp" />
+    <ClCompile Include="src\tree\p98_validate_binary_search_tree\validate_binary_search_tree.cpp" />
+    <ClCompile Include="src\tree\p102_binary_tree_level_order_traversal\binary_tree_level_order_traversal.cpp" />
+    <ClCompile Include="src\search\p46_permutations\permutations.cpp" />
+    <ClCompile Include="src\search\p51_n_queens\n_queens.cpp" />
+    <ClCompile Include="src\search\p77_combinations\combinations.cpp" />
+    <ClCompile Include="src\search\p79_word_search\word_search.cpp" />
+    <ClCompile Include="src\search\p126_word_ladder_ii\word_ladder_ii.cpp" />
+    <ClCompile Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.cpp" />
+    <ClCompile Include="src\search\p494_target_sum\target_sum.cpp" />
+    <ClCompile Include="src\search\p547_number_of_provinces\number_of_provinces.cpp" />
+    <ClCompile Include="src\search\p695_max_area_of_island\max_area_of_island.cpp" />
+    <ClCompile Include="src\search\p934_shortest_bridge\shortest_bridge.cpp" />
+    <ClCompile Include="src\search\p1091_shortest_path_in_binary_matrix\shortest_path_in_binary_matrix.cpp" />
+    <ClCompile Include="src\search\p1129_shortest_path_with_alternating_colors\shortest_path_with_alternating_colors.cpp" />
+    <ClCompile Include="src\search\p1254_number_of_closed_islands\number_of_closed_islands.cpp" />
+    <ClCompile Include="src\search\p752_open_the_lock\open_the_lock.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.h" />
@@ -121,15 +132,6 @@
     <ClInclude Include="src\linked_list\p234_palindrome_linked_list\palindrome_linked_list.h" />
     <ClInclude Include="src\linked_list\p24_swap_nodes_in_pairs\swap_nodes_in_pairs.h" />
     <ClInclude Include="src\other_structures\p146_lru_cache\lru_cache.h" />
-    <ClInclude Include="src\search\p126_word_ladder_ii\word_ladder_ii.h" />
-    <ClInclude Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.h" />
-    <ClInclude Include="src\search\p46_permutations\permutations.h" />
-    <ClInclude Include="src\search\p51_n_queens\n_queens.h" />
-    <ClInclude Include="src\search\p547_number_of_provinces\number_of_provinces.h" />
-    <ClInclude Include="src\search\p695_max_area_of_island\max_area_of_island.h" />
-    <ClInclude Include="src\search\p77_combinations\combinations.h" />
-    <ClInclude Include="src\search\p79_word_search\word_search.h" />
-    <ClInclude Include="src\search\p934_shortest_bridge\shortest_bridge.h" />
     <ClInclude Include="src\sort\p215_kth_largest_element\kth_largest_element.h" />
     <ClInclude Include="src\sort\p347_top_k_frequent_elements\top_k_frequent_elements.h" />
     <ClInclude Include="src\tree\p101_symmetric_tree\symmetric_tree.h" />
@@ -163,5 +165,25 @@
     <ClInclude Include="src\greedy_algorithm\p946_validate_stack_sequences\validate_stack_sequences.h" />
     <ClInclude Include="src\tree\p116_populating_next_right_pointers_in_each_node\populating_next_right_pointers_in_each_node.h" />
     <ClInclude Include="src\tree\p117_populating_next_right_pointers_in_each_node_ii\populating_next_right_pointers_in_each_node_ii.h" />
+    <ClInclude Include="src\linked_list\p61_rotate_list\rotate_list.h" />
+    <ClInclude Include="src\other_structures\p729_my_calendar_i\my_calendar_i.h" />
+    <ClInclude Include="src\huawei\p554_brick_wall\brick_wall.h" />
+    <ClInclude Include="src\tree\p112_path_sum\path_sum.h" />
+    <ClInclude Include="src\tree\p98_validate_binary_search_tree\validate_binary_search_tree.h" />
+    <ClInclude Include="src\tree\p102_binary_tree_level_order_traversal\binary_tree_level_order_traversal.h" />
+    <ClInclude Include="src\search\p46_permutations\permutations.h" />
+    <ClInclude Include="src\search\p51_n_queens\n_queens.h" />
+    <ClInclude Include="src\search\p77_combinations\combinations.h" />
+    <ClInclude Include="src\search\p79_word_search\word_search.h" />
+    <ClInclude Include="src\search\p126_word_ladder_ii\word_ladder_ii.h" />
+    <ClInclude Include="src\search\p417_pacific_atlantic_water_flow\pacific_atlantic_water_flow.h" />
+    <ClInclude Include="src\search\p494_target_sum\target_sum.h" />
+    <ClInclude Include="src\search\p547_number_of_provinces\number_of_provinces.h" />
+    <ClInclude Include="src\search\p695_max_area_of_island\max_area_of_island.h" />
+    <ClInclude Include="src\search\p934_shortest_bridge\shortest_bridge.h" />
+    <ClInclude Include="src\search\p1091_shortest_path_in_binary_matrix\shortest_path_in_binary_matrix.h" />
+    <ClInclude Include="src\search\p1129_shortest_path_with_alternating_colors\shortest_path_with_alternating_colors.h" />
+    <ClInclude Include="src\search\p1254_number_of_closed_islands\number_of_closed_islands.h" />
+    <ClInclude Include="src\search\p752_open_the_lock\open_the_lock.h" />
   </ItemGroup>
 </Project>

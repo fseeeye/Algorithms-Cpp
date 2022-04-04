@@ -73,10 +73,15 @@
 #include "p16_3sum_closest/3sum_closest.h"
 #include "p641_design_circular_deque/design_circular_deque.h"
 #include "p946_validate_stack_sequences/validate_stack_sequences.h"
+#include "p554_brick_wall/brick_wall.h"
+#include "p494_target_sum/target_sum.h"
+#include "p1254_number_of_closed_islands/number_of_closed_islands.h"
+#include "p1091_shortest_path_in_binary_matrix/shortest_path_in_binary_matrix.h"
+#include "p752_open_the_lock/open_the_lock.h"
 
 int main()
 {
-	Solution946::test();
+	Solution752::test();
 
 	std::cin.get();
 }
