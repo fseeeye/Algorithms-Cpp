@@ -91,6 +91,9 @@
     <ClCompile Include="src\search\p1129_shortest_path_with_alternating_colors\shortest_path_with_alternating_colors.cpp" />
     <ClCompile Include="src\search\p1254_number_of_closed_islands\number_of_closed_islands.cpp" />
     <ClCompile Include="src\search\p752_open_the_lock\open_the_lock.cpp" />
+    <ClCompile Include="src\huawei\hj43_maze\maze.cpp" />
+    <ClCompile Include="src\huawei\hj67_24points\24points.cpp" />
+    <ClCompile Include="src\huawei\hj107_cube_root\cube_root.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.h" />
@@ -185,5 +188,8 @@
     <ClInclude Include="src\search\p1129_shortest_path_with_alternating_colors\shortest_path_with_alternating_colors.h" />
     <ClInclude Include="src\search\p1254_number_of_closed_islands\number_of_closed_islands.h" />
     <ClInclude Include="src\search\p752_open_the_lock\open_the_lock.h" />
+    <ClInclude Include="src\huawei\hj43_maze\maze.h" />
+    <ClInclude Include="src\huawei\hj67_24points\24points.h" />
+    <ClInclude Include="src\huawei\hj107_cube_root\cube_root.h" />
   </ItemGroup>
 </Project>

@@ -3,7 +3,7 @@ My LeetCode Solutions.
 
 ## 目录
 * [贪心算法](https://github.com/fseeeye/leetcode-cpp#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95)
-* [双指针](https://github.com/fseeeye/leetcode-cpp%E5%8F%8C%E6%8C%87%E9%92%88)
+* [双指针](https://github.com/fseeeye/leetcode-cpp#%E5%8F%8C%E6%8C%87%E9%92%88)
 * [二分查找](https://github.com/fseeeye/leetcode-cpp#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE)
 * [排序算法](https://github.com/fseeeye/leetcode-cpp#%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95)
 * [优先搜索](https://github.com/fseeeye/leetcode-cpp#%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2)

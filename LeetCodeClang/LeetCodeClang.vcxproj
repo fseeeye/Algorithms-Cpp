@@ -48,8 +48,11 @@
     <ClInclude Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.h" />
     <ClInclude Include="src\huawei\hj01_last_word_length\last_word_length.h" />
     <ClInclude Include="src\huawei\hj02_count_char\count_char.h" />
+    <ClInclude Include="src\huawei\hj107_cube_root\cube_root.h" />
+    <ClInclude Include="src\huawei\hj43_maze\maze.h" />
     <ClInclude Include="src\huawei\hj51_linked_list_last_k\linked_list_last_k.h" />
     <ClInclude Include="src\huawei\hj54_exp_calc\exp_calc.h" />
+    <ClInclude Include="src\huawei\hj67_24points\24points.h" />
     <ClInclude Include="src\huawei\hj97_input_nums_count\input_nums_count.h" />
     <ClInclude Include="src\binary_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.h" />
     <ClInclude Include="src\binary_search\p69_sqrtx\sqrtx.h" />
@@ -141,8 +144,11 @@
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp" />
     <ClCompile Include="src\huawei\hj01_last_word_length\last_word_length.cpp" />
     <ClCompile Include="src\huawei\hj02_count_char\count_char.cpp" />
+    <ClCompile Include="src\huawei\hj107_cube_root\cube_root.cpp" />
+    <ClCompile Include="src\huawei\hj43_maze\maze.cpp" />
     <ClCompile Include="src\huawei\hj51_linked_list_last_k\linked_list_last_k.cpp" />
     <ClCompile Include="src\huawei\hj54_exp_calc\exp_calc.cpp" />
+    <ClCompile Include="src\huawei\hj67_24points\24points.cpp" />
     <ClCompile Include="src\huawei\hj97_input_nums_count\input_nums_count.cpp" />
     <ClCompile Include="src\binary_search\p34_find_ele_in_sorted_array\find_ele_in_sorted_array.cpp" />
     <ClCompile Include="src\binary_search\p69_sqrtx\sqrtx.cpp" />
