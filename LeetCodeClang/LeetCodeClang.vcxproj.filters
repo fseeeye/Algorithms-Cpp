@@ -94,6 +94,9 @@
     <ClCompile Include="src\huawei\hj43_maze\maze.cpp" />
     <ClCompile Include="src\huawei\hj67_24points\24points.cpp" />
     <ClCompile Include="src\huawei\hj107_cube_root\cube_root.cpp" />
+    <ClCompile Include="src\huawei\hjt01_footbal_match_score\footbal_match_score.cpp" />
+    <ClCompile Include="src\huawei\hjt03_min_swap\min_swap.cpp" />
+    <ClCompile Include="src\huawei\hjt02_ip_to_int\ip_to_int.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.h" />
@@ -191,5 +194,9 @@
     <ClInclude Include="src\huawei\hj43_maze\maze.h" />
     <ClInclude Include="src\huawei\hj67_24points\24points.h" />
     <ClInclude Include="src\huawei\hj107_cube_root\cube_root.h" />
+    <ClInclude Include="src\huawei\hjt01_footbal_match_score\footbal_match_score.h" />
+    <ClInclude Include="src\huawei\hjt03_min_swap\min_swap.h" />
+    <ClInclude Include="src\huawei\hjt02_ip_to_int\ip_to_int.h" />
+    <ClInclude Include="src\huawei\handle_input_output\handle_input_output.h" />
   </ItemGroup>
 </Project>
