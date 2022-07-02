@@ -5,6 +5,7 @@
 //#include "p455_assign_cookies/assign_cookies.h"
 //#include "p135_candy/candy.h"
 //#include "p435_non_overlapping_intervals/non_overlapping_intervals.h"
+#include "poffer45_lcof/lcof.h"
 
 // two pointers
 //#include "p167_two_sum_ii/two_sum_ii.h"
@@ -62,26 +63,27 @@
 //#include "p241_different_ways_to_add_parentheses/different_ways_to_add_parentheses.h"
 
 // Huawei Interview
-#include "hj01_last_word_length/last_word_length.h"
-#include "hj97_input_nums_count/input_nums_count.h"
-#include "hj02_count_char/count_char.h"
-#include "hj54_exp_calc/exp_calc.h"
-#include "hj51_linked_list_last_k/linked_list_last_k.h"
-
-#include "p3_longest_substring_without_repeating_characters/longest_substring_without_repeating_characters.h"
-#include "p30_substring_with_concatenation_of_all_words/substring_with_concatenation_of_all_words.h"
-#include "p16_3sum_closest/3sum_closest.h"
-#include "p641_design_circular_deque/design_circular_deque.h"
-#include "p946_validate_stack_sequences/validate_stack_sequences.h"
-#include "p554_brick_wall/brick_wall.h"
-#include "p494_target_sum/target_sum.h"
-#include "p1254_number_of_closed_islands/number_of_closed_islands.h"
-#include "p1091_shortest_path_in_binary_matrix/shortest_path_in_binary_matrix.h"
-#include "p752_open_the_lock/open_the_lock.h"
+//#include "hj01_last_word_length/last_word_length.h"
+//#include "hj97_input_nums_count/input_nums_count.h"
+//#include "hj02_count_char/count_char.h"
+//#include "hj54_exp_calc/exp_calc.h"
+//#include "hj51_linked_list_last_k/linked_list_last_k.h"
+//
+//#include "p3_longest_substring_without_repeating_characters/longest_substring_without_repeating_characters.h"
+//#include "p30_substring_with_concatenation_of_all_words/substring_with_concatenation_of_all_words.h"
+//#include "p16_3sum_closest/3sum_closest.h"
+//#include "p641_design_circular_deque/design_circular_deque.h"
+//#include "p946_validate_stack_sequences/validate_stack_sequences.h"
+//#include "p554_brick_wall/brick_wall.h"
+//#include "p494_target_sum/target_sum.h"
+//#include "p1254_number_of_closed_islands/number_of_closed_islands.h"
+//#include "p1091_shortest_path_in_binary_matrix/shortest_path_in_binary_matrix.h"
+//#include "p752_open_the_lock/open_the_lock.h"
 
 int main()
 {
-	Solution752::test();
+	SolutionO45::test();
+
 
 	std::cin.get();
 }

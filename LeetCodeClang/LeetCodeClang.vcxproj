@@ -46,6 +46,7 @@
     <ClInclude Include="src\greedy_algorithm\p135_candy\candy.h" />
     <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h" />
     <ClInclude Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.h" />
+    <ClInclude Include="src\greedy_algorithm\poffer45_lcof\lcof.h" />
     <ClInclude Include="src\huawei\handle_input_output\handle_input_output.h" />
     <ClInclude Include="src\huawei\hj01_last_word_length\last_word_length.h" />
     <ClInclude Include="src\huawei\hj02_count_char\count_char.h" />
@@ -146,6 +147,7 @@
     <ClCompile Include="src\greedy_algorithm\p135_candy\candy.cpp" />
     <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp" />
     <ClCompile Include="src\greedy_algorithm\p455_assign_cookies\assign_cookies.cpp" />
+    <ClCompile Include="src\greedy_algorithm\poffer45_lcof\lcof.cpp" />
     <ClCompile Include="src\huawei\hj01_last_word_length\last_word_length.cpp" />
     <ClCompile Include="src\huawei\hj02_count_char\count_char.cpp" />
     <ClCompile Include="src\huawei\hj107_cube_root\cube_root.cpp" />
