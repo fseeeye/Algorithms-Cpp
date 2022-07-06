@@ -80,9 +80,11 @@
 //#include "p1091_shortest_path_in_binary_matrix/shortest_path_in_binary_matrix.h"
 //#include "p752_open_the_lock/open_the_lock.h"
 
+#include "p503_next_greater_element_ii/next_greater_element_ii.h"
+
 int main()
 {
-	SolutionO45::test();
+	Solution503::test();
 
 
 	std::cin.get();

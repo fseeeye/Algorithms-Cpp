@@ -71,7 +71,9 @@
     <ClInclude Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.h" />
     <ClInclude Include="src\linked_list\p61_rotate_list\rotate_list.h" />
     <ClInclude Include="src\linked_list\p641_design_circular_deque\design_circular_deque.h" />
+    <ClInclude Include="src\other_structures\p503_next_greater_element_ii\next_greater_element_ii.h" />
     <ClInclude Include="src\other_structures\p729_my_calendar_i\my_calendar_i.h" />
+    <ClInclude Include="src\other_structures\p739_daily_temperatures\daily_temperatures.h" />
     <ClInclude Include="src\search\p1091_shortest_path_in_binary_matrix\shortest_path_in_binary_matrix.h" />
     <ClInclude Include="src\search\p1129_shortest_path_with_alternating_colors\shortest_path_with_alternating_colors.h" />
     <ClInclude Include="src\search\p1254_number_of_closed_islands\number_of_closed_islands.h" />
@@ -169,7 +171,9 @@
     <ClCompile Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.cpp" />
     <ClCompile Include="src\linked_list\p61_rotate_list\rotate_list.cpp" />
     <ClCompile Include="src\linked_list\p641_design_circular_deque\design_circular_deque.cpp" />
+    <ClCompile Include="src\other_structures\p503_next_greater_element_ii\next_greater_element_ii.cpp" />
     <ClCompile Include="src\other_structures\p729_my_calendar_i\my_calendar_i.cpp" />
+    <ClCompile Include="src\other_structures\p739_daily_temperatures\daily_temperatures.cpp" />
     <ClCompile Include="src\search\p1091_shortest_path_in_binary_matrix\shortest_path_in_binary_matrix.cpp" />
     <ClCompile Include="src\search\p1129_shortest_path_with_alternating_colors\shortest_path_with_alternating_colors.cpp" />
     <ClCompile Include="src\search\p1254_number_of_closed_islands\number_of_closed_islands.cpp" />
