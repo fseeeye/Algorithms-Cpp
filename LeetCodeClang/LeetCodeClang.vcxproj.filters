@@ -100,6 +100,10 @@
     <ClCompile Include="src\greedy_algorithm\poffer45_lcof\lcof.cpp" />
     <ClCompile Include="src\other_structures\p503_next_greater_element_ii\next_greater_element_ii.cpp" />
     <ClCompile Include="src\other_structures\p739_daily_temperatures\daily_temperatures.cpp" />
+    <ClCompile Include="src\other_structures\p684_redundant_connection\redundant_connection.cpp" />
+    <ClCompile Include="src\other_structures\p303_range_sum_query\range_sum_query.cpp" />
+    <ClCompile Include="src\other_structures\p304_range_sum_query_2d\range_sum_query_2d.cpp" />
+    <ClCompile Include="src\other_structures\p560_subarray_sum_equals_k\subarray_sum_equals_k.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.h" />
@@ -204,5 +208,9 @@
     <ClInclude Include="src\greedy_algorithm\poffer45_lcof\lcof.h" />
     <ClInclude Include="src\other_structures\p503_next_greater_element_ii\next_greater_element_ii.h" />
     <ClInclude Include="src\other_structures\p739_daily_temperatures\daily_temperatures.h" />
+    <ClInclude Include="src\other_structures\p684_redundant_connection\redundant_connection.h" />
+    <ClInclude Include="src\other_structures\p303_range_sum_query\range_sum_query.h" />
+    <ClInclude Include="src\other_structures\p304_range_sum_query_2d\range_sum_query_2d.h" />
+    <ClInclude Include="src\other_structures\p560_subarray_sum_equals_k\subarray_sum_equals_k.h" />
   </ItemGroup>
 </Project>
