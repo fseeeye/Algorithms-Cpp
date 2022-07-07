@@ -42,6 +42,7 @@
     <ClInclude Include="src\dynamic_programming\p72_edit_distance\edit_distance.h" />
     <ClInclude Include="src\dynamic_programming\p91_decode_ways\decode_ways.h" />
     <ClInclude Include="src\graph\p210_course_schedule_ii\course_schedule_ii.h" />
+    <ClInclude Include="src\graph\p444_sequence_reconstruction\sequence_reconstruction.h" />
     <ClInclude Include="src\graph\p785_is_graph_bipartite\is_graph_bipartite.h" />
     <ClInclude Include="src\greedy_algorithm\p135_candy\candy.h" />
     <ClInclude Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.h" />
@@ -71,6 +72,7 @@
     <ClInclude Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.h" />
     <ClInclude Include="src\linked_list\p61_rotate_list\rotate_list.h" />
     <ClInclude Include="src\linked_list\p641_design_circular_deque\design_circular_deque.h" />
+    <ClInclude Include="src\other_structures\p1109_corporate_flight_bookings\corporate_flight_bookings.h" />
     <ClInclude Include="src\other_structures\p303_range_sum_query\range_sum_query.h" />
     <ClInclude Include="src\other_structures\p304_range_sum_query_2d\range_sum_query_2d.h" />
     <ClInclude Include="src\other_structures\p503_next_greater_element_ii\next_greater_element_ii.h" />
@@ -149,6 +151,7 @@
     <ClCompile Include="src\dynamic_programming\p72_edit_distance\edit_distance.cpp" />
     <ClCompile Include="src\dynamic_programming\p91_decode_ways\decode_ways.cpp" />
     <ClCompile Include="src\graph\p210_course_schedule_ii\course_schedule_ii.cpp" />
+    <ClCompile Include="src\graph\p444_sequence_reconstruction\sequence_reconstruction.cpp" />
     <ClCompile Include="src\graph\p785_is_graph_bipartite\is_graph_bipartite.cpp" />
     <ClCompile Include="src\greedy_algorithm\p135_candy\candy.cpp" />
     <ClCompile Include="src\greedy_algorithm\p435_non_overlapping_intervals\non_overlapping_intervals.cpp" />
@@ -175,6 +178,7 @@
     <ClCompile Include="src\linked_list\p160_intersection_of_two_linked_list\intersection_of_two_linked_list.cpp" />
     <ClCompile Include="src\linked_list\p61_rotate_list\rotate_list.cpp" />
     <ClCompile Include="src\linked_list\p641_design_circular_deque\design_circular_deque.cpp" />
+    <ClCompile Include="src\other_structures\p1109_corporate_flight_bookings\corporate_flight_bookings.cpp" />
     <ClCompile Include="src\other_structures\p303_range_sum_query\range_sum_query.cpp" />
     <ClCompile Include="src\other_structures\p304_range_sum_query_2d\range_sum_query_2d.cpp" />
     <ClCompile Include="src\other_structures\p503_next_greater_element_ii\next_greater_element_ii.cpp" />

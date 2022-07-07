@@ -104,6 +104,8 @@
     <ClCompile Include="src\other_structures\p303_range_sum_query\range_sum_query.cpp" />
     <ClCompile Include="src\other_structures\p304_range_sum_query_2d\range_sum_query_2d.cpp" />
     <ClCompile Include="src\other_structures\p560_subarray_sum_equals_k\subarray_sum_equals_k.cpp" />
+    <ClCompile Include="src\other_structures\p1109_corporate_flight_bookings\corporate_flight_bookings.cpp" />
+    <ClCompile Include="src\graph\p444_sequence_reconstruction\sequence_reconstruction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\divide_conquer\p241_different_ways_to_add_parentheses\different_ways_to_add_parentheses.h" />
@@ -212,5 +214,7 @@
     <ClInclude Include="src\other_structures\p303_range_sum_query\range_sum_query.h" />
     <ClInclude Include="src\other_structures\p304_range_sum_query_2d\range_sum_query_2d.h" />
     <ClInclude Include="src\other_structures\p560_subarray_sum_equals_k\subarray_sum_equals_k.h" />
+    <ClInclude Include="src\other_structures\p1109_corporate_flight_bookings\corporate_flight_bookings.h" />
+    <ClInclude Include="src\graph\p444_sequence_reconstruction\sequence_reconstruction.h" />
   </ItemGroup>
 </Project>
