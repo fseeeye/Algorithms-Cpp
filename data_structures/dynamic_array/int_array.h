@@ -19,22 +19,22 @@ public:
 	int& operator[](uint32_t index);
 	const int& operator[](uint32_t index) const;
 
-	uint32_t Size() const
+	FORCEINLINE uint32_t Size() const
 	{
 		return m_Size;
 	}
 
-	uint32_t Capacity() const
+	FORCEINLINE uint32_t Capacity() const
 	{
 		return m_Capacity;
 	}
 
-	bool IsEmpty() const
+	FORCEINLINE bool IsEmpty() const
 	{
 		return m_Size == 0;
 	}
 
-	int At(uint32_t index) const
+	FORCEINLINE int At(uint32_t index) const
 	{
 		ASSERT(index < m_Size)
 		return m_StaticArray[index];
@@ -44,7 +44,7 @@ public:
 	void RemoveAt(uint32_t index);
 
 private:
-	void ExpandCapacity(uint32_t newCapacity);
+	void ExpandCapacity();
 
 private:
 	static int DEFAULT_CAP;

@@ -12,7 +12,7 @@ target("test_structures")
     set_group("Data Structures")
 
     -- add files
-    add_files("main.cpp")
+    add_files("test_structures.cpp")
 
     -- add deps
     add_deps("nodes", "dynamic_array")

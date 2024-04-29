@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-int IntArray::DEFAULT_CAP = 1 << 2;
+int IntArray::DEFAULT_CAP = 4;
 
 IntArray::IntArray()
 	: IntArray(DEFAULT_CAP)
@@ -72,7 +72,7 @@ void IntArray::Append(const int value)
 {
 	if (m_Size + 1 >= m_Capacity)
 	{
-		ExpandCapacity(m_Capacity << 1);
+		ExpandCapacity();
 	}
 	m_StaticArray[m_Size++] = value;
 }
@@ -84,17 +84,22 @@ void IntArray::RemoveAt(const uint32_t index)
 	--m_Size;
 }
 
-void IntArray::ExpandCapacity(uint32_t newCapacity)
+void IntArray::ExpandCapacity()
 {
-	std::cout << "IntArray::ExpandCapacity: expand array to " << newCapacity << "\n";
-	if (newCapacity == 0)
+	uint32_t newCapacity = DEFAULT_CAP;
+	if (m_Capacity > 0)
 	{
-		newCapacity = 1;
+		// Refs: DefaultCalculateSlackGrow() in UE5
+#ifdef AGGRESSIVE_MEMORY_SAVING
+		newCapacity = m_Size + m_Size / 4;
+#else
+		newCapacity = m_Size + 3 * m_Size / 8 + 16;
+#endif
 	}
+	std::cout << "IntArray::ExpandCapacity: expand array from " << m_Capacity << " to " << newCapacity << "\n";
 
 	auto newArray = std::make_unique<int[]>(newCapacity);
 	std::copy_n(m_StaticArray.get(), m_Size, newArray.get());
-
-	m_Capacity = newCapacity;
 	m_StaticArray = std::move(newArray);
+	m_Capacity = newCapacity;
 }

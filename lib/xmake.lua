@@ -1,8 +1,7 @@
 -- define target
 target("basic")
-    set_kind("static")
+    set_kind("headeronly")
 
-    add_files("common.cpp")
     add_headerfiles("common.h")
     add_includedirs(".", {public = true})
 
