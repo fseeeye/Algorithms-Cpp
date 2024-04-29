@@ -4,8 +4,7 @@
 #include <iostream>
 #include <vector>
 
-#include "Tester.h"
-#include "Structures.h"
+#include "common.h"
 
 class IntervalSearchTemp {
 public:
@@ -25,7 +24,9 @@ public:
 	int binary_search_right_bound(std::vector<int>& nums, int target);
 
 	void test() {
-		
+		std::cout << "[-] Binary Search Template\n";
+		std::vector<int> test = { 0, 2, 1, 10, 1, 3, 9, 10, 10, 3 };
+		ASSERT(binary_search(test, 3) == 5);
 		std::cout << "Interval Search Template passed!\n";
 	}
 };

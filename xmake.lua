@@ -16,7 +16,7 @@ end
 -- set warning all as error
 set_warnings("all", "error")
 
-includes("basic")
+includes("lib")
 includes("data_structures")
 includes("algorithms")
 
