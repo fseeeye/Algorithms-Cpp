@@ -1,4 +1,4 @@
-includes("dynamic_array")
+includes("array")
 
 target("nodes")
     set_kind("headeronly")
@@ -15,4 +15,4 @@ target("test_structures")
     add_files("test_structures.cpp")
 
     -- add deps
-    add_deps("nodes", "dynamic_array")
+    add_deps("nodes", "array")

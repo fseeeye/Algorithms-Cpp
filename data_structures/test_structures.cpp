@@ -1,11 +1,11 @@
 #include <iostream>
 
-#include "int_array.h"
+#include "dynamic_array.h"
 
 int main()
 {
     std::cout << "[-] Testing DynamicArray.\n";
-    auto arr = IntArray();
+    auto arr = IntDynamicArray();
     arr.Append(0);
     arr.Append(1);
     arr.Append(2);

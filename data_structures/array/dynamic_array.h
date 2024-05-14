@@ -4,17 +4,18 @@
 #include <memory>
 
 #include "common.h"
+#include "static_array.h"
 
-class IntArray
+class IntDynamicArray
 {
 public:
-	IntArray();
-	~IntArray() noexcept = default;
-	explicit IntArray(uint32_t initCapcity);
-	IntArray(const IntArray& other);
-	IntArray(IntArray&& other) noexcept;
-	IntArray& operator=(const IntArray& other);
-	IntArray& operator=(IntArray&& other) noexcept;
+	IntDynamicArray();
+	~IntDynamicArray() noexcept = default;
+	explicit IntDynamicArray(uint32_t initCapcity);
+	IntDynamicArray(const IntDynamicArray& other);
+	IntDynamicArray(IntDynamicArray&& other) noexcept;
+	IntDynamicArray& operator=(const IntDynamicArray& other);
+	IntDynamicArray& operator=(IntDynamicArray&& other) noexcept;
 
 	int& operator[](uint32_t index);
 	const int& operator[](uint32_t index) const;

@@ -4,11 +4,12 @@ My collection of algorithm and data structure solutions.
 
 ## Content List
 
-- [数据结构 - 动态数组](https://github.com/fseeeye/Algorithms-Cpp/tree/master/data_structures/dynamic_array)
+- [数据结构 - 动态数组](https://github.com/fseeeye/Algorithms-Cpp/tree/master/data_structures/array)
 - [数据结构 - 链表](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E9%93%BE%E8%A1%A8)
 - [数据结构 - 树](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E6%A0%91)
 - [数据结构 - 图](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E5%9B%BE)
-- [数据结构 - 其它](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E5%85%B6%E5%AE%83)
+- [数据结构 - 栈](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E5%9B%BE)
+- [数据结构 - 其它](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---栈)
 - [贪心算法](#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95)
 - [双指针](#%E5%8F%8C%E6%8C%87%E9%92%88)
 - [二分查找](#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE)
@@ -133,6 +134,12 @@ My collection of algorithm and data structure solutions.
 | :---: |     :----:     |     :----:    |
 |  785  | [Is Graphy Bipartite? (Medium)](./algorithms/graph/p785_is_graph_bipartite) | 二分图 |
 |  210  | [Course Schedule II (Medium)](./algorithms/graph/p210_course_schedule_ii) | 拓扑排序 |
+
+### 数据结构 - 栈
+
+|  QID  |      Name      |      Tip      |
+| :---: |     :----:     |     :----:    |
+|  946  | [Validate Stack Sequences](./algorithms/greedy_algorithm/p946_validate_stack_sequences)  | 栈 |
 
 ### 数据结构 - 其它
 
