@@ -7,4 +7,4 @@ target("array")
     add_headerfiles("*.h")
     add_includedirs(".", {public = true})
 
-    add_deps("basic")
+    add_deps("basic", "others")

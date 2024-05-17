@@ -1,37 +1,59 @@
 #include "dynamic_array.h"
+#include "vector3.h"
 
 #include <iostream>
 
-int IntDynamicArray::DEFAULT_CAP = 4;
+template <typename T>
+size_t DynamicArray<T>::DEFAULT_CAP = 2;
 
-IntDynamicArray::IntDynamicArray()
-	: IntDynamicArray(DEFAULT_CAP)
+template <typename T>
+DynamicArray<T>::DynamicArray()
+	: DynamicArray(DEFAULT_CAP)
 {
 }
 
-IntDynamicArray::IntDynamicArray(uint32_t initCapcity)
+template <typename T>
+DynamicArray<T>::~DynamicArray() noexcept
+{
+	std::cout << "[-] DynamicArray dtor\n";
+
+	// DestroyElements();
+	// DeleteMemorys();
+	ASSERT(m_StaticArray != nullptr);
+	delete[] m_StaticArray;
+	m_StaticArray = nullptr;
+	m_Size = 0;
+	m_Capacity = 0;
+}
+
+template <typename T>
+DynamicArray<T>::DynamicArray(size_t initCapcity)
 	: m_Size(0),
-	  m_Capacity(initCapcity),
-	  m_StaticArray(std::make_unique<int[]>(initCapcity))
+	m_Capacity(initCapcity),
+	m_StaticArray(new T[initCapcity])
 {
+	std::cout << "[-] DynamicArray ctor\n";
 }
 
-IntDynamicArray::IntDynamicArray(const IntDynamicArray& other)
+template <typename T>
+DynamicArray<T>::DynamicArray(const DynamicArray& other)
 	: m_Size(other.m_Size),
-	  m_Capacity(other.m_Capacity),
-	  m_StaticArray(std::make_unique<int[]>(other.Capacity()))
+	m_Capacity(other.m_Capacity),
+	m_StaticArray(std::make_unique<int[]>(other.Capacity()))
 {
 	std::copy_n(other.m_StaticArray.get(), other.m_Size, m_StaticArray.get());
 }
 
-IntDynamicArray::IntDynamicArray(IntDynamicArray&& other) noexcept
+template <typename T>
+DynamicArray<T>::DynamicArray(DynamicArray&& other) noexcept
 	: m_Size(other.m_Size),
-	  m_Capacity(other.m_Capacity),
-	  m_StaticArray(std::move(other.m_StaticArray))
+	m_Capacity(other.m_Capacity),
+	m_StaticArray(std::move(other.m_StaticArray))
 {
 }
 
-IntDynamicArray& IntDynamicArray::operator=(const IntDynamicArray& other)
+template <typename T>
+DynamicArray<T>& DynamicArray<T>::operator=(const DynamicArray& other)
 {
 	if (this == &other)
 		return *this;
@@ -44,7 +66,8 @@ IntDynamicArray& IntDynamicArray::operator=(const IntDynamicArray& other)
 	return *this;
 }
 
-IntDynamicArray& IntDynamicArray::operator=(IntDynamicArray&& other) noexcept
+template <typename T>
+DynamicArray<T>& DynamicArray<T>::operator=(DynamicArray&& other) noexcept
 {
 	if (this == &other)
 		return *this;
@@ -56,37 +79,84 @@ IntDynamicArray& IntDynamicArray::operator=(IntDynamicArray&& other) noexcept
 	return *this;
 }
 
-int& IntDynamicArray::operator[](uint32_t index)
+template <typename T>
+T& DynamicArray<T>::operator[](size_t index)
 {
 	ASSERT(index < m_Size)
-	return m_StaticArray[index];
+		return m_StaticArray[index];
 }
 
-const int& IntDynamicArray::operator[](uint32_t index) const
+template <typename T>
+const T& DynamicArray<T>::operator[](size_t index) const
 {
 	ASSERT(index < m_Size)
-	return m_StaticArray[index];
+		return m_StaticArray[index];
 }
 
-void IntDynamicArray::Append(const int value)
+template <typename T>
+void DynamicArray<T>::PushBack(const T& value)
 {
-	if (m_Size + 1 >= m_Capacity)
+	if (m_Size >= m_Capacity)
 	{
-		ExpandCapacity();
+		ReAlloc();
 	}
 	m_StaticArray[m_Size++] = value;
 }
 
-void IntDynamicArray::RemoveAt(const uint32_t index)
+template <typename T>
+void DynamicArray<T>::PushBack(T&& value)
 {
-	ASSERT(index < m_Size)
-	std::move(m_StaticArray.get() + index + 1, m_StaticArray.get() + m_Size, m_StaticArray.get() + index);
+	if (m_Size >= m_Capacity)
+	{
+		ReAlloc();
+	}
+	m_StaticArray[m_Size++] = std::move(value);
+}
+
+template <typename T>
+template <typename ... Args>
+T& DynamicArray<T>::EmplaceBack(Args&&... args)
+{
+	if (m_Size >= m_Capacity)
+	{
+		ReAlloc();
+	}
+	new (&m_StaticArray[m_Size]) T(std::forward<Args>(args)...);
+	return m_StaticArray[m_Size++];
+}
+
+template <typename T>
+void DynamicArray<T>::PopBack()
+{
+	if (m_Size > 0)
+	{
+		// call destructor, but don't free memory
+		m_StaticArray[--m_Size].~T();
+	}
+}
+
+template <typename T>
+void DynamicArray<T>::Clear()
+{
+	DestroyElements();
+	m_Size = 0;
+}
+
+template <typename T>
+void DynamicArray<T>::RemoveAt(const uint32_t index)
+{
+	ASSERT(index < m_Size);
+	std::move(m_StaticArray + index + 1, m_StaticArray + m_Size, m_StaticArray + index);
 	--m_Size;
 }
 
-void IntDynamicArray::ExpandCapacity()
+template <typename T>
+void DynamicArray<T>::ReAlloc()
 {
-	uint32_t newCapacity = DEFAULT_CAP;
+	ASSERT(m_StaticArray != nullptr);
+
+	// 0. determine the new capacity
+	size_t newCapacity = DEFAULT_CAP;
 	if (m_Capacity > 0)
 	{
 		// Refs: DefaultCalculateSlackGrow() in UE5
@@ -96,10 +166,78 @@ void IntDynamicArray::ExpandCapacity()
 		newCapacity = m_Size + 3 * m_Size / 8 + 16;
 #endif
 	}
-	std::cout << "IntArray::ExpandCapacity: expand array from " << m_Capacity << " to " << newCapacity << "\n";
+	std::cout << "[-] DynamicArray::ReAlloc: grow/shrink array from " << m_Capacity << " to " << newCapacity << "\n";
 
-	auto newArray = std::make_unique<int[]>(newCapacity);
-	std::copy_n(m_StaticArray.get(), m_Size, newArray.get());
-	m_StaticArray = std::move(newArray);
+	// 1. allocate a new block of memory (DO NOT call constructor!)
+	// T* newArray = static_cast<T*>(::operator new(newCapacity * sizeof(T)));
+	T* newArray = new T[newCapacity];
+
+	// 2. copy/move the old elements into new block. (use operator= to hit copy constructor, instead of memory copy)
+	size_t moveSize = std::min(m_Size, newCapacity);
+	for (size_t i = 0; i < moveSize; i++)
+	{
+		newArray[i] = std::move(m_StaticArray[i]);
+	}
+
+	// 3. delete the old block.
+	// DestroyElements();
+	// DeleteMemorys();
+	delete[] m_StaticArray;
+	m_StaticArray = nullptr;
+
+	// 4. set the new data and capacity
+	m_StaticArray = newArray;
 	m_Capacity = newCapacity;
+	std::cout << "[-] DynamicArray::ReAlloc: done.\n";
+}
+
+template <typename T>
+void DynamicArray<T>::DestroyElements()
+{
+	for (size_t i = 0; i < m_Size; i++)
+	{
+		// call destructor, but don't free memory
+		m_StaticArray[i].~T();
+	}
+}
+
+template <typename T>
+void DynamicArray<T>::DeleteMemorys() const
+{
+	::operator delete(m_StaticArray, m_Capacity * sizeof(T));
+}
+
+template <typename T>
+T* DynamicArray<T>::AllocMemorys()
+{
+	return static_cast<T*>(::operator new(m_Capacity * sizeof(T)));
+}
+
+void TestDynamicArray()
+{
+	std::cout << "[-] Testing DynamicArray.\n";
+	auto arr = DynamicArray<Vector3>();
+	auto ele0 = Vector3(6.0f);
+	arr.EmplaceBack();
+	arr.EmplaceBack(1.0f);
+	arr.EmplaceBack(2.0f, 3.0f, 4.0f);
+	arr.EmplaceBack(Vector3(5.0f));
+	arr.PushBack(Vector3(6.0f));
+	arr.RemoveAt(1);
+	arr.PopBack();
+	ASSERT(arr.Size() == 3);
+
+	arr.Clear();
+	arr.EmplaceBack(2.0f);
+	arr.EmplaceBack(3.0f);
+	ASSERT(arr.Size() == 2);
+
+	std::cout << "[-] Final Array:";
+	for (size_t i = 0; i < arr.Size(); i++)
+	{
+		std::cout << "(" << arr[i].x << "," << arr[i].y << "," << arr[i].z << ") ";
+	}
+	std::cout << "\n";
+
+	std::cout << "[-] Done.\n";
 }

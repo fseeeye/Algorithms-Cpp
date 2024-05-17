@@ -35,7 +35,7 @@ private:
 	T m_Array[S];
 };
 
-void test() {
+inline void TestStaticArray() {
 	constexpr int size = 5;
 	StaticArray<int, size> array;
 	const auto& arrayRef = array;
