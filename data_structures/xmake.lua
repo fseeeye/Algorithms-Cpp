@@ -1,4 +1,4 @@
-add_requires("vcpkg::spdlog", {alias = "spdlog"})
+add_requires("spdlog 1.14")
 
 includes("others", "array")
 
