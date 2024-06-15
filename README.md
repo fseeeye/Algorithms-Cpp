@@ -4,13 +4,20 @@ My collection of algorithm and data structure solutions.
 
 ## Get Started
 
-1. Install vcpkg : 
+1. (Optional)Install vcpkg : 
     1. `git clone https://github.com/microsoft/vcpkg.git`
     2. `cd vcpkg`
     3. `.\bootstrap-vcpkg.bat`
     4. add install path to system environment variable `VCPKG_ROOT` : `set VCPKG_ROOT="C:\path\to\vcpkg"; set PATH=%VCPKG_ROOT%;%PATH%`
-2. Generate Visual Studio project : `xmake project -k vsxmake -m "debug,release"`
-3. Open Visual Studio project and try to build it.
+2. Install xmake : `winget install xmake`
+3. Develop with VS:
+     1. Run `xmake project -k vsxmake -m "debug,release"`
+     2. Open the generated VS solution file in `vsxmake20xx` folder.
+     3. Choose **Release/Debug x64** and Build in Visual Studio.
+4. Develop with VSCode:
+     1. (Optional) Set Debug/Release mode: `xmake config -m [debug|release]` 
+     2. Build: `xmake -v`
+     3. Run: `xmake run xxx [-d]`
 
 ## Content List
 
