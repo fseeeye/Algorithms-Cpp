@@ -1,3 +1,5 @@
+add_requires("vcpkg::spdlog", {alias = "spdlog"})
+
 includes("others", "array")
 
 target("test_structures")
@@ -9,3 +11,4 @@ target("test_structures")
 
     -- add deps
     add_deps("others", "array")
+    add_packages("spdlog")

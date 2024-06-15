@@ -8,9 +8,9 @@ set_languages("c++20")
 add_rules("plugin.vsxmake.autoupdate")
 add_rules("mode.debug", "mode.release")
 if is_mode("debug") then
-    set_runtimes("MTd") -- msvc runtime library: multithreaded static library (debug)
+    set_runtimes("MDd") -- msvc runtime library: multithreaded dynamic library (debug)
 else
-    set_runtimes("MT") -- msvc runtime library: multithreaded static library
+    set_runtimes("MD") -- msvc runtime library: multithreaded dynamic library
 end
 
 -- set warning all as error

@@ -2,6 +2,16 @@
 
 My collection of algorithm and data structure solutions.
 
+## Get Started
+
+1. Install vcpkg : 
+    1. `git clone https://github.com/microsoft/vcpkg.git`
+    2. `cd vcpkg`
+    3. `.\bootstrap-vcpkg.bat`
+    4. add install path to system environment variable `VCPKG_ROOT` : `set VCPKG_ROOT="C:\path\to\vcpkg"; set PATH=%VCPKG_ROOT%;%PATH%`
+2. Generate Visual Studio project : `xmake project -k vsxmake -m "debug,release"`
+3. Open Visual Studio project and try to build it.
+
 ## Content List
 
 - [数据结构 - 动态数组](https://github.com/fseeeye/Algorithms-Cpp/tree/master/data_structures/array)
