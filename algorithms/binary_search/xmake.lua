@@ -5,7 +5,7 @@ target("binary_search")
 
     -- add files
     add_files("main.cpp")
-    add_files("template/*.cpp")
+    add_files("template/*.cpp|*/*_test.cpp")
     add_headerfiles("template/*.h")
     add_filegroups("Header Files", {rootdir = "./", files = "**/*.h"})
     add_filegroups("Source Files", {rootdir = "./", files = "**/*.cpp"})

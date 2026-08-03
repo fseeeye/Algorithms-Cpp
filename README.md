@@ -19,6 +19,66 @@ My collection of algorithm and data structure solutions.
      2. Build: `xmake -v`
      3. Run: `xmake run xxx [-d]`
 
+## Exercise Workflow
+
+Each Exercise is built as an independent Catch2 test executable. Xmake manages Catch2 `3.15.x`, discovers Exercise directories recursively, and creates one target for every directory containing at least one `*_test.cpp`. Every Exercise depends on the `basic` support library and is excluded from the default `xmake` build.
+
+Create a Problem Exercise while retaining the problem's native public API:
+
+```powershell
+xmake new --kind=problem --domain=algorithm --root=algorithms/sort --id=LC215 --slug=kth_largest_element
+```
+
+This maps to directory and target `lc215_kth_largest_element`, namespace `AlgoCpp::Problem::Algorithm::LC215`, and Catch2 tags `[problem][algorithm][lc215]`.
+
+Create a reusable Template Exercise without an external problem ID:
+
+```powershell
+xmake new --kind=template --domain=data_structure --root=data_structures/array --slug=dynamic_array
+```
+
+This maps to directory and target `ds_dynamic_array`, namespace `AlgoCpp::Template::DataStructure::DynamicArray`, and tags `[template][data_structure][dynamic_array]`. The initial scaffold contains commented interface examples and a failing placeholder test; replace that placeholder with real assertions after choosing the Exercise's natural API.
+
+Safe slug formatting is normalized to lower `snake_case` and reported. Ambiguous or unsafe input, an unsupported root/domain, an existing target, or a duplicate Problem ID causes `xmake new` to fail without overwriting files.
+
+A typical Exercise is:
+
+```text
+lc215_kth_largest_element/
+├── kth_largest_element.h
+├── kth_largest_element.cpp
+├── kth_largest_element_test.cpp
+└── duplicates_test.cpp          # optional; any number of *_test.cpp files
+```
+
+Use the same Catch2 `TEST_CASE` form for Huawei, LeetCode, and Template Exercises; only the public API inside the assertion changes:
+
+```cpp
+TEST_CASE("LC215 finds the kth largest element", "[problem][algorithm][lc215]")
+{
+    Solution solution;
+    std::vector<int> nums{3, 2, 1, 5, 6, 4};
+    REQUIRE(solution.findKthLargest(nums, 2) == 5);
+}
+```
+
+```cpp
+TEST_CASE("HJ02 counts characters without case sensitivity", "[problem][algorithm][hj02]")
+{
+    REQUIRE(CountChar("ABCabc", 'A') == 2);
+}
+```
+
+Run one Exercise or all migrated Exercise Tests:
+
+```powershell
+xmake run lc215_kth_largest_element
+xmake run hj02_count_char
+xmake test
+```
+
+Migration is currently incremental. LC215 and HJ02 use this layout; legacy category executables remain available and explicitly exclude `*_test.cpp`. Solution List paths will be migrated together with their Exercises rather than rewritten in bulk ahead of the files.
+
 ## Content List
 
 - [数据结构 - 动态数组](https://github.com/fseeeye/Algorithms-Cpp/tree/master/data_structures/array)
@@ -69,7 +129,7 @@ My collection of algorithm and data structure solutions.
 
 |  QID  |      Name      |      Tip      |
 | :---: |     :----:     |     :----:    |
-|  215  | [Kth Largest Element (Medium)](./algorithms/sort/p215_kth_largest_element)  | 快速选择 |
+|  215  | [Kth Largest Element (Medium)](./algorithms/sort/lc215_kth_largest_element)  | 快速选择 |
 |  347  | [Top k Frequent Elements (Medium)](./algorithms/sort/p347_top_k_frequent_elements)  | 桶排序 |
 
 ### 优先搜索

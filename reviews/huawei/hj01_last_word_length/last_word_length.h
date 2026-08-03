@@ -4,7 +4,7 @@
 #include <iostream>
 
 #include "common.h"
-#include "Structures.h"
+#include "structures.h"
 
 class HJ01 {
 public:

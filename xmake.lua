@@ -16,9 +16,13 @@ end
 -- set warning all as error
 set_warnings("all", "error")
 
+add_requires("catch2 3.15.x")
+
 includes("lib")
 includes("data_structures")
 includes("algorithms")
+includes("reviews")
+includes("xmake")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
