@@ -1,8 +1,8 @@
-#include "last_word_length.h"
+#include "template_hj.h"
 
 int main()
 {
-    HJ01::native_main();
+    HJ00::native_main();
 
     return 0;
 }

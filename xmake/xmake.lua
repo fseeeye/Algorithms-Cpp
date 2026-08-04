@@ -1,8 +1,8 @@
 local projectDir = path.directory(os.scriptdir())
 local exerciseRoots = {
-    {directory = "algorithms", group = "Exercises/Algorithms"},
-    {directory = "reviews", group = "Exercises/Reviews"},
-    {directory = "data_structures", group = "Exercises/Data Structures"}
+    {directory = "algorithms", group = "Algorithms"},
+    {directory = "data_structures", group = "Data Structures"},
+    {directory = "reviews", group = "Reviews"}
 }
 
 local exerciseDirectories = {}

@@ -11,7 +11,7 @@ target("huawei")
     add_filegroups("Private", {rootdir = "./", files = "**/*.cpp"})
 
     -- add include search directories
-    add_includedirs("hj01_last_word_length")
+    add_includedirs("template_hj")
 
     -- set optimization: none, faster, fastest, smallest
     set_optimize("none")

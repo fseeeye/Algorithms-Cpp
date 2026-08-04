@@ -7,17 +7,19 @@ My collection of algorithm and data structure solutions.
 1. (Optional)Install vcpkg : 
     1. `git clone https://github.com/microsoft/vcpkg.git`
     2. `cd vcpkg`
-    3. `.\bootstrap-vcpkg.bat`
+    3. `.\bootstrap-vcpkg.bat -disableMetrics`
     4. add install path to system environment variable `VCPKG_ROOT` : `set VCPKG_ROOT="C:\path\to\vcpkg"; set PATH=%VCPKG_ROOT%;%PATH%`
-2. Install xmake : `winget install xmake`
+2. Install xmake : `winget install --id Xmake-io.Xmake`
 3. Develop with VS:
      1. Run `xmake project -k vsxmake -m "debug,release"`
      2. Open the generated VS solution file in `vsxmake20xx` folder.
      3. Choose **Release/Debug x64** and Build in Visual Studio.
 4. Develop with VSCode:
      1. (Optional) Set Debug/Release mode: `xmake config -m [debug|release]` 
+     2. (Optional) Make compile_commands.json file: `xmake project -k compile_commands .vscode`
      2. Build: `xmake -v`
      3. Run: `xmake run xxx [-d]`
+5. Next Step : [#exercise-workflow]
 
 ## Exercise Workflow
 
@@ -73,7 +75,6 @@ Run one Exercise or all migrated Exercise Tests:
 
 ```powershell
 xmake run lc215_kth_largest_element
-xmake run hj02_count_char
 xmake test
 ```
 

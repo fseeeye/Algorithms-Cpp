@@ -42,3 +42,12 @@ vsxmake*/
 *.exe
 *.out
 *.app
+
+### AI ###
+.agents/
+.codex/
+.claude/
+docs/
+AGENTS.md
+CONTEXT.md
+skills-lock.json

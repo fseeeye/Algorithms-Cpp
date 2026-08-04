@@ -6,7 +6,7 @@
 #include <vector>
 
 #include "common.h"
-#include "Structures.h"
+#include "structures.h"
 
 class Solution016 {
 public:

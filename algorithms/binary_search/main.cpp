@@ -1,4 +1,4 @@
-#include "template.h"
+#include "template_binary_search.h"
 
 int main()
 {

@@ -5,13 +5,13 @@ target("binary_search")
 
     -- add files
     add_files("main.cpp")
-    add_files("template/*.cpp|*/*_test.cpp")
-    add_headerfiles("template/*.h")
-    add_filegroups("Header Files", {rootdir = "./", files = "**/*.h"})
-    add_filegroups("Source Files", {rootdir = "./", files = "**/*.cpp"})
+    add_files("*/*.cpp|*/*_test.cpp")
+    add_headerfiles("*/*.h")
+    add_filegroups("Public", {rootdir = "./", files = "**/*.h"})
+    add_filegroups("Private", {rootdir = "./", files = "**/*.cpp"})
 
     -- add include search directories
-    add_includedirs("template")
+    add_includedirs("template_binary_search")
 
     -- set optimization: none, faster, fastest, smallest
     set_optimize("none")

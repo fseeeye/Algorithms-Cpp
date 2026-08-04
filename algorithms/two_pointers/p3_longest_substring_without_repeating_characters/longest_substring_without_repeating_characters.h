@@ -5,7 +5,7 @@
 #include <iostream>
 
 #include "common.h"
-#include "Structures.h"
+#include "structures.h"
 
 class Solution03 {
 public:
