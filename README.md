@@ -52,7 +52,7 @@ lc215_kth_largest_element/
 Use the same Catch2 `TEST_CASE` form for Huawei, LeetCode, and Template Exercises; invoke each Exercise through its natural public API:
 
 ```cpp
-TEST_CASE("LC215 finds the kth largest element", "[problem][algorithm][lc215]")
+TEST_CASE("LC215 finds the kth largest element", "[problem][algorithm][sort][lc215]")
 {
     Solution solution;
     std::vector<int> nums{3, 2, 1, 5, 6, 4};
