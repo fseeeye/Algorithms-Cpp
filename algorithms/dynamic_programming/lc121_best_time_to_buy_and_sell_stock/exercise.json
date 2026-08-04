@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC121",
+  "name": "Best Time to Buy and Sell Stock",
+  "difficulty": "Easy",
+  "tip": "股票交易问题",
+  "url": "https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/"
+}

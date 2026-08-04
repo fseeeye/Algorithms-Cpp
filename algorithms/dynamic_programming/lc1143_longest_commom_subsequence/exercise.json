@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC1143",
+  "name": "Logest Common Subsequence",
+  "difficulty": "Medium",
+  "tip": "子序列问题",
+  "url": "https://leetcode-cn.com/problems/longest-common-subsequence/"
+}

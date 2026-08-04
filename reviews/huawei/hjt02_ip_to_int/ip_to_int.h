@@ -1,4 +1,4 @@
-﻿// 字符串
+// 字符串
 //题目描述
 //
 //存在一种虚拟IPv4地址，由4小节组成，每节的范围为0~128，以#号间隔，格式如下：
@@ -42,6 +42,9 @@
 
 #include "common.h"
 
+namespace AlgoCpp::Problem::Review::HJT02
+{
+
 class HJT02 {
 public:
 	static void native_main();
@@ -63,11 +66,6 @@ public:
 		}
 	}
 
-	static void test() {
-		std::cout << "Solution start.\n";
-
-		native_main();
-
-		std::cout << "\nSolution done.\n";
-	}
 };
+
+} // namespace AlgoCpp::Problem::Review::HJT02

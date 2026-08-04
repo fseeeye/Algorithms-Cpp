@@ -1,4 +1,7 @@
-﻿#include "24points.h"
+#include "24points.h"
+
+namespace AlgoCpp::Problem::Review::HJ67
+{
 
 void HJ67::native_main()
 {
@@ -42,3 +45,5 @@ bool HJ67::dfsRecurse(std::vector<float> nums, float sum)
 
 	return false;
 }
+
+} // namespace AlgoCpp::Problem::Review::HJ67

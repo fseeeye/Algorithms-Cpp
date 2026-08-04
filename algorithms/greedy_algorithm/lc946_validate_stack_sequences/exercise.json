@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC946",
+  "name": "Validate Stack Sequences",
+  "difficulty": "",
+  "tip": "栈",
+  "url": "https://leetcode-cn.com/problems/validate-stack-sequences/"
+}

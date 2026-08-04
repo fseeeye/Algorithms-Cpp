@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC309",
+  "name": "Best Time to Buy and Sell Stock with Cooldown",
+  "difficulty": "Medium",
+  "tip": "股票交易问题",
+  "url": "https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/"
+}

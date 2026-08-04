@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC51",
+  "name": "N-Queens",
+  "difficulty": "Hard",
+  "tip": "回溯法",
+  "url": "https://leetcode-cn.com/problems/n-queens/"
+}

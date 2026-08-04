@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC64",
+  "name": "Minimum Path Sum",
+  "difficulty": "Medium",
+  "tip": "二维",
+  "url": "https://leetcode-cn.com/problems/minimum-path-sum/"
+}

@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-namespace AlgoCpp::Problem::Algorithm::HJ02
+namespace AlgoCpp::Problem::Review::HJ02
 {
 	namespace
 	{
@@ -39,4 +39,4 @@ namespace AlgoCpp::Problem::Algorithm::HJ02
 		std::cout << CountChar(input, target);
 	}
 
-} // namespace AlgoCpp::Problem::Algorithm::HJ02
+} // namespace AlgoCpp::Problem::Review::HJ02

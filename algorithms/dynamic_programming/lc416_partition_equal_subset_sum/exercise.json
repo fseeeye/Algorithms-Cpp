@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC416",
+  "name": "Partition Equal Subset Sum",
+  "difficulty": "Medium",
+  "tip": "背包问题",
+  "url": "https://leetcode-cn.com/problems/partition-equal-subset-sum/"
+}

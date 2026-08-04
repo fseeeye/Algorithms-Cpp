@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC417",
+  "name": "Pacific Atlantic Waterflow",
+  "difficulty": "Medium",
+  "tip": "深度优先搜索",
+  "url": "https://leetcode-cn.com/problems/pacific-atlantic-water-flow/"
+}

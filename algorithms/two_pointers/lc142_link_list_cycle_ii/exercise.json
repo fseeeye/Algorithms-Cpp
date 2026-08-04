@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC142",
+  "name": "Link List Cycle II",
+  "difficulty": "Medium",
+  "tip": "快慢指针",
+  "url": "https://leetcode-cn.com/problems/linked-list-cycle-ii/"
+}

@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC77",
+  "name": "Combinations",
+  "difficulty": "Medium",
+  "tip": "回溯法",
+  "url": "https://leetcode-cn.com/problems/.../"
+}

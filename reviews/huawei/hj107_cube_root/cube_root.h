@@ -1,19 +1,9 @@
-﻿// 二分法
 #pragma once
 
-#include <bits/stdc++.h>
+namespace AlgoCpp::Problem::Review::HJ107
+{
 
-#include "common.h"
+double CubeRoot(double value);
+void native_main();
 
-class HJ107 {
-public:
-	static void native_main();
-
-	static void test() {
-		std::cout << "Solution 107 start.\n";
-
-		native_main();
-
-		std::cout << "\nSolution 107 done.\n";
-	}
-};
+} // namespace AlgoCpp::Problem::Review::HJ107

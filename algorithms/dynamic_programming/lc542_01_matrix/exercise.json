@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC542",
+  "name": "0-1 Matrix",
+  "difficulty": "Medium",
+  "tip": "二维",
+  "url": "https://leetcode-cn.com/problems/01-matrix/"
+}

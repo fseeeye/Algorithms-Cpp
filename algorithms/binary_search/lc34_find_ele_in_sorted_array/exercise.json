@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC34",
+  "name": "Find First and Last Position of Element in Sorted Array",
+  "difficulty": "Medium",
+  "tip": "查找区间",
+  "url": "https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+}

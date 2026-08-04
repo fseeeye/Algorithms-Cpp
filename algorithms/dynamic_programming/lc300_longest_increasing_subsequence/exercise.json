@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC300",
+  "name": "Logest Increasing Subsequence",
+  "difficulty": "Medium",
+  "tip": "子序列问题",
+  "url": "https://leetcode-cn.com/problems/longest-increasing-subsequence/"
+}

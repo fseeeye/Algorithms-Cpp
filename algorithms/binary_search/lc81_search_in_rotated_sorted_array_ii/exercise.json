@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC81",
+  "name": "Search In Rotated Sorted Array II",
+  "difficulty": "Medium",
+  "tip": "旋转数组",
+  "url": "https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/"
+}

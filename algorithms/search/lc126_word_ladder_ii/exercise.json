@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC126",
+  "name": "Word Ladder II",
+  "difficulty": "Hard",
+  "tip": "广度优先搜索",
+  "url": "https://leetcode-cn.com/problems/word-ladder-ii/"
+}

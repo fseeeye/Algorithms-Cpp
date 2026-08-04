@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC347",
+  "name": "Top k Frequent Elements",
+  "difficulty": "Medium",
+  "tip": "桶排序",
+  "url": "https://leetcode-cn.com/problems/top-k-frequent-elements/"
+}

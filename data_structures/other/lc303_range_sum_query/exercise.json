@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC303",
+  "name": "Range Sum Query",
+  "difficulty": "",
+  "tip": "",
+  "url": "https://leetcode.com/problems/range-sum-query-immutable/"
+}

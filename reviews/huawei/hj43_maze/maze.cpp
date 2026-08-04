@@ -1,4 +1,7 @@
-﻿#include "maze.h"
+#include "maze.h"
+
+namespace AlgoCpp::Problem::Review::HJ43
+{
 
 std::vector<int> HJ43::dirs = { -1, 0, 1, 0, -1 };
 
@@ -93,3 +96,5 @@ void HJ43::native_main()
 		printf("(%i,%i)\n", x, y);
 	}
 }
+
+} // namespace AlgoCpp::Problem::Review::HJ43

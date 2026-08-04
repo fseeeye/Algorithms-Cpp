@@ -1,4 +1,7 @@
-﻿#include "min_swap.h"
+#include "min_swap.h"
+
+namespace AlgoCpp::Problem::Review::HJT03
+{
 
 void HJT03::native_main()
 {
@@ -63,3 +66,5 @@ int HJT03::minTimes(std::vector<int>& nums, int k)
 
 	return rst == INT_MAX ? 0 : rst;
 }
+
+} // namespace AlgoCpp::Problem::Review::HJT03

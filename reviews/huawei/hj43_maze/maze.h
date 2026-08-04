@@ -1,9 +1,12 @@
-﻿// BFS
+// BFS
 #pragma once
 
 #include <bits/stdc++.h>
 
 #include "common.h"
+
+namespace AlgoCpp::Problem::Review::HJ43
+{
 
 class HJ43 {
 	struct Node {
@@ -23,11 +26,6 @@ public:
 
 	static std::vector<std::pair<int, int>> bfs(std::vector<std::vector<int>>& grid, int n, int m);
 
-	static void test() {
-		std::cout << "Solution 43 start.\n";
-
-		native_main();
-
-		std::cout << "\nSolution 43 done.\n";
-	}
 };
+
+} // namespace AlgoCpp::Problem::Review::HJ43

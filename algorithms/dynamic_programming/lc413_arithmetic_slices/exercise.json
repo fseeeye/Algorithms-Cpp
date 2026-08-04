@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC413",
+  "name": "Arithmetic Slices",
+  "difficulty": "Medium",
+  "tip": "一维",
+  "url": "https://leetcode-cn.com/problems/arithmetic-slices/"
+}

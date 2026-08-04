@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC435",
+  "name": "Non-Overlapping Intervals",
+  "difficulty": "Medium",
+  "tip": "区间问题",
+  "url": "https://leetcode-cn.com/problems/non-overlapping-intervals/"
+}

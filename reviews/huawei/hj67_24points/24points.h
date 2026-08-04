@@ -1,9 +1,12 @@
-﻿// DFS
+// DFS
 #pragma once
 
 #include <bits/stdc++.h>
 
 #include "common.h"
+
+namespace AlgoCpp::Problem::Review::HJ67
+{
 
 class HJ67 {
 public:
@@ -11,11 +14,6 @@ public:
 
 	static bool dfsRecurse(std::vector<float> nums, float sum);
 
-	static void test() {
-		std::cout << "Solution 67 start.\n";
-
-		native_main();
-
-		std::cout << "\nSolution 67 done.\n";
-	}
 };
+
+} // namespace AlgoCpp::Problem::Review::HJ67

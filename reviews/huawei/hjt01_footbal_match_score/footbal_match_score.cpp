@@ -1,4 +1,7 @@
-﻿#include "footbal_match_score.h"
+#include "footbal_match_score.h"
+
+namespace AlgoCpp::Problem::Review::HJT01
+{
 
 void HJT01::native_main()
 {
@@ -69,3 +72,5 @@ std::vector<std::pair<std::string, int>> HJT01::sort(std::vector<std::string>& i
 
 	return rst;
 }
+
+} // namespace AlgoCpp::Problem::Review::HJT01

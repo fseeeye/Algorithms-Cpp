@@ -4,31 +4,26 @@ My collection of algorithm and data structure solutions.
 
 ## Get Started
 
-1. (Optional)Install vcpkg : 
-    1. `git clone https://github.com/microsoft/vcpkg.git`
-    2. `cd vcpkg`
-    3. `.\bootstrap-vcpkg.bat -disableMetrics`
-    4. add install path to system environment variable `VCPKG_ROOT` : `set VCPKG_ROOT="C:\path\to\vcpkg"; set PATH=%VCPKG_ROOT%;%PATH%`
-2. Install xmake : `winget install --id Xmake-io.Xmake`
-3. Develop with VS:
-     1. Run `xmake project -k vsxmake -m "debug,release"`
-     2. Open the generated VS solution file in `vsxmake20xx` folder.
-     3. Choose **Release/Debug x64** and Build in Visual Studio.
-4. Develop with VSCode:
-     1. (Optional) Set Debug/Release mode: `xmake config -m [debug|release]` 
-     2. (Optional) Make compile_commands.json file: `xmake project -k compile_commands .vscode`
-     2. Build: `xmake -v`
-     3. Run: `xmake run xxx [-d]`
-5. Next Step : [#exercise-workflow]
+Install [Xmake](https://xmake.io), configure the repository, then run an Exercise target:
+
+```powershell
+xmake f -m debug -y
+xmake build lc215_kth_largest_element
+xmake run lc215_kth_largest_element
+```
+
+Generate a Visual Studio solution with `xmake project -k vsxmake -m "debug,release"`. Exercise projects are grouped by their source path, such as `Algorithms/binary_search`, and source, header, metadata, and test files appear directly beneath their target.
 
 ## Exercise Workflow
 
-Each Exercise is built as an independent Catch2 test executable. Xmake manages Catch2 `3.15.x`, discovers Exercise directories recursively, and creates one target for every directory containing at least one `*_test.cpp`. Every Exercise depends on the `basic` support library and is excluded from the default `xmake` build.
+Each Exercise is an independent Catch2 test executable. Xmake manages Catch2 `3.15.x`, discovers Exercise directories recursively, and creates one target for every valid `exercise.json` plus `*_test.cpp` pair. Every Exercise depends on the `basic` support library and is excluded from the default build.
 
 Create a Problem Exercise while retaining the problem's native public API:
 
 ```powershell
-xmake new --kind=problem --domain=algorithm --root=algorithms/sort --id=LC215 --slug=kth_largest_element
+xmake new --kind=problem --root=algorithms/sort --id=LC215 --slug=kth_largest_element `
+  --name="Kth Largest Element" --difficulty=Medium `
+  --tip="Quick select" --url=https://leetcode.com/problems/kth-largest-element-in-an-array/
 ```
 
 This maps to directory and target `lc215_kth_largest_element`, namespace `AlgoCpp::Problem::Algorithm::LC215`, and Catch2 tags `[problem][algorithm][lc215]`.
@@ -36,12 +31,12 @@ This maps to directory and target `lc215_kth_largest_element`, namespace `AlgoCp
 Create a reusable Template Exercise without an external problem ID:
 
 ```powershell
-xmake new --kind=template --domain=data_structure --root=data_structures/array --slug=dynamic_array
+xmake new --kind=template --root=data_structures/array --slug=dynamic_array
 ```
 
 This maps to directory and target `ds_dynamic_array`, namespace `AlgoCpp::Template::DataStructure::DynamicArray`, and tags `[template][data_structure][dynamic_array]`. The initial scaffold contains commented interface examples and a failing placeholder test; replace that placeholder with real assertions after choosing the Exercise's natural API.
 
-Safe slug formatting is normalized to lower `snake_case` and reported. Ambiguous or unsafe input, an unsupported root/domain, an existing target, or a duplicate Problem ID causes `xmake new` to fail without overwriting files.
+The top-level root determines the namespace domain: `algorithms` → `Algorithm`, `data_structures` → `DataStructure`, and `reviews` → `Review`. Problem IDs and slugs are safely normalized and reported. Unsafe input, an unsupported root, an existing target, or a duplicate Problem ID fails without leaving a partial Exercise. `--url` is optional for both Problem and Template Exercises; when supplied, it is stored in metadata and emitted once as `// refs : URL` above the generated header.
 
 A typical Exercise is:
 
@@ -53,7 +48,7 @@ lc215_kth_largest_element/
 └── duplicates_test.cpp          # optional; any number of *_test.cpp files
 ```
 
-Use the same Catch2 `TEST_CASE` form for Huawei, LeetCode, and Template Exercises; only the public API inside the assertion changes:
+Use the same Catch2 `TEST_CASE` form for Huawei, LeetCode, and Template Exercises; invoke each Exercise through its natural public API:
 
 ```cpp
 TEST_CASE("LC215 finds the kth largest element", "[problem][algorithm][lc215]")
@@ -65,166 +60,181 @@ TEST_CASE("LC215 finds the kth largest element", "[problem][algorithm][lc215]")
 ```
 
 ```cpp
-TEST_CASE("HJ02 counts characters without case sensitivity", "[problem][algorithm][hj02]")
+TEST_CASE("HJ02 counts characters without case sensitivity", "[problem][review][huawei][hj02]")
 {
     REQUIRE(CountChar("ABCabc", 'A') == 2);
 }
 ```
 
-Run one Exercise or all migrated Exercise Tests:
+Run one Exercise or every Exercise Test:
 
 ```powershell
 xmake run lc215_kth_largest_element
 xmake test
 ```
 
-Migration is currently incremental. LC215 and HJ02 use this layout; legacy category executables remain available and explicitly exclude `*_test.cpp`. Solution List paths will be migrated together with their Exercises rather than rewritten in bulk ahead of the files.
+`exercise.json` is the catalog source of truth. Regenerate the managed README region with `xmake index`, or verify that it is current without writing via `xmake index --check`. The index follows the `algorithms` and `data_structures` directory categories; Review Exercises remain buildable but are intentionally omitted.
 
-## Content List
+## Exercise Index
 
-- [数据结构 - 动态数组](https://github.com/fseeeye/Algorithms-Cpp/tree/master/data_structures/array)
-- [数据结构 - 链表](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E9%93%BE%E8%A1%A8)
-- [数据结构 - 树](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E6%A0%91)
-- [数据结构 - 图](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E5%9B%BE)
-- [数据结构 - 栈](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---%E5%9B%BE)
-- [数据结构 - 其它](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84---栈)
-- [贪心算法](#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95)
-- [双指针](#%E5%8F%8C%E6%8C%87%E9%92%88)
-- [二分查找](#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE)
-- [排序算法](#%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95)
-- [优先搜索](#%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2)
-- [动态规划](#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)
-- [分治算法](#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95)
-- [Ref](#reference)
+<!-- exercise-index:start -->
+### Algorithms
 
-## Solution List
+#### Binary Search
 
-### 贪心算法
+| ID | Name | Difficulty | Tip |
+| :-- | :--- | :--------- | :-- |
+| Algorithm.BinarySearch | [Binary Search](./algorithms/binary_search/algo_binary_search) |  |  |
+| LC34 | [Find First and Last Position of Element in Sorted Array](./algorithms/binary_search/lc34_find_ele_in_sorted_array) | Medium | 查找区间 |
+| LC69 | [Sqrt(x)](./algorithms/binary_search/lc69_sqrtx) | Easy | 开方 |
+| LC81 | [Search In Rotated Sorted Array II](./algorithms/binary_search/lc81_search_in_rotated_sorted_array_ii) | Medium | 旋转数组 |
 
-|  QID  |      Name      |      Tip      |
-| :---: |     :----:     |     :----:    |
-|  135  | [Candy (Hard)](./algorithms/greedy_algorithm/p135_candy)  | 分配问题 |
-|  435  | [Non-Overlapping Intervals (Medium)](./algorithms/greedy_algorithm/p435_non_overlapping_intervals)  | 区间问题 |
-|  455  | [Assign Cookies (Easy)](./algorithms/greedy_algorithm/p455_assign_cookies)  | 分配问题 |
+#### Divide Conquer
 
-### 双指针
+| ID | Name | Difficulty | Tip |
+| :-- | :--- | :--------- | :-- |
+| LC241 | [Different Ways to Add Parentheses](./algorithms/divide_conquer/lc241_different_ways_to_add_parentheses) |  |  |
 
-|  QID  |      Name      |      Tip      |
-| :---: |     :----:     |     :----:    |
-|  76   | [Minimum Window Substring (Hard)](./algorithms/two_pointers/p76_minimum_window_substring)  | 滑动窗口 |
-|  88   | [Merge Sorted Array (Easy)](./algorithms/two_pointers/p88_merge_sorted_array)  |
-|  142  | [Link List Cycle II (Medium)](./algorithms/two_pointers/p142_link_list_cycle_ii)  | 快慢指针 |
-|  167  | [Two Sum II (Easy)](./algorithms/two_pointers/p167_two_sum_ii)  |
+#### Dynamic Programming
 
-### 二分查找
+| ID | Name | Difficulty | Tip |
+| :-- | :--- | :--------- | :-- |
+| LC10 | [Regular Expression Matching](./algorithms/dynamic_programming/lc10_regular_expression_matching) | Hard | 字符串编辑问题 |
+| LC64 | [Minimum Path Sum](./algorithms/dynamic_programming/lc64_mini_path_sum) | Medium | 二维 |
+| LC70 | [Climbing Stairs](./algorithms/dynamic_programming/lc70_climbing_stairs) | Easy | 一维 |
+| LC72 | [Edit Distance](./algorithms/dynamic_programming/lc72_edit_distance) | Hard | 字符串编辑问题 |
+| LC91 | [Decode Ways](./algorithms/dynamic_programming/lc91_decode_ways) | Medium | 分割问题 |
+| LC121 | [Best Time to Buy and Sell Stock](./algorithms/dynamic_programming/lc121_best_time_to_buy_and_sell_stock) | Easy | 股票交易问题 |
+| LC139 | [Word Break](./algorithms/dynamic_programming/lc139_word_break) | Medium | 分割问题 |
+| LC188 | [Best Time to Buy and Sell Stock IV](./algorithms/dynamic_programming/lc188_best_time_to_buy_and_sell_stock_iv) | Hard | 股票交易问题 |
+| LC198 | [Hourse Robber](./algorithms/dynamic_programming/lc198_house_robber) | Easy | 一维 |
+| LC221 | [Maximal Square](./algorithms/dynamic_programming/lc221_maximal_square) | Medium | 二维 |
+| LC279 | [Perfect Square](./algorithms/dynamic_programming/lc279_perfect_squares) | Medium | 分割问题 |
+| LC300 | [Logest Increasing Subsequence](./algorithms/dynamic_programming/lc300_longest_increasing_subsequence) | Medium | 子序列问题 |
+| LC309 | [Best Time to Buy and Sell Stock with Cooldown](./algorithms/dynamic_programming/lc309_best_time_to_buy_and_sell_stock_with_cooldown) | Medium | 股票交易问题 |
+| LC322 | [Coin Change](./algorithms/dynamic_programming/lc322_coin_change) | Medium | 完全背包问题 |
+| LC413 | [Arithmetic Slices](./algorithms/dynamic_programming/lc413_arithmetic_slices) | Medium | 一维 |
+| LC416 | [Partition Equal Subset Sum](./algorithms/dynamic_programming/lc416_partition_equal_subset_sum) | Medium | 背包问题 |
+| LC474 | [Ones and Zeros](./algorithms/dynamic_programming/lc474_ones_and_zeroes) | Medium | 0-1背包问题 |
+| LC542 | [0-1 Matrix](./algorithms/dynamic_programming/lc542_01_matrix) | Medium | 二维 |
+| LC650 | [2 Keys Keyboard](./algorithms/dynamic_programming/lc650_2_keys_keyboard) | Medium | 字符串编辑问题 |
+| LC1143 | [Logest Common Subsequence](./algorithms/dynamic_programming/lc1143_longest_commom_subsequence) | Medium | 子序列问题 |
 
-[模板总结](./algorithms/binary_search/template/)
+#### Greedy Algorithm
 
-|  QID  |      Name      |
-| :---: |     :----:     |
-|  34   | [Find First and Last Position of Element in Sorted Array (Easy)](./algorithms/binary_search/p34_find_ele_in_sorted_array)  | 查找区间 |
-|  69   | [Sqrt(x) (Easy)](./algorithms/binary_search/p69_sqrtx)  | 开方 |
-|  81   | [Search In Rotated Sorted Array II (Medium)](./algorithms/binary_search/p81_search_in_rotated_sorted_array_ii)  | 旋转数组 |
+| ID | Name | Difficulty | Tip |
+| :-- | :--- | :--------- | :-- |
+| LC135 | [Candy](./algorithms/greedy_algorithm/lc135_candy) | Hard | 分配问题 |
+| LC435 | [Non-Overlapping Intervals](./algorithms/greedy_algorithm/lc435_non_overlapping_intervals) | Medium | 区间问题 |
+| LC455 | [Assign Cookies](./algorithms/greedy_algorithm/lc455_assign_cookies) | Easy | 分配问题 |
+| LC946 | [Validate Stack Sequences](./algorithms/greedy_algorithm/lc946_validate_stack_sequences) |  | 栈 |
+| LCOF45 | [Arrange Array to Minimum Number](./algorithms/greedy_algorithm/lcof45_arrange_array_to_min_number) | Easy | 排序 |
 
-### 排序算法
+#### Search
 
-|  QID  |      Name      |      Tip      |
-| :---: |     :----:     |     :----:    |
-|  215  | [Kth Largest Element (Medium)](./algorithms/sort/lc215_kth_largest_element)  | 快速选择 |
-|  347  | [Top k Frequent Elements (Medium)](./algorithms/sort/p347_top_k_frequent_elements)  | 桶排序 |
+| ID | Name | Difficulty | Tip |
+| :-- | :--- | :--------- | :-- |
+| LC46 | [Permutations](./algorithms/search/lc46_permutations) | Medium | 回溯法 |
+| LC51 | [N-Queens](./algorithms/search/lc51_n_queens) | Hard | 回溯法 |
+| LC77 | [Combinations](./algorithms/search/lc77_combinations) | Medium | 回溯法 |
+| LC79 | [Word Search](./algorithms/search/lc79_word_search) | Medium | 回溯法 |
+| LC126 | [Word Ladder II](./algorithms/search/lc126_word_ladder_ii) | Hard | 广度优先搜索 |
+| LC417 | [Pacific Atlantic Waterflow](./algorithms/search/lc417_pacific_atlantic_water_flow) | Medium | 深度优先搜索 |
+| LC494 | [Target Sum](./algorithms/search/lc494_target_sum) |  |  |
+| LC547 | [Number of Provinces](./algorithms/search/lc547_number_of_provinces) | Medium | 深度优先搜索 |
+| LC695 | [Max Area of Island](./algorithms/search/lc695_max_area_of_island) | Medium | 深度优先搜索 |
+| LC752 | [Open The Lock](./algorithms/search/lc752_open_the_lock) |  |  |
+| LC934 | [Shortest Bridge](./algorithms/search/lc934_shortest_bridge) | Medium | 广度优先搜索 |
+| LC1091 | [Shortest Path In Binary Matrix](./algorithms/search/lc1091_shortest_path_in_binary_matrix) |  |  |
+| LC1129 | [Shortest Path with Alternating Colors](./algorithms/search/lc1129_shortest_path_with_alternating_colors) |  |  |
+| LC1254 | [Number Of Closed Islands](./algorithms/search/lc1254_number_of_closed_islands) |  |  |
 
-### 优先搜索
+#### Sort
 
-|  QID  |      Name      |      Tip      |
-| :---: |     :----:     |     :----:    |
-|  417  | [Pacific Atlantic Waterflow (Medium)](./algorithms/search/p417_pacific_atlantic_water_flow)  | 深度优先搜索 |
-|  547  | [Number of Provinces (Medium)](./algorithms/search/p547_number_of_provinces)  | 深度优先搜索 |
-|  695  | [Max Area of Island (Medium)](./algorithms/search/p695_max_area_of_island)  | 深度优先搜索 |
-|  46   | [Permutations (Medium)](./algorithms/search/p46_permutations)  | 回溯法 |
-|  51   | [N-Queens (Hard)](./algorithms/search/p51_n_queens)  | 回溯法 |
-|  77   | [Combinations (Medium)](./algorithms/search/p77_combinations)  | 回溯法 |
-|  79   | [Word Search (Medium)](./algorithms/search/p79_word_search)  | 回溯法 |
-|  126  | [Word Ladder II (Hard)](./algorithms/search/p126_word_ladder_ii)  | 广度优先搜索 |
-|  934  | [Shortest Bridge (Medium)](./algorithms/search/p934_shortest_bridge)  | 广度优先搜索 |
+| ID | Name | Difficulty | Tip |
+| :-- | :--- | :--------- | :-- |
+| LC215 | [Kth Largest Element](./algorithms/sort/lc215_kth_largest_element) | Medium | 快速选择 |
+| LC347 | [Top k Frequent Elements](./algorithms/sort/lc347_top_k_frequent_elements) | Medium | 桶排序 |
 
-### 动态规划
+#### Two Pointers
 
-|  QID  |      Name      |      Tip      |
-| :---: |     :----:     |     :----:    |
-|  70   | [Climbing Stairs (Easy)](./algorithms/dynamic_programming/p70_climbing_stairs)  | 一维 |
-|  198  | [Hourse Robber (Easy)](./algorithms/dynamic_programming/p198_house_robber)  | 一维 |
-|  413  | [Arithmetic Slices (Medium)](./algorithms/dynamic_programming/p413_arithmetic_slices)  | 一维 |
-|  64   | [Minimum Path Sum (Medium)](./algorithms/dynamic_programming/p64_mini_path_sum)  | 二维 |
-|  542  | [0-1 Matrix (Medium)](./algorithms/dynamic_programming/p542_01_matrix)  | 二维 |
-|  221  | [Maximal Square (Medium)](./algorithms/dynamic_programming/p221_maximal_square)  | 二维 |
-|  279  | [Perfect Square (Medium)](./algorithms/dynamic_programming/p279_perfect_squares)  | 分割问题 |
-|  91   | [Decode Ways (Medium)](./algorithms/dynamic_programming/p91_decode_ways)  | 分割问题 |
-|  139  | [Word Break (Medium)](./algorithms/dynamic_programming/p139_word_break)  | 分割问题 |
-|  300  | [Logest Increasing Subsequence (Medium)](./algorithms/dynamic_programming/p300_longest_increasing_subsequence)  | 子序列问题 |
-|  1143 | [Logest Common Subsequence (Medium)](./algorithms/dynamic_programming/p1143_longest_commom_subsequence)  | 子序列问题 |
-|  416  | [Partition Equal Subset Sum (Medium)](./algorithms/dynamic_programming/p416_partition_equal_subset_sum)  | 背包问题 |
-|  474  | [Ones and Zeros (Medium)](./algorithms/dynamic_programming/p474_ones_and_zeroes)  | 0-1背包问题 |
-|  322  | [Coin Change (Medium)](./algorithms/dynamic_programming/p322_coin_change)  | 完全背包问题 |
-|  72   | [Edit Distance (Hard)](./algorithms/dynamic_programming/p72_edit_distance)  | 字符串编辑问题 |
-|  650  | [2 Keys Keyboard (Medium)](./algorithms/dynamic_programming/p650_2_keys_keyboard)  | 字符串编辑问题 |
-|  10   | [Regular Expression Matching (Hard)](./algorithms/dynamic_programming/p10_regular_expression_matching)  | 字符串编辑问题 |
-|  121  | [Best Time to Buy and Sell Stock (Easy)](./algorithms/dynamic_programming/p121_best_time_to_buy_and_sell_stock)  | 股票交易问题 |
-|  188  | [Best Time to Buy and Sell Stock IV (Hard)](./algorithms/dynamic_programming/p188_best_time_to_buy_and_sell_stock_iv)  | 股票交易问题 |
-|  309  | [Best Time to Buy and Sell Stock with Cooldown (Medium)](./algorithms/dynamic_programming/p188_best_time_to_buy_and_sell_stock_iv)  | 股票交易问题 |
+| ID | Name | Difficulty | Tip |
+| :-- | :--- | :--------- | :-- |
+| LC3 | [Longest Substring Without Repeating Characters](./algorithms/two_pointers/lc3_longest_substring_without_repeating_characters) |  |  |
+| LC16 | [3sum Closest](./algorithms/two_pointers/lc16_3sum_closest) |  |  |
+| LC27 | [Remove Element](./algorithms/two_pointers/lc27_remove_element) | Easy | 双指针 |
+| LC30 | [Substring With Concatenation Of All Words](./algorithms/two_pointers/lc30_substring_with_concatenation_of_all_words) |  |  |
+| LC76 | [Minimum Window Substring](./algorithms/two_pointers/lc76_minimum_window_substring) | Hard | 滑动窗口 |
+| LC88 | [Merge Sorted Array](./algorithms/two_pointers/lc88_merge_sorted_array) | Easy |  |
+| LC142 | [Link List Cycle II](./algorithms/two_pointers/lc142_link_list_cycle_ii) | Medium | 快慢指针 |
+| LC167 | [Two Sum II](./algorithms/two_pointers/lc167_two_sum_ii) | Easy |  |
 
+### Data Structures
 
-### 分治算法
+#### Array
 
-|  QID  |      Name      |
-| :---: |     :----:     |
-|  241  | [Different Ways to Add Parentheses](./algorithms/divide_conquer/p241_different_ways_to_add_parentheses)  |
+| ID | Name | Difficulty | Tip |
+| :-- | :--- | :--------- | :-- |
+| DataStructure.DynamicArray | [Dynamic Array](./data_structures/array/ds_dynamic_array) |  |  |
+| DataStructure.StaticArray | [Static Array](./data_structures/array/ds_static_array) |  |  |
 
-### 数据结构 - 链表
+#### Graph
 
-|  QID  |      Name      |
-| :---: |     :----:     |
-|  21   | [Merge Two Sorted List (Easy)](./algorithms/linked_list/p21_merge_two_sorted_lists)  |
-|  24   | [Swap Nodes in Pairs (Easy)](./algorithms/linked_list/p24_swap_nodes_in_pairs)  |
-|  160  | [Intersection of Two Linked Lists (Easy)](./algorithms/linked_list/p160_intersection_of_two_linked_list)  |
-|  206  | [Reverse Linked List (Easy)](./algorithms/linked_list/p206_reverse_linked_list)  |
-|  234  | [Palindrome Linked List (Easy)](./algorithms/linked_list/p234_palindrome_linked_list)  |
+| ID | Name | Difficulty | Tip |
+| :-- | :--- | :--------- | :-- |
+| LC210 | [Course Schedule Ii](./data_structures/graph/lc210_course_schedule_ii) |  |  |
+| LC444 | [Sequence Reconstruction](./data_structures/graph/lc444_sequence_reconstruction) |  |  |
+| LC785 | [Is Graph Bipartite](./data_structures/graph/lc785_is_graph_bipartite) |  |  |
 
-### 数据结构 - 树
+#### Linked List
 
-|  QID  |      Name      |      Tip      |
-| :---: |     :----:     |     :----:    |
-|  104  | [Maximum Depth of Binary Tree (Easy)](./algorithms/tree/p104_maximum_depth_of_binary_tree)  | 二叉树递归遍历 |
-|  110  | [Balanced Binary Tree (Easy)](./algorithms/tree/p110_balanced_binary_tree)  | 二叉树递归遍历 |
-|  543  | [Diameter of Binary Tree (Easy)](./algorithms/tree/p543_diameter_of_binary_tree)  | 二叉树递归遍历 |
-|  437  | [Path Sum III (Medium)](./algorithms/tree/p437_path_sum_iii)  | 二叉树递归遍历 |
-|  101  | [Symmetric Tree (Easy)](./algorithms/tree/p110_balanced_binary_tree)  | 二叉树递归遍历 |
-|  1110 | [Delete Nodes And Return Forest (Medium)](./algorithms/tree/p1110_delete_nodes_and_return_forest)  | 二叉树递归遍历 |
-|  637  | [Average of Levels in Binary Tree (Easy)](./algorithms/tree/p637_average_of_levels_in_binary_tree)  | 二叉树层次遍历 |
-|  105  | [Construct Binary Tree from Preorder and Inorder Traversal (Medium)](./algorithms/tree/p105_construct_binary_tree)  | 二叉树前中序遍历 |
-|  144  | [Binary Tree Preorder Traversal (Easy)](./algorithms/tree/p144_binary_tree_preorder_traversal)  | 二叉树前序遍历 |
-|  99   | [Recover Binary Search Tree (Medium)](./algorithms/tree/p99_recover_binary_search_tree)  | 二叉查找树 |
-|  669  | [Trim a Binary Search Tree (Easy)](./algorithms/tree/p669_trim_a_binary_search_tree) | 二叉查找树 |
-|  208  | [Implement Trie (Prefix Tree) (Medium)](./algorithms/tree/p208_implement_trie) | 前缀树 / 字典树 |
+| ID | Name | Difficulty | Tip |
+| :-- | :--- | :--------- | :-- |
+| LC21 | [Merge Two Sorted Lists](./data_structures/linked_list/lc21_merge_two_sorted_lists) |  |  |
+| LC24 | [Swap Nodes In Pairs](./data_structures/linked_list/lc24_swap_nodes_in_pairs) |  |  |
+| LC61 | [Rotate List](./data_structures/linked_list/lc61_rotate_list) |  |  |
+| LC86 | [Partition List](./data_structures/linked_list/lc86_partition_list) |  |  |
+| LC160 | [Intersection Of Two Linked List](./data_structures/linked_list/lc160_intersection_of_two_linked_list) |  |  |
+| LC206 | [Reverse Linked List](./data_structures/linked_list/lc206_reverse_linked_list) |  |  |
+| LC234 | [Palindrome Linked List](./data_structures/linked_list/lc234_palindrome_linked_list) |  |  |
+| LC641 | [Design Circular Deque](./data_structures/linked_list/lc641_design_circular_deque) |  |  |
 
-### 数据结构 - 图
+#### Other
 
-|  QID  |      Name      |      Tip      |
-| :---: |     :----:     |     :----:    |
-|  785  | [Is Graphy Bipartite? (Medium)](./algorithms/graph/p785_is_graph_bipartite) | 二分图 |
-|  210  | [Course Schedule II (Medium)](./algorithms/graph/p210_course_schedule_ii) | 拓扑排序 |
+| ID | Name | Difficulty | Tip |
+| :-- | :--- | :--------- | :-- |
+| LC146 | [Lru Cache](./data_structures/other/lc146_lru_cache) |  |  |
+| LC303 | [Range Sum Query](./data_structures/other/lc303_range_sum_query) |  |  |
+| LC304 | [Range Sum Query 2d](./data_structures/other/lc304_range_sum_query_2d) |  |  |
+| LC503 | [Next Greater Element Ii](./data_structures/other/lc503_next_greater_element_ii) |  |  |
+| LC560 | [Subarray Sum Equals K](./data_structures/other/lc560_subarray_sum_equals_k) |  |  |
+| LC684 | [Redundant Connection](./data_structures/other/lc684_redundant_connection) |  |  |
+| LC729 | [My Calendar I](./data_structures/other/lc729_my_calendar_i) |  |  |
+| LC739 | [Daily Temperatures](./data_structures/other/lc739_daily_temperatures) |  |  |
+| LC1109 | [Corporate Flight Bookings](./data_structures/other/lc1109_corporate_flight_bookings) |  |  |
 
-### 数据结构 - 栈
+#### Tree
 
-|  QID  |      Name      |      Tip      |
-| :---: |     :----:     |     :----:    |
-|  946  | [Validate Stack Sequences](./algorithms/greedy_algorithm/p946_validate_stack_sequences)  | 栈 |
-
-### 数据结构 - 其它
-
-|  QID  |      Name      |      Tip      |
-| :---: |     :----:     |     :----:    |
-|  210  | [LRU Cache (Medium)](./algorithms/other_structures/p146_lru_cache) | LRU |
-
+| ID | Name | Difficulty | Tip |
+| :-- | :--- | :--------- | :-- |
+| LC98 | [Validate Binary Search Tree](./data_structures/tree/lc98_validate_binary_search_tree) |  |  |
+| LC99 | [Recover Binary Search Tree](./data_structures/tree/lc99_recover_binary_search_tree) |  |  |
+| LC101 | [Symmetric Tree](./data_structures/tree/lc101_symmetric_tree) |  |  |
+| LC102 | [Binary Tree Level Order Traversal](./data_structures/tree/lc102_binary_tree_level_order_traversal) |  |  |
+| LC104 | [Maximum Depth Of Binary Tree](./data_structures/tree/lc104_maximum_depth_of_binary_tree) |  |  |
+| LC105 | [Construct Binary Tree](./data_structures/tree/lc105_construct_binary_tree) |  |  |
+| LC110 | [Balanced Binary Tree](./data_structures/tree/lc110_balanced_binary_tree) |  |  |
+| LC112 | [Path Sum](./data_structures/tree/lc112_path_sum) |  |  |
+| LC116 | [Populating Next Right Pointers In Each Node](./data_structures/tree/lc116_populating_next_right_pointers_in_each_node) |  |  |
+| LC117 | [Populating Next Right Pointers In Each Node Ii](./data_structures/tree/lc117_populating_next_right_pointers_in_each_node_ii) |  |  |
+| LC144 | [Binary Tree Preorder Traversal](./data_structures/tree/lc144_binary_tree_preorder_traversal) |  |  |
+| LC208 | [Implement Trie](./data_structures/tree/lc208_implement_trie) |  |  |
+| LC437 | [Path Sum Iii](./data_structures/tree/lc437_path_sum_iii) |  |  |
+| LC543 | [Diameter Of Binary Tree](./data_structures/tree/lc543_diameter_of_binary_tree) |  |  |
+| LC637 | [Average Of Levels In Binary Tree](./data_structures/tree/lc637_average_of_levels_in_binary_tree) |  |  |
+| LC669 | [Trim A Binary Search Tree](./data_structures/tree/lc669_trim_a_binary_search_tree) |  |  |
+| LC1110 | [Delete Nodes And Return Forest](./data_structures/tree/lc1110_delete_nodes_and_return_forest) |  |  |
+<!-- exercise-index:end -->
 
 ## Reference
 

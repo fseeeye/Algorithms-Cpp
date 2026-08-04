@@ -1,111 +1,97 @@
-﻿#include "exp_calc.h"
+#include "exp_calc.h"
 
+#include <cctype>
+#include <iostream>
+#include <stdexcept>
+#include <string>
 
-void HJ54::native_main()
+namespace AlgoCpp::Problem::Review::HJ54
 {
-	std::string input;
-	std::cin >> input;
-	 
-	std::stack<int> num_stack;
-	std::stack<char> op_stack;
-	op_stack.push('(');
-	input += ')';
+namespace
+{
 
-	bool op_flag = false;
-	for (int i = 0; i < input.length(); ++i)
+class Parser
+{
+public:
+	explicit Parser(const std::string_view expression) : m_Expression(expression) {}
+
+	int Parse()
 	{
-		char& c = input[i];
-		
-		if (op_flag == true)
-		{
-			if (c == ')')
-			{
-				while (op_stack.top() != '(')
-				{
-					compute(num_stack, op_stack);
-				}
-				op_stack.pop(); // pop '('
-			}
-			else
-			{
-				while (compare_priority(op_stack.top(), c))
-				{
-					compute(num_stack, op_stack);
-				}
-				op_stack.push(c);
+		const int value = ParseExpression();
+		SkipSpaces();
+		if (m_Position != m_Expression.size()) throw std::invalid_argument("unexpected expression token");
+		return value;
+	}
 
-				op_flag = false;
-			}
-		}
-		else
-		{
-			if (c == '(')
-			{
-				op_stack.push(c);
-			}
-			else
-			{
-				int start_pos = i;
-				if (c == '-' || c == '+')
-				{
-					++i;
-				}
-
-				while (std::isdigit(input[i]))
-				{
-					++i;
-				}
-
-				std::string num_str = input.substr(start_pos, i - start_pos);
-				int num = std::stoi(num_str);
-
-				num_stack.push(num);
-
-				op_flag = true;
-				--i;
-			}
+private:
+	int ParseExpression()
+	{
+		int value = ParseTerm();
+		while (true) {
+			SkipSpaces();
+			if (Take('+')) value += ParseTerm();
+			else if (Take('-')) value -= ParseTerm();
+			else return value;
 		}
 	}
 
-	std::cout << num_stack.top() << std::endl;
-}
+	int ParseTerm()
+	{
+		int value = ParseFactor();
+		while (true) {
+			SkipSpaces();
+			if (Take('*')) value *= ParseFactor();
+			else if (Take('/')) value /= ParseFactor();
+			else return value;
+		}
+	}
 
-void HJ54::compute(std::stack<int>& num_stack, std::stack<char>& op_stack)
+	int ParseFactor()
+	{
+		SkipSpaces();
+		if (Take('+')) return ParseFactor();
+		if (Take('-')) return -ParseFactor();
+		if (Take('(')) {
+			const int value = ParseExpression();
+			if (!Take(')')) throw std::invalid_argument("missing closing parenthesis");
+			return value;
+		}
+		if (m_Position >= m_Expression.size() || !std::isdigit(static_cast<unsigned char>(m_Expression[m_Position]))) {
+			throw std::invalid_argument("number expected");
+		}
+		int value = 0;
+		while (m_Position < m_Expression.size() && std::isdigit(static_cast<unsigned char>(m_Expression[m_Position]))) {
+			value = value * 10 + (m_Expression[m_Position++] - '0');
+		}
+		return value;
+	}
+
+	bool Take(const char expected)
+	{
+		SkipSpaces();
+		if (m_Position >= m_Expression.size() || m_Expression[m_Position] != expected) return false;
+		++m_Position;
+		return true;
+	}
+
+	void SkipSpaces()
+	{
+		while (m_Position < m_Expression.size() && std::isspace(static_cast<unsigned char>(m_Expression[m_Position]))) ++m_Position;
+	}
+
+	std::string_view m_Expression;
+	std::size_t m_Position = 0;
+};
+
+} // namespace
+
+int EvaluateExpression(const std::string_view expression) { return Parser(expression).Parse(); }
+
+void native_main()
 {
-	int num2 = num_stack.top();
-	num_stack.pop();
-
-	int num1 = num_stack.top();
-	num_stack.pop();
-
-	char op = op_stack.top();
-	op_stack.pop();
-
-	if (op == '+')
-	{
-		num_stack.push(num1 + num2);
-	}
-	else if (op == '-')
-	{
-		num_stack.push(num1 - num2);
-	}
-	else if (op == '*')
-	{
-		num_stack.push(num1 * num2);
-	}
-	else if (op == '/')
-	{
-		num_stack.push(num1 / num2);
-	}
+	std::string expression;
+	std::cin >> expression;
+	std::cout << EvaluateExpression(expression);
 }
 
-bool HJ54::compare_priority(char op1, char op2)
-{
-	if (op1 == '(')
-		return false;
-
-	if ((op1 == '+' || op1 == '-') && (op2 == '*' || op2 == '/'))
-		return false;
-
-	return true;
-}
+} // namespace AlgoCpp::Problem::Review::HJ54

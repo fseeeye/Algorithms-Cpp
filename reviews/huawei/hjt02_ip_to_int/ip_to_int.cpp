@@ -1,5 +1,7 @@
-﻿#include "ip_to_int.h"
+#include "ip_to_int.h"
 
+namespace AlgoCpp::Problem::Review::HJT02
+{
 
 void HJT02::native_main()
 {
@@ -38,3 +40,5 @@ unsigned int HJT02::handle(std::string input)
 
 	return rst;
 }
+
+} // namespace AlgoCpp::Problem::Review::HJT02

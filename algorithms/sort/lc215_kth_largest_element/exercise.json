@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC215",
+  "name": "Kth Largest Element",
+  "difficulty": "Medium",
+  "tip": "快速选择",
+  "url": ""
+}

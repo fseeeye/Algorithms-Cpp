@@ -1,0 +1,8 @@
+{
+  "kind": "template",
+  "id": "DataStructure.DynamicArray",
+  "name": "Dynamic Array",
+  "difficulty": "",
+  "tip": "",
+  "url": "https://github.com/williamfiset/Algorithms/blob/master/src/main/java/com/williamfiset/algorithms/datastructures/dynamicarray/IntArray.java"
+}

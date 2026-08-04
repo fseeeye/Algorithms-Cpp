@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC91",
+  "name": "Decode Ways",
+  "difficulty": "Medium",
+  "tip": "分割问题",
+  "url": "https://leetcode-cn.com/problems/decode-ways/"
+}

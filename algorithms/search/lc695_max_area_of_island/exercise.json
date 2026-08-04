@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC695",
+  "name": "Max Area of Island",
+  "difficulty": "Medium",
+  "tip": "深度优先搜索",
+  "url": "https://leetcode-cn.com/problems/max-area-of-island/"
+}

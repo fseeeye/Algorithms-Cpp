@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC474",
+  "name": "Ones and Zeros",
+  "difficulty": "Medium",
+  "tip": "0-1背包问题",
+  "url": "https://leetcode-cn.com/problems/ones-and-zeroes/"
+}

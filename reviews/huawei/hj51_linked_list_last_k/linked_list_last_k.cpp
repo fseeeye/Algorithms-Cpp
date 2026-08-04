@@ -1,57 +1,26 @@
-﻿#include "linked_list_last_k.h"
+#include "linked_list_last_k.h"
 
-#include <bits/stdc++.h>
+#include <iostream>
 
-void HJ51::native_main()
+namespace AlgoCpp::Problem::Review::HJ51
 {
-	int list_len;
-	
-	while (std::cin >> list_len)
-	{
-		// handle input
-		ListNode* head = new ListNode();
-		ListNode* current = head;
 
-		int value;
-		ListNode* temp_node;
-		for (int i = 0; i < list_len; i++)
-		{
-			std::cin >> value;
-			temp_node = new ListNode(value);
+std::optional<int> FindLastKValue(const std::vector<int>& values, const std::size_t k)
+{
+	if (k == 0 || k > values.size()) return std::nullopt;
+	return values[values.size() - k];
+}
 
-			current->m_pNext = temp_node;
-			current = temp_node;
-		}
-		current->m_pNext = nullptr;
-
-		// find last k node (slow fast ptr)
-		int k;
+void native_main()
+{
+	std::size_t count = 0;
+	while (std::cin >> count) {
+		std::vector<int> values(count);
+		for (int& value : values) std::cin >> value;
+		std::size_t k = 0;
 		std::cin >> k;
-
-		temp_node = find_node(head->m_pNext, k);
-		if (temp_node != nullptr)
-		{
-			std::cout << temp_node->m_nKey << std::endl;
-		}
+		if (const auto value = FindLastKValue(values, k)) std::cout << *value << '\n';
 	}
 }
 
-HJ51::ListNode* HJ51::find_node(ListNode* head, int k)
-{
-	ListNode* slow = head, * fast = head;
-
-	for (int i = 0; i < k; i++)
-	{
-		if (fast == nullptr)
-			return nullptr;
-		fast = fast->m_pNext;
-	}
-
-	while (fast != nullptr)
-	{
-		slow = slow->m_pNext;
-		fast = fast->m_pNext;
-	}
-
-	return slow;
-}
+} // namespace AlgoCpp::Problem::Review::HJ51

@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC547",
+  "name": "Number of Provinces",
+  "difficulty": "Medium",
+  "tip": "深度优先搜索",
+  "url": "https://leetcode-cn.com/problems/number-of-provinces/"
+}

@@ -1,6 +1,6 @@
-﻿// 字符串 + 排序
+// 字符串 + 排序
 //题目描述
-// 
+//
 //足球比赛采用双循环赛制（即任意两队之间分主客场进行两场比赛），胜平负分别得分3、1、0分。
 //设计一个足球比赛自动排名系统，以数组形式输入比赛信息，如 String[] str = { "a-b 2:1","a-c 3:4" }。
 //假设队伍名为a - z的26个英文字母，比赛球队最多26只。
@@ -59,6 +59,9 @@
 
 #include "common.h"
 
+namespace AlgoCpp::Problem::Review::HJT01
+{
+
 class HJT01 {
 public:
 	static void native_main();
@@ -97,11 +100,6 @@ public:
 		}
 	}
 
-	static void test() {
-		std::cout << "Solution start.\n";
-
-		native_main();
-
-		std::cout << "\nSolution done.\n";
-	}
 };
+
+} // namespace AlgoCpp::Problem::Review::HJT01

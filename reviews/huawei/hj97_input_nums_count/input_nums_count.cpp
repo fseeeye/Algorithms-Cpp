@@ -1,40 +1,34 @@
-﻿#include "input_nums_count.h"
+#include "input_nums_count.h"
 
-// Time:  O()
-// Space: O()
-void HJ97::native_main()
+#include <iomanip>
+#include <iostream>
+
+namespace AlgoCpp::Problem::Review::HJ97
 {
-	size_t nums_size;
-	std::vector<int> nums;
 
-	unsigned int negative_size = 0;
-	float positive_average = 0.f;
-	
-	// handle input
-	std::cin >> nums_size;
-	nums.reserve(nums_size);
-
-	int temp;
-	for (int i = 0; i < nums_size; ++i)
-	{
-		std::cin >> temp;
-		if (temp > 0)
-		{
-			nums.push_back(temp);
-		}
-		else if (temp < 0)
-		{
-			++negative_size;
+std::pair<std::size_t, double> AnalyzeNumbers(const std::vector<int>& numbers)
+{
+	std::size_t negativeCount = 0;
+	std::size_t positiveCount = 0;
+	double positiveSum = 0.0;
+	for (const int number : numbers) {
+		if (number < 0) ++negativeCount;
+		else if (number > 0) {
+			++positiveCount;
+			positiveSum += number;
 		}
 	}
-
-	// calc average
-	auto positive_size = nums.size();
-	for (auto positive_num : nums)
-	{
-		positive_average += positive_num / (float)positive_size;
-	}
-
-	// output
-	printf("%i %.1f", negative_size, positive_average);
+	return {negativeCount, positiveCount == 0 ? 0.0 : positiveSum / static_cast<double>(positiveCount)};
 }
+
+void native_main()
+{
+	std::size_t count = 0;
+	std::cin >> count;
+	std::vector<int> numbers(count);
+	for (int& number : numbers) std::cin >> number;
+	const auto [negativeCount, positiveAverage] = AnalyzeNumbers(numbers);
+	std::cout << negativeCount << ' ' << std::fixed << std::setprecision(1) << positiveAverage;
+}
+
+} // namespace AlgoCpp::Problem::Review::HJ97

@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC105",
+  "name": "Construct Binary Tree",
+  "difficulty": "",
+  "tip": "",
+  "url": "https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"
+}

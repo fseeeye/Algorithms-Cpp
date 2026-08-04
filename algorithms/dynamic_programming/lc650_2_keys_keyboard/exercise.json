@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC650",
+  "name": "2 Keys Keyboard",
+  "difficulty": "Medium",
+  "tip": "字符串编辑问题",
+  "url": "https://leetcode-cn.com/problems/2-keys-keyboard/"
+}

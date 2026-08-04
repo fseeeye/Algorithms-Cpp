@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LCOF45",
+  "name": "Arrange Array to Minimum Number",
+  "difficulty": "Easy",
+  "tip": "排序",
+  "url": "https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/"
+}

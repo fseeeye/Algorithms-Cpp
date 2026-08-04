@@ -1,4 +1,4 @@
-﻿// 滑动窗口
+// 滑动窗口
 //题目描述
 //
 //给出一个数组nums，你需要通过交换位置，将数组中 任何位置 上的 小于 k 的整数 组合到一起，并返回所有可能中所需最少的交换次数。
@@ -57,6 +57,9 @@
 
 #include "common.h"
 
+namespace AlgoCpp::Problem::Review::HJT03
+{
+
 class HJT03 {
 public:
 	static void native_main();
@@ -78,11 +81,6 @@ public:
 		}
 	}
 
-	static void test() {
-		std::cout << "Solution start.\n";
-
-		native_main();
-
-		std::cout << "\nSolution done.\n";
-	}
 };
+
+} // namespace AlgoCpp::Problem::Review::HJT03

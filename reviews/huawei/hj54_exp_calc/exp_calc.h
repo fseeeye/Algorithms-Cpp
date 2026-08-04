@@ -1,26 +1,11 @@
-﻿// XX问题
 #pragma once
 
-#include <bits/stdc++.h>
+#include <string_view>
 
-#include "common.h"
+namespace AlgoCpp::Problem::Review::HJ54
+{
 
-class HJ54 {
-public:
-	static void native_main();
+int EvaluateExpression(std::string_view expression);
+void native_main();
 
-	static void compute(std::stack<int>& num_stack, std::stack<char>& op_stack);
-
-	static bool compare_priority(char op1, char op2);
-
-	static void test() {
-		while (true)
-		{
-			std::cout << "\nSolution 54 start.\n";
-
-			native_main();
-
-			std::cout << "\nSolution 54 done.\n";
-		}
-	}
-};
+} // namespace AlgoCpp::Problem::Review::HJ54

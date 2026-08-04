@@ -1,0 +1,8 @@
+{
+  "kind": "template",
+  "id": "DataStructure.StaticArray",
+  "name": "Static Array",
+  "difficulty": "",
+  "tip": "",
+  "url": "https://en.cppreference.com/w/cpp/container/array"
+}

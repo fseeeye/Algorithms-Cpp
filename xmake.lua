@@ -3,6 +3,7 @@ set_version("1.0.0")
 
 -- set language: c++20
 set_languages("c++20")
+set_encodings("utf-8")
 
 -- add debug and release modes
 add_rules("plugin.vsxmake.autoupdate")
@@ -19,9 +20,6 @@ set_warnings("all", "error")
 add_requires("catch2 3.15.x")
 
 includes("lib")
-includes("data_structures")
-includes("algorithms")
-includes("reviews")
 includes("xmake")
 
 --

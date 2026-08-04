@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC88",
+  "name": "Merge Sorted Array",
+  "difficulty": "Easy",
+  "tip": "",
+  "url": "https://leetcode-cn.com/problems/merge-sorted-array/"
+}

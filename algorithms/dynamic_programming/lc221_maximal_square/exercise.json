@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC221",
+  "name": "Maximal Square",
+  "difficulty": "Medium",
+  "tip": "二维",
+  "url": "https://leetcode-cn.com/problems/maximal-square/"
+}

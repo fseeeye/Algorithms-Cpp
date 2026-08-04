@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC279",
+  "name": "Perfect Square",
+  "difficulty": "Medium",
+  "tip": "分割问题",
+  "url": "https://leetcode-cn.com/problems/perfect-squares/"
+}

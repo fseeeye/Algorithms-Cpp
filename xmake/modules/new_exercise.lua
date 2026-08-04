@@ -1,12 +1,7 @@
 import("core.base.option")
+import("exercise_catalog", {rootdir = os.scriptdir()})
 
-local _allowedRoots = {"algorithms", "reviews", "data_structures"}
-local _domains = {
-    algorithm = {namespace = "Algorithm", prefix = "algo"},
-    data_structure = {namespace = "DataStructure", prefix = "ds"}
-}
-
-function _require_option(name, preserveWhitespace)
+local function _required_option(name, preserveWhitespace)
     local value = option.get(name)
     if not value or string.trim(value) == "" then
         raise("--%s is required", name)
@@ -14,64 +9,18 @@ function _require_option(name, preserveWhitespace)
     return preserveWhitespace and value or string.trim(value)
 end
 
-function _normalize_slug(rawSlug)
-    if rawSlug:find("[/\\]") or rawSlug:find("%.%.") then
-        raise("unsafe slug '%s': path separators and '..' are not allowed", rawSlug)
-    end
-    if rawSlug:find("[^A-Za-z0-9 _%-]") then
-        raise("unsafe slug '%s': use letters, digits, spaces, '-' or '_'", rawSlug)
-    end
-
-    local slug = rawSlug:gsub("(%u+)(%u%l)", "%1_%2")
-    slug = slug:gsub("(%l)(%u)", "%1_%2")
-    slug = slug:gsub("(%d)(%u)", "%1_%2")
-    slug = slug:gsub("[ _%-]+", "_"):lower()
-    slug = slug:gsub("^_+", ""):gsub("_+$", "")
-    if slug == "" then
-        raise("--slug must contain at least one letter or digit")
-    end
-    return slug
+local function _optional_option(name)
+    local value = option.get(name)
+    return value and string.trim(value) or ""
 end
 
-function _pascal_case(slug)
-    local identity = slug:gsub("^%l", string.upper)
-    return identity:gsub("_(%l)", string.upper)
+local function _cpp_string(value)
+    return value:gsub("\\", "\\\\"):gsub('"', '\\"'):gsub("\r", "\\r"):gsub("\n", "\\n")
 end
 
-function _relative_root(projectDir, rawRoot)
-    local absoluteRoot = path.absolute(rawRoot, projectDir)
-    local relativeRoot = path.relative(absoluteRoot, projectDir):gsub("\\", "/")
-    local comparableRoot = relativeRoot:lower()
-
-    for _, allowedRoot in ipairs(_allowedRoots) do
-        if comparableRoot == allowedRoot or comparableRoot:sub(1, #allowedRoot + 1) == allowedRoot .. "/" then
-            if not os.isdir(absoluteRoot) then
-                raise("--root does not exist or is not a directory: %s", relativeRoot)
-            end
-            return absoluteRoot, relativeRoot
-        end
-    end
-
-    raise("--root must be inside algorithms, reviews or data_structures: %s", rawRoot)
-end
-
-function _check_collision(projectDir, directoryName, problemId)
-    for _, allowedRoot in ipairs(_allowedRoots) do
-        local rootDir = path.join(projectDir, allowedRoot)
-        for _, directory in ipairs(os.dirs(path.join(rootDir, "**"))) do
-            local existingName = path.basename(directory):lower()
-            if existingName == directoryName:lower() then
-                raise("Exercise target already exists: %s", directoryName)
-            end
-            if problemId and (existingName == problemId or existingName:sub(1, #problemId + 1) == problemId .. "_") then
-                raise("Problem ID already exists: %s", problemId:upper())
-            end
-        end
-    end
-end
-
-function _header_template(namespaceName)
-    return string.format([[#pragma once
+local function _header_template(namespaceName, url)
+    local reference = url ~= "" and string.format("// refs : %s\n", url) or ""
+    return string.format([[%s#pragma once
 
 namespace %s
 {
@@ -82,10 +31,10 @@ namespace %s
 	// ReturnType FunctionName(Arguments...);
 
 } // namespace %s
-]], namespaceName, namespaceName)
+]], reference, namespaceName, namespaceName)
 end
 
-function _source_template(namespaceName, slug)
+local function _source_template(namespaceName, slug)
     return string.format([[#include "%s.h"
 
 namespace %s
@@ -97,7 +46,7 @@ namespace %s
 ]], slug, namespaceName, slug, namespaceName)
 end
 
-function _test_template(namespaceName, displayName, tags, slug)
+local function _test_template(namespaceName, displayName, tags, slug)
     return string.format([[#include "%s.h"
 
 #include <catch2/catch_test_macros.hpp>
@@ -112,63 +61,100 @@ namespace %s
 	}
 
 } // namespace %s
-]], slug, namespaceName, displayName, tags, namespaceName)
+]], slug, namespaceName, _cpp_string(displayName), tags, namespaceName)
 end
 
 function main()
-    local kind = _require_option("kind"):lower()
-    local domain = _require_option("domain"):lower()
-    local rawRoot = _require_option("root")
-    local rawSlug = _require_option("slug", true)
-
+    local kind = _required_option("kind"):lower()
+    local rawRoot = _required_option("root")
+    local rawSlug = _required_option("slug", true)
     if kind ~= "problem" and kind ~= "template" then
         raise("--kind must be problem or template")
     end
-    local domainInfo = _domains[domain]
-    if not domainInfo then
-        raise("--domain must be algorithm or data_structure")
+
+    local projectDir = os.projectdir()
+    local rootDir, relativeRoot, _, domain = exercise_catalog.resolve_root(projectDir, rawRoot)
+    local slug = exercise_catalog.normalize_slug(rawSlug)
+    local difficulty = exercise_catalog.normalize_difficulty(option.get("difficulty"))
+    local tip = _optional_option("tip")
+    local url = exercise_catalog.validate_url(option.get("url"))
+    local name = _optional_option("name")
+    if name == "" then
+        name = exercise_catalog.humanize(slug)
     end
 
-    local slug = _normalize_slug(rawSlug)
-    local projectDir = os.projectdir()
-    local rootDir, relativeRoot = _relative_root(projectDir, rawRoot)
-    local exercise = {}
-
+    local exercise = {kind = kind, difficulty = difficulty, name = name, tip = tip, url = url}
     if kind == "problem" then
-        local id = _require_option("id")
-        if not id:match("^[A-Z]+[0-9]+$") then
-            raise("--id must be a compact uppercase Problem ID such as LC215, HJ02 or LCOF45")
-        end
-        exercise.problemId = id:lower()
-        exercise.directoryName = exercise.problemId .. "_" .. slug
-        exercise.namespaceName = "AlgoCpp::Problem::" .. domainInfo.namespace .. "::" .. id
-        exercise.displayName = id .. " " .. slug:gsub("_", " ")
-        exercise.tags = string.format("[problem][%s][%s]", domain, exercise.problemId)
+        exercise.id = exercise_catalog.normalize_problem_id(_required_option("id"))
+        exercise.identity = exercise.id
+        exercise.directoryName = exercise.id:lower() .. "_" .. slug
     else
         if option.get("id") then
             raise("--id is only valid for Problem Exercises")
         end
-        local identity = _pascal_case(slug)
-        exercise.directoryName = domainInfo.prefix .. "_" .. slug
-        exercise.namespaceName = "AlgoCpp::Template::" .. domainInfo.namespace .. "::" .. identity
-        exercise.displayName = identity
-        exercise.tags = string.format("[template][%s][%s]", domain, slug)
+        exercise.identity = exercise_catalog.pascal_case(slug)
+        exercise.id = domain.metadataPrefix .. "." .. exercise.identity
+        exercise.directoryName = domain.targetPrefix .. "_" .. slug
     end
+    exercise.namespaceName = string.format("AlgoCpp::%s::%s::%s",
+        kind == "problem" and "Problem" or "Template", domain.namespace, exercise.identity)
 
-    _check_collision(projectDir, exercise.directoryName, exercise.problemId)
+    local relativeParent = relativeRoot:match("^[^/]+/(.+)$") or ""
+    local tags = {kind, domain.tag}
+    if relativeParent ~= "" then
+        for category in relativeParent:gmatch("[^/]+") do
+            table.insert(tags, category)
+        end
+    end
+    if kind == "problem" then
+        table.insert(tags, exercise.id:lower())
+    end
+    exercise.tags = "[" .. table.concat(tags, "][") .. "]"
+
+    exercise_catalog.scan(projectDir)
+    exercise_catalog.index_contents(projectDir)
+    exercise_catalog.check_new_collision(projectDir, exercise.directoryName, exercise.id)
+
     local exerciseDir = path.join(rootDir, exercise.directoryName)
     if os.exists(exerciseDir) then
         raise("destination already exists: %s", path.join(relativeRoot, exercise.directoryName))
     end
 
-    os.mkdir(exerciseDir)
-    io.writefile(path.join(exerciseDir, slug .. ".h"), _header_template(exercise.namespaceName))
-    io.writefile(path.join(exerciseDir, slug .. ".cpp"), _source_template(exercise.namespaceName, slug))
-    io.writefile(path.join(exerciseDir, slug .. "_test.cpp"),
-        _test_template(exercise.namespaceName, exercise.displayName, exercise.tags, slug))
+    local readmePath = path.join(projectDir, "README.md")
+    local originalReadme = assert(io.readfile(readmePath))
+    local ok, errors = try {
+        function ()
+            os.mkdir(exerciseDir)
+            io.writefile(path.join(exerciseDir, slug .. ".h"), _header_template(exercise.namespaceName, url))
+            io.writefile(path.join(exerciseDir, slug .. ".cpp"), _source_template(exercise.namespaceName, slug))
+            io.writefile(path.join(exerciseDir, slug .. "_test.cpp"),
+                _test_template(exercise.namespaceName, exercise.id .. " " .. name, exercise.tags, slug))
+            io.writefile(path.join(exerciseDir, "exercise.json"), exercise_catalog.metadata_json(exercise))
+            exercise_catalog.update_index(projectDir, false)
+            return true
+        end,
+        catch {
+            function (caught)
+                return false, caught
+            end
+        }
+    }
+    if not ok then
+        os.tryrm(exerciseDir)
+        io.writefile(readmePath, originalReadme)
+        raise("cannot create Exercise transactionally: %s", errors)
+    end
 
     if slug ~= rawSlug then
         cprint("${yellow}normalized slug:${clear} %s -> %s", rawSlug, slug)
+    end
+    local rawId = option.get("id")
+    if kind == "problem" and rawId ~= exercise.id then
+        cprint("${yellow}normalized id:${clear} %s -> %s", rawId, exercise.id)
+    end
+    local rawDifficulty = option.get("difficulty")
+    if rawDifficulty and string.trim(rawDifficulty) ~= difficulty then
+        cprint("${yellow}normalized difficulty:${clear} %s -> %s", rawDifficulty, difficulty)
     end
     cprint("${green}created Exercise:${clear} %s", path.join(relativeRoot, exercise.directoryName))
     cprint("${dim}target:${clear} %s", exercise.directoryName)
