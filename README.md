@@ -16,7 +16,7 @@ Generate a Visual Studio solution with `xmake project -k vsxmake -m "debug,relea
 
 ## Exercise Workflow
 
-Each Exercise is an independent Catch2 test executable. Xmake manages Catch2 `3.15.x`, discovers Exercise directories recursively, and creates one target for every valid `exercise.json` plus `*_test.cpp` pair. Every Exercise depends on the `basic` support library and is excluded from the default build.
+Each Exercise is built as an independent Catch2 test executable. Xmake manages Catch2 `3.15.x`, discovers Exercise directories recursively, and creates one target for every valid `exercise.json` plus `*_test.cpp` pair. Every Exercise depends on the `basic` support library and is excluded from the default build.
 
 Create a Problem Exercise while retaining the problem's native public API:
 
@@ -26,7 +26,7 @@ xmake new --kind=problem --root=algorithms/sort --id=LC215 --slug=kth_largest_el
   --tip="Quick select" --url=https://leetcode.com/problems/kth-largest-element-in-an-array/
 ```
 
-This maps to directory and target `lc215_kth_largest_element`, namespace `AlgoCpp::Problem::Algorithm::LC215`, and Catch2 tags `[problem][algorithm][lc215]`.
+This maps to directory and target `lc215_kth_largest_element`, namespace `AlgoCpp::Problem::Algorithm::LC215`, and Catch2 tags `[problem][algorithm][sort][lc215]`.
 
 Create a reusable Template Exercise without an external problem ID:
 
@@ -34,7 +34,7 @@ Create a reusable Template Exercise without an external problem ID:
 xmake new --kind=template --root=data_structures/array --slug=dynamic_array
 ```
 
-This maps to directory and target `ds_dynamic_array`, namespace `AlgoCpp::Template::DataStructure::DynamicArray`, and tags `[template][data_structure][dynamic_array]`. The initial scaffold contains commented interface examples and a failing placeholder test; replace that placeholder with real assertions after choosing the Exercise's natural API.
+This maps to directory and target `ds_dynamic_array`, namespace `AlgoCpp::Template::DataStructure::DynamicArray`, and tags `[template][data_structure][array][dynamic_array]`. The initial scaffold contains commented interface examples and a failing placeholder test; replace that placeholder with real assertions after choosing the Exercise's natural API.
 
 The top-level root determines the namespace domain: `algorithms` → `Algorithm`, `data_structures` → `DataStructure`, and `reviews` → `Review`. Problem IDs and slugs are safely normalized and reported. Unsafe input, an unsupported root, an existing target, or a duplicate Problem ID fails without leaving a partial Exercise. `--url` is optional for both Problem and Template Exercises; when supplied, it is stored in metadata and emitted once as `// refs : URL` above the generated header.
 
@@ -45,7 +45,8 @@ lc215_kth_largest_element/
 ├── kth_largest_element.h
 ├── kth_largest_element.cpp
 ├── kth_largest_element_test.cpp
-└── duplicates_test.cpp          # optional; any number of *_test.cpp files
+├── duplicates_test.cpp          # optional; any number of *_test.cpp files
+└── exercise.json
 ```
 
 Use the same Catch2 `TEST_CASE` form for Huawei, LeetCode, and Template Exercises; invoke each Exercise through its natural public API:

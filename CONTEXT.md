@@ -30,7 +30,8 @@ _Avoid_: User-supplied domain, topic category, problem source
 
 **Exercise Test**:
 The sole verification form for an Exercise: a repeatable set of behavioral assertions that invokes the Exercise through its public interface and passes when the Exercise is considered complete.
-_Avoid_: Runner, demo, interactive verification, source-specific test, compile-only check, placeholder test
+A newly generated scaffold is intentionally incomplete and contains a fail-fast sentinel until its commented API example is replaced by real assertions.
+_Avoid_: Runner, demo, interactive verification, source-specific test, compile-only check, passing or permanent placeholder test
 
 **Native Exercise Interface**:
 The public API shaped by the Exercise itself, preserving an external problem's contract or exposing the natural operations of a reusable implementation. The repository does not impose a universal input/output wrapper on Exercises.

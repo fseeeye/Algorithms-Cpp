@@ -66,6 +66,7 @@ for exerciseDir, info in pairs(exerciseDirectories) do
         add_includedirs(exerciseDir)
         add_deps("basic")
         add_packages("catch2", {components = {"main", "lib"}})
+        on_load("modules.validate_exercises")
         add_tests("default")
 end
 

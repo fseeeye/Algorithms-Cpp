@@ -108,6 +108,8 @@ function main()
     end
     if kind == "problem" then
         table.insert(tags, exercise.id:lower())
+    else
+        table.insert(tags, slug)
     end
     exercise.tags = "[" .. table.concat(tags, "][") .. "]"
 
