@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC232",
+  "name": "Implement Queue Using Stacks",
+  "difficulty": "Easy",
+  "tip": "",
+  "url": "https://leetcode.cn/problems/implement-queue-using-stacks/"
+}
