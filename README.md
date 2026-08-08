@@ -165,6 +165,7 @@ xmake test
 
 | ID | Name | Difficulty | Tip |
 | :-- | :--- | :--------- | :-- |
+| LC56 | [Merge Intervals](./algorithms/sort/lc56_merge_intervals) | Medium |  |
 | LC215 | [Kth Largest Element](./algorithms/sort/lc215_kth_largest_element) | Medium | 快速选择 |
 | LC347 | [Top k Frequent Elements](./algorithms/sort/lc347_top_k_frequent_elements) | Medium | 桶排序 |
 

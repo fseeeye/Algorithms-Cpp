@@ -11,6 +11,7 @@ namespace AlgoCpp::Problem::Algorithm::LC27
 	{
 	public:
 		static int removeElement(std::vector<int>& nums, int val);
+		static int removeElementOpt(std::vector<int>& nums, int val);
 	};
 
 } // namespace AlgoCpp::Problem::Algorithm::LC27

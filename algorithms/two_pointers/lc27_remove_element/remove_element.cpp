@@ -23,4 +23,30 @@ namespace AlgoCpp::Problem::Algorithm::LC27
 		return static_cast<int>(slow);
 	}
 
+	int Solution027::removeElementOpt(std::vector<int>& nums, int val)
+	{
+		int left = 0;
+		int right = static_cast<int>(nums.size()) - 1;
+
+		// 0. if right == left, end
+		while (left <= right)
+		{
+			// 1. right find !val index
+			if (nums[right] == val)
+			{
+				right--;
+				continue;
+			}
+			// 2. left search -> replace with right
+			if (nums[left] == val)
+			{
+				nums[left] = nums[right];
+				right--;
+			}
+			left++;
+		}
+
+		return left;
+	}
+
 } // namespace AlgoCpp::Problem::Algorithm::LC27

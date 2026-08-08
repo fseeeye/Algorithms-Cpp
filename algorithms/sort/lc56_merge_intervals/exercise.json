@@ -1,0 +1,8 @@
+{
+  "kind": "problem",
+  "id": "LC56",
+  "name": "Merge Intervals",
+  "difficulty": "Medium",
+  "tip": "",
+  "url": "https://leetcode.cn/problems/merge-intervals"
+}
